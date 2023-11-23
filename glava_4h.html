@@ -1,0 +1,561 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<Title> ϳ������� HTML/CSS ��� ����������. </Title>
+<link rel="stylesheet" href="../style.css" type="text/css"></script>
+</head>
+<body>
+<div class="header">
+<H1 class = "logo"> ϳ������� HTML/CSS </h1>
+</div>
+<div class="left">
+<div class="fixed">
+<script type="text/javascript"> 
+function shiftSubDiv(n)
+{
+  var el = document.getElementById('subDiv'+n);
+ 
+  if ( el.style.display == 'none' )
+    el.style.display = 'block'
+  else
+    if ( el.style.display == 'block' )
+    el.style.display = 'none';
+};
+</script>
+<a href="index.html" class="menu" title="От автора.">Главная</a>
+<div class="navHeader" id="navHeader1" onClick="shiftSubDiv(1)">HTML</div> 
+<ul class="ul_none" id="subDiv1" style="display:block">
+<li><a href="glava h.html" class="activemenu" title="Вступ.">Вступ</a></li>
+<li><a href="glava 1h.html" class="menu" >Что такое HTML язык</a>  </li>
+<li><a href="glava 2h.html" class="menu" >Редактируем текст</a></li>
+<li><a href="glava 4h.html" class="menu" >Таблица</a></li>
+<li><a href="glava 5h.html" class="menu" >Ссылка</a></li>
+<li><a href="glava 6h.html" class="menu" >И ещё ...</a></li>
+<li><a href="glava 7h.html" class="menu" >Списки</a></li>
+<li><a href="glava 8h.html" class="menu" >Meta теги</a></li>
+<li><a href="glava 9h.html" class="menu" >Заглавный текс </a></li>
+<li><a href="glava 10h.html" class="menu" >И снова таблица ..</a></li>
+<li><a href="glava 11h.html" class="menu" >Фоновая музыка</a></li>
+<li><a href="glava 12h.html" class="menu" >Текст - логика и физика</a></li>
+<li><a href="glava 13h.html" class="menu" >Формы</a></li>
+<li><a href="glava 14h.html" class="menu" >Випадающее меню</a></li>
+</ul>
+<div class="navHeader" id="navHeader2" onClick="shiftSubDiv(2)">CSS</div> 
+<ul class="ul_none" id="subDiv2" style="display:none">
+<li><a href="glava1.html" class="menu" title="Глава 1   Начало CSS.">Начало CSS.</a></li>
+<li><a href="glava2.html" class="menu" title="Глава 2   Властивості тексту.">Возможности текста.</a></li>
+<li><a href="glava3.html" class="menu" title="Глава 3   Властивості шрифту.">Возможности шрифта.</a></li>
+<li><a href="glava4.html" class="menu" title="Глава 4   Колір і фон.">Цвет и фон.</a></li>
+<li><a href="glava5.html" class="menu" title="Глава 5   Межі елемента.">Грань элемента.</a></li>
+<li><a href="glava6.html" class="menu" title="Глава 6   Класи і id селектори.">Класы и id селекторы.</a></li>
+<li><a href="glava7.html" class="menu" title="Глава 7   Розміри елемента.">Розмеры элемента.</a></li>
+<li><a href="glava8.html" class="menu" title="Глава 8   Поля і відступи.">Поля и отступы.</a></li>
+<li><a href="glava9.html" class="menu" title="Глава 9   Курсори.">Курсоры.</a></li>
+<li><a href="glava10.html" class="menu" title="Глава 10   Форматування.">Форматирование.</a></li>
+<li><a href="glava11.html" class="menu" title="Глава 11   Поплавці.">Поплавки.</a></li>
+<li><a href="glava12.html" class="menu" title="Глава 12   Позиціонування.">Позицыонирование.</a></li>
+<li><a href="glava13.html" class="menu" title="Глава 13   Стиль списку.">Стиль списка.</a></li>
+<li><a href="glava14.html" class="menu" title="Глава 14   Полоса прокрутки.">Полоса прокрутки.</a></li>
+<li><a href="glava15.html" class="menu" title="Глава 15   Псевдокласи.">Псевдокласы.</a></li>
+<li><a href="glava16.html" class="menu" title="Глава 16   Псевдоелементи.">Псевдоэлементи.</a></li>
+</ul>
+</div>
+</div>
+
+<div class="center">
+
+<p class="zag">����� 4</p>
+
+<h1>�������</h1>
+
+<p>��� ����� ��'���� � ��� ���� �� ������ �������� ������� .. � ������ �������� ������ ����� ��� �� �� ���� ����� �� ���� ��������� ��� ��������� �����. �� ��������� ������� ����� �� ����� �������� �� �� ���� ����������, ������� ���� ��� ������ ��������� ���������, ��� � ������ �� �� ������ �������� ���������� �� ��� ��� ����, ������� ������ �������� ��� ������� �������, ��� ��� �� ������. � ����� ������� ��������� �� ��������..</p>
+
+<h2>������� �������</h2>
+
+<p>��� <samp><b>&lt;table&gt;</b></samp> ���� ������� � ����� �������, ����-��� �������, �� �����, ���������� � ����� � ��������, ��� ����� � �� ��� ����:</p>
+
+<samp class="x"><b>&lt;tr&gt;</b></samp> - ����� �������<br>
+<samp class="x"><b>&lt;td&gt;</b></samp> - �������� �������
+
+<p>����� �� ���� �������� ���:</p>
+<b>
+<samp class="x">&lt;table&gt;</samp><br>
+<samp class="xx">&lt;tr&gt;</samp><br>
+<samp class="xxx">&lt;td&gt;������&lt;/td&gt;</samp><br>
+<samp class="xx">&lt;/tr&gt;</samp><br>
+<samp class="x">&lt;/table&gt;</samp><br>
+</b>
+
+<p>����� ����� �� �������� �������, � ��� ������ ���� �����, �� ������ ���� �������� - ������</p>
+<p>��������� ����� ����� ������ ���������� ������� � ����� ����� � ����� ��������, � ������ ������� ������� <samp><b>border</b></samp> "�����", ���� ������� ��� ��������.</p>
+
+<div class="primer">
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;�������&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;<b>table border="1"</b>&gt;</samp><br>
+<samp class="xxx"><b>&lt;tr&gt;</b></samp><br>
+<samp class="xxxx"><b>&lt;td&gt;</b>�����1 ������1<b>&lt;/td&gt;</b></samp><br>
+<samp class="xxxx"><b>&lt;td&gt;</b>�����1 ������2<b>&lt;/td&gt;</b></samp><br>
+<samp class="xxxx"><b>&lt;td&gt;</b>�����1 ������3<b>&lt;/td&gt;</b></samp><br>
+<samp class="xxx"><b>&lt;/tr&gt;</b></samp><br>
+<samp class="xxx"><b>&lt;tr&gt;</b></samp><br>
+<samp class="xxxx"><b>&lt;td&gt;</b>�����2 ������1<b>&lt;/td&gt;</b></samp><br>
+<samp class="xxxx"><b>&lt;td&gt;</b>�����2 ������2<b>&lt;/td&gt;</b></samp><br>
+<samp class="xxxx"><b>&lt;td&gt;</b>�����2 ������3<b>&lt;/td&gt;</b></samp><br>
+<samp class="xxx"><b>&lt;/tr&gt;</b></samp><br>
+<samp class="xxx"><b>&lt;tr&gt;</b></samp><br>
+<samp class="xxxx"><b>&lt;td&gt;</b>�����3 ������1<b>&lt;/td&gt;</b></samp><br>
+<samp class="xxxx"><b>&lt;td&gt;</b>�����3 ������2<b>&lt;/td&gt;</b></samp><br>
+<samp class="xxxx"><b>&lt;td&gt;</b>�����3 ������3<b>&lt;/td&gt;</b></samp><br>
+<samp class="xxx"><b>&lt;/tr&gt;</b></samp><br>
+<samp class="xx"><b>&lt;/table&gt;</b></samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer10h.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>���������? ���� ���, ����� ��� ..</p> 
+
+<h2>��'������� ������.</h2>
+
+<p>����� ��� ����� � ��������� ������ ������������ ��'������ � �� ���� ������ � ����.</p>
+<p>�������� ����� "��'������" ��� ���������, �������������� � ���� ���� ��� ����, �� � ��������� ��������� � ����� �����. �������� ��� �� Word, ������� ��� ������� �� �������� ������� ������ � ��������� ������ "��'������" .. ��� ��� ���������� �� ����� ���, � ����������� ���� � �������� �� "��'������" � "" ����������.</p>
+<p>�� �������� ����� �������� <samp><b>colspan</b></samp> � <samp><b>rowspan</b></samp></p>
+<ul>
+<li><samp><b>colspan</b></samp> - ������� ������ ��������� ���� ������� ���� ������
+<li><samp><b>rowspan</b></samp> - ������� ������ ����  ���� ������� ���� ������
+</ul>
+<p>��������� �� � ������ ������� ��� ��������� "��'������" � �������� ����� ����� � ����� ������, ��� ����� ��������<samp><b>colspan</b></samp> ���������� �������� 2 (���������� �� ��� �������) � �������� ���� � ��������� ����.</p>
+<div class="primer">
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;�������&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;table border="1"&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�����1 ������1&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�����1 ������2&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�����1 ������3&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�����2 ������1&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�����2 ������2&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�����2 ������3&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�����3 ������1&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;td <b>colspan="2"</b>&gt;�����3 ������2&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�����3 ������3&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xx">&lt;/table&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer11h.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>�� ������ ������ ������������ �� ��� �������, ��� ��� ����� ������� ����� ������, ��� ������ ��� ����� �� �������, � �� ���� �� �� ������ �������� ���������. ���������� �������� �� �������, ��� �� �������� ������� ���� 䳿.</p>
+<p>����������� �������:</p>
+
+<div class="primer">
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;�������&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;table border="1"&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�����1 ������1&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�����1 ������2&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�����1 ������3&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�����2 ������1&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�����2 ������2&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�����2 ������3&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�����3 ������1&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;td <b>colspan="2"</b>&gt;�����3 ������2&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xx">&lt;/table&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer12h.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>����� �������� ��'������ ���� ������ �������� � ���� �������, �������������� ������� <samp><b>rowspan</b></samp>, �� ������� �������� �������� ������� ����� ������� ��������� �� ��� ����� � ����� ���� ������ ��������� �����.</p>
+<div class="primer">
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;�������&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;table border="1"&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td <b>rowspan="3"</b>&gt;�����1 ������1&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�����1 ������2&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�����1 ������3&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�����2 ������2&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�����2 ������3&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td colspan="2"&gt;�����3 ������2&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xx">&lt;/table&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer13h.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>��� ������ .. ������� ���� �������!</p> 
+
+<h2>������ �������.</h2>
+
+<p>���� �� ��������� ����������� � ���������� ������� �� ������� �������� ����� �� ��, �� ������ ������� � ������ �� ������������ �������� ���������� � �� ������� .. � "��������" ��� �� ������.   
+�������� ��� �������� <samp><b>width</b></samp> - ������ � <samp><b>height</b></samp> - ������, �� �� ��������������� ��� ������������ �������, ���� ��� ���� ���������� �� ����� <samp><b>&lt;table&gt;, &lt;tr&gt;</b></samp> �  <samp><b>&lt;td&gt;</b></samp>. � ���� ���������� �� ������, ��� �� ������������� �� ���� .. ������ ������ �������. � ��� ������ ������� ������� � ����� �� ��������, � ������ � ��� ������� �������� �� ������ ��������� ��� <samp><b>&lt;center&gt;</b></samp></p>
+
+<p>�������:</p>
+
+<div class="primer">
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;�������&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx"><b>&lt;center&gt;</b></samp><br> 
+<samp class="xxx">&lt;table border="1" <b>width="640" height="480"</b>&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;td rowspan="3" <b>width="150"</b>&gt;�����1 ������1&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td<b> height="30"</b>&gt;�����1 ������2&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td&gt;�����1 ������3&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;td <b>height="30"</b>&gt;�����2 ������2&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td&gt;�����2 ������3&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;td colspan="2" &gt;�����3 ������2&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;/table&gt;</samp><br>
+<samp class="xx"><b>&lt;/center&gt;</b></samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer14h.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>�������� ����� �� ��, �� ������� � ������ ������ �� ��� ��� ������. � �����? ���� � ��� ������� ���� �������� �� ��������� � ��������� ������ .. �� �� ���� � �������..</p>
+<p>�� �� ��� �������..</p>
+<p>�������� �������� <samp><b>width</b></samp> � <samp><b>height</b></samp> � ������� ���� ����������� �� ����� � �������, ��� � � ��������� </p>
+
+<p align="left">��� ������:</p>
+
+<div class="primer">
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;�������&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;center&gt;</samp><br> 
+<samp class="xxx">&lt;table border="1" width="640" height="480"&gt;</samp><br>
+<samp class="xxxx">&lt;tr <b>height="25%"</b>&gt;</samp><br>
+<samp class="xxxxx">&lt;td <b>width="15%"&gt;</b> �����1 ������1&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td <b>width="25%"&gt;</b>�����1 ������2&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td <b>width="60%"&gt;</b>�����1 ������3&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr <b>height="50%"&gt;</b></samp><br>
+<samp class="xxxxx">&lt;td&gt;�����2 ������1&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td&gt;�����2 ������2&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td&gt;�����2 ������3&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr <b>height="25%"</b>&gt;</samp><br>
+<samp class="xxxxx">&lt;td&gt;�����3 ������1&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td&gt;�����3 ������2&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td&gt;�����3 ������3&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;/table&gt;</samp><br>
+<samp class="xx">&lt;/center&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer15h.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>� ����� ������� �� �������� ������ ������� � 640 ����� �� ������ 15% ������ ������, 25% � 60 �����% �����. � �� ����� � 480 ������ �� 25% ����� � �������� �����, � ����� �������� ���� ������� .. ������� ������������� � ��� ���� .. �� �� �� ��� ���������, ������ ���� ���� ����������, �������, ��� � ��� ���� 100%, ������ ��������� ���� .. ������ ���� .. ���������..</p>
+
+<h2>������� ������� � ������������� �������.</h2>
+
+<p>��������� �� ��� ������� � ��������, �� ��� ������ �� ������??</p>
+
+<div class="primer">
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;<b>������� �������</b>&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;center&gt;</samp><br> 
+<samp class="xxx">&lt;table border="1" width="640" height="480"&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;td colspan="5" height="30"&gt;&lt;center&gt;���������&lt;/center&gt;&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;td height="30" width="20%"&gt;&lt;center&gt;������1&lt;/center&gt;&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td width="20%"&gt;&lt;center&gt;������2&lt;/center&gt;&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td width="20%"&gt;&lt;center&gt;������3&lt;/center&gt;&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td width="20%"&gt;&lt;center&gt;������4&lt;/center&gt;&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td width="20%"&gt;&lt;center&gt;������5&lt;/center&gt;&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;td valign="top"&gt;����:&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td colspan="4"&gt;&lt;center&gt;���� ������&lt;/center&gt;&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;/table&gt;</samp><br>
+<samp class="xx">&lt;/center&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer16h.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>�� ������, ������� �� ������� � ������� ������� ���������� ��� ������� ������� .. </p>
+<p> ����-��� ����� ������� ���� ������� ��������� ������� ��� ���������� ����� ���� � ���������� �����, � ����� ���� ��� �� ����� ������������ ����������. - �������� </p>
+<p> ������� ������� � ����� ��� ��������� �������, ������������ �� ������ �� �������. ������ �� ���������, �� �� ��� ��������� .. </p>
+<p> ������ ����: </p>
+
+<div class="primer">
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;������� � �����&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;center&gt;</samp><br> 
+<samp class="xxx">&lt;table width="300" height="300"&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;td <b>bgcolor="#c0e4ff"&gt;1&lt;/td&gt;</b></samp><br>
+<samp class="xxxxx">&lt;td <b>bgcolor="#c5ffa0"&gt;2&lt;/td&gt;</b></samp><br>
+<samp class="xxxxx">&lt;td <b>bgcolor="#c0e4ff"&gt;3&lt;/td&gt;</b></samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;td <b>bgcolor="#c5ffa0"&gt;4&lt;/td&gt;</b></samp><br>
+<samp class="xxxxx">&lt;td <b>bgcolor="#ffa0c5"&gt;5&lt;/td&gt;</b></samp><br>
+<samp class="xxxxx">&lt;td <b>bgcolor="#c5ffa0"&gt;6&lt;/td&gt;</b></samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;td <b>bgcolor="#c0e4ff"&gt;7&lt;/td&gt;</b></samp><br>
+<samp class="xxxxx">&lt;td <b>bgcolor="#c5ffa0"&gt;8&lt;/td&gt;</b></samp><br>
+<samp class="xxxxx">&lt;td <b>bgcolor="#c0e4ff"&gt;9&lt;/td&gt;</b></samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;/table&gt;</samp><br>
+<samp class="xx">&lt;/center&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer17h.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>��������� �����:</p>
+<p>��� �'��������� ����� ������� <samp><b>valign</b></samp> - ����������� �����������. �� ����� ������� ��� ��� ������ ������� <samp><b>align</b></samp> - ������������� �����������.</p>
+
+<div class="primer">
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;����������� � �������&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;center&gt;</samp><br>
+<samp class="xxx">&lt;table width="300" height="300"&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c0e4ff" <b>valign="top"</b>&gt;1&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c5ffa0" <b>valign="top"</b>&gt;&lt;center&gt;2&lt;/center&gt;&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c0e4ff" <b>align="right"</b> valign="top"&gt;3&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c5ffa0"&gt;4&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#ffa0c5"&gt;<b>&lt;center&gt;</b>5<b>&lt;/center&gt;</b>&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c5ffa0" <b>align="right"</b>&gt;6&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c0e4ff" <b>valign="bottom"</b>&gt;7&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c5ffa0" <b>valign="bottom"</b>&gt;&lt;center&gt;8&lt;/center&gt;&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c0e4ff" <b>align="right" valign="bottom"</b>&gt;9&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;/table&gt;</samp><br>
+<samp class="xx">&lt;/center&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer18h.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>����� ��� ��� ��������.</p>
+<p><samp><b>Cellspacing</b></samp> - ���� ������� � ������� �� ������� �������. ������� �������� <samp><b>cellspacing="0"</b></samp> ����� ��������� �� "������" �� �������.</p>
+<p>�������, �������� "�����":</p>
+
+<div class="primer">
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;³������ �� �������&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;center&gt;</samp><br>
+<samp class="xxx">&lt;table width="300" height="300" <b>cellspacing="15"</b>&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c0e4ff" valign="top"&gt;1&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c5ffa0" valign="top"&gt;&lt;center&gt;2&lt;/center&gt;&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c0e4ff" align="right" valign="top"&gt;3&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c5ffa0"&gt;4&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#ffa0c5"&gt;&lt;center&gt;5&lt;/center&gt;&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c5ffa0" align="right"&gt;6&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c0e4ff" valign="bottom"&gt;7&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c5ffa0" valign="bottom"&gt;&lt;center&gt;8&lt;/center&gt;&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c0e4ff" align="right" valign="bottom"&gt;9&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;/table&gt;</samp><br>
+<samp class="xx">&lt;/center&gt;</samp><br> 
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer19h.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>������� <samp><b>cellpadding</b></samp> (�� �������� � <samp><b>cellspacing</b></samp>) - � ������� ���� ���� ������ (������ �� �������� �������� �� ������)</p>
+<p>�������:</p>
+<div class="primer">
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;���� �������&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;center&gt;</samp><br>
+<samp class="xxx">&lt;table width="300" height="300" cellspacing="0" <b>cellpadding="25"</b>&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c0e4ff" valign="top"&gt;1&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c5ffa0" valign="top"&gt;&lt;center&gt;2&lt;/center&gt;&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c0e4ff" align="right" valign="top"&gt;3&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c5ffa0"&gt;4&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#ffa0c5"&gt;&lt;center&gt;5&lt;/center&gt;&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c5ffa0" align="right"&gt;6&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c0e4ff" valign="bottom"&gt;7&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c5ffa0" valign="bottom"&gt;&lt;center&gt;8&lt;/center&gt;&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;td bgcolor="#c0e4ff" align="right" valign="bottom"&gt;9&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;/table&gt;</samp><br>
+<samp class="xx">&lt;/center&gt;</samp><br> 
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer20h.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>������, ������, �� ��� �������� ����� �� ��� ����� �������� �������, � ��� ������� ��� ��, �� ����� ������ ����� ������ ���� ������� ������� ��� ����� ���� .. � ��� <samp><b>&lt;table&gt;</b></samp> �� � ��������. �� ��� ����� �������� ���� ������� � ����..</p>
+<p>�������� �������:</p>
+
+<div class="primer">
+<samp>&lt;html&gt;</samp><br>
+<samp>&lt;head&gt;</samp><br>
+<samp class="x">&lt;title&gt;�������� �������&lt;/title&gt;</samp><br>
+<samp>&lt;/head&gt;</samp><br>
+<samp>&lt;body&gt;</samp><br>
+<samp class="x">&lt;center&gt;</samp><br>
+<samp class="xx">&lt;table width="600" height="400" border="1"&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td colspan="2"&gt;&lt;center&gt;���������&lt;/center&gt;&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td valign="top"&gt;����:&lt;/td&gt;</samp><br>   
+<samp class="xxxx">&lt;td valign="top"&gt;</samp><br>
+<samp class="xxxxx">&lt;center&gt;</samp><br>
+<samp class="xxxxx">&lt;br&gt;&lt;br&gt;</samp><br>
+<samp class="xxxxx">� ���� ������� �������� ���� �������!!</samp><br> 
+<samp class="xxxxx">&lt;br&gt;&lt;br&gt;&lt;br&gt;</samp><br>
+<samp class="xxxxx"><b>&lt;table width="200" height="200" cellspacing="0" cellpadding="15"&gt;</b></samp><br>
+<samp class="xxxxx"><b>&lt;tr&gt;</b></samp><br>
+<samp class="xxxxx"><b>&lt;td bgcolor="#c0e4ff" valign="top"&gt;1&lt;/td&gt;</b></samp><br>
+<samp class="xxxxx"><b>&lt;td bgcolor="#c5ffa0" valign="top"&gt;&lt;center&gt;2&lt;/center&gt;&lt;/td&gt;</b></samp><br>
+<samp class="xxxxx"><b>&lt;td bgcolor="#c0e4ff" align="right" valign="top"&gt;3&lt;/td&gt;</b></samp><br>
+<samp class="xxxxx"><b>&lt;/tr&gt;</b></samp><br>
+<samp class="xxxxx"><b>&lt;tr&gt;</b></samp><br>
+<samp class="xxxxx"><b>&lt;td bgcolor="#c5ffa0"&gt;4&lt;/td&gt;</b></samp><br>
+<samp class="xxxxx"><b>&lt;td bgcolor="#ffa0c5"&gt;&lt;center&gt;5&lt;/center&gt;&lt;/td&gt;</b></samp><br>
+<samp class="xxxxx"><b>&lt;td bgcolor="#c5ffa0" align="right"&gt;6&lt;/td&gt;</b></samp><br>
+<samp class="xxxxx"><b>&lt;/tr&gt;</b></samp><br>
+<samp class="xxxxx"><b>&lt;tr&gt;</b></samp><br>
+<samp class="xxxxx"><b>&lt;td bgcolor="#c0e4ff" valign="bottom"&gt;7&lt;/td&gt;</b></samp><br>
+<samp class="xxxxx"><b>&lt;td bgcolor="#c5ffa0" valign="bottom"&gt;&lt;center&gt;8&lt;/center&gt;&lt;/td&gt;</b></samp><br>
+<samp class="xxxxx"><b>&lt;td bgcolor="#c0e4ff" align="right" valign="bottom"&gt;9&lt;/td&gt;</b></samp><br>
+<samp class="xxxxx"><b>&lt;/tr&gt;</b></samp><br>
+<samp class="xxxxx"><b>&lt;/table&gt;</b></samp><br>
+<samp class="xxxxx">&lt;/center&gt;</samp><br>
+<samp class="xxxx">&lt;/td&gt;</samp><br>   
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xx">&lt;/table&gt;</samp><br>
+<samp class="x">&lt;/center&gt;</samp><br>
+<samp>&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer21h.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>����� ��� ����������� ��� ������ ... �������? ���������? ���� ���� �� ������ ������ ���� ��� � �, ��� � �� ����� � � �������� ������ ��������! ���� ���� �� �������� ����������� �����, �����������, ���� �� �������� �� ����������� � ��� ��� ����� �� ��� ����! �������� - �������� �����. �� ��������, �������� ������ ��� ���������.. </p>
+<p>�� � ��� �� ��������� ������� ������� ����� .. ����, �� � ��� ��� �� ������� ������ ..?</p>
+
+<p>� ���� ���� ��� ��� ����:</p>
+
+<div class="primer">
+<samp>&lt;html&gt;</samp><br>
+<samp>&lt;head&gt;</samp><br>
+<samp class="x">&lt;title&gt;̳� ������ ���� &lt;/title&gt;</samp><br>
+<samp>&lt;/head&gt;</samp><br>
+<samp>&lt;body text="#484800" bgcolor="#ffffff" background="graphics/fon.jpg"&gt;</samp><br>
+<samp class="x">&lt;center&gt;</samp><br> 
+<samp class="xx"><b>&lt;table width="640" height="480" cellpadding="5" cellspacing="2" border="1"&gt;</b></samp><br>
+<samp class="xxx"><b>&lt;tr&gt;</b></samp><br>
+<samp class="xxxx"><b>&lt;td colspan="3" height="30" bgcolor="#b2ff80"&gt;</b></samp><br>
+<samp class="xxxxx">&lt;center&gt;&lt;img src="graphics/privet.png" width="200" height="40" alt="����� ���!!!"&gt;&lt;/center&gt;</samp><br>
+<samp class="xxxx"><b>&lt;/td&gt;</b></samp><br>
+<samp class="xxx"><b>&lt;/tr&gt;</b></samp><br>
+<samp class="xxx"><b>&lt;tr&gt;</b></samp><br>
+<samp class="xxxx"><b>&lt;td height="30" width="33%" bgcolor="#ffa0cf"&gt;</b>&lt;center&gt;&lt;b&gt;��� ����!!!&lt;/b&gt;&lt;/center&gt;<b>&lt;/td&gt;</b></samp><br>
+<samp class="xxxx"><b>&lt;td width="33%" bgcolor="#c0e4ff"&gt;</b>&lt;center&gt;&lt;b&gt;��� �� �����!!&lt;/b&gt;&lt;/center&gt;<b>&lt;/td&gt;</b></samp><br>
+<samp class="xxxx"><b>&lt;td bgcolor="#c0e4ff"&gt;</b>&lt;center&gt;&lt;b&gt;�������� ���� �����..&lt;/b&gt;&lt;/center&gt;<b>&lt;/td&gt;</b></samp><br>
+<samp class="xxx"><b>&lt;/tr&gt;</b></samp><br>
+<samp class="xxx"><b>&lt;tr&gt;</b></samp><br>
+<samp class="xxxx"><b>&lt;td colspan="3" valign="top" bgcolor="#b2ff80"&gt;</b></samp><br>
+<samp class="xxxxx">&lt;p align="justify"&gt;</samp><br>
+<samp class="xxxxx">&lt;img src="graphics/foto.jpg" align="left" hspace="10" width="100" height="90" alt="�� ��� �����!!!" title="�� ��� �����!!"&gt;</samp><br>
+<samp class="xxxxx">&amp;nbsp;&amp;nbsp;&amp;nbsp;��������� ������������� �������! ���� ���� �� ����.</samp><br>
+<samp class="xxxxx">�����! ҳ���� �����! ������� � ������ ��������..&lt;br&gt; �- ��������, ��������, � ��� ���������� ������, � ������� ������ ���! Ƴ��� ������� �� ���� ���������� .. �� .. ����� ������ .. � ���������� � ���� �� ������� ..</samp><br>
+<samp class="xxxxx">&lt;/p&gt;</samp><br>
+<samp class="xxxxx">&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;�� ��������� ��������� ������ ... ճ�� � ����� ?! - ��� �� ��� ������ ������� ���� �������!&lt;/p&gt;</samp><br>
+<samp class="xxxxx">&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;���� ��� ������ ��� ����� �����, ��� ���� ��� ����� ������ �� �����!&lt;/p&gt;</samp><br>
+<samp class="xxxxx">&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;� ���� ���� ������ ����� &lt;font size="+1" color="#ff0000"&gt; �������&lt;/font&gt; !!! � ���������� ���� ������ ���� ���������� �� ��� .. ���������� �������� ... ���������&lt;/p&gt;</samp><br>
+<samp class="xxxxx">&lt;center&gt;&lt;b&gt;�������!!&lt;/b&gt;&lt;/center&gt;</samp><br>
+<samp class="xxxxx">&lt;p&gt;&amp;nbsp;&amp;nbsp;�� ����� ��� ��� ����? � � �����, �����&lt;/p&gt;</samp><br>
+<samp class="xxxx"><b>&lt;/td&gt;</b></samp><br>
+<samp class="xxx"><b>&lt;/tr&gt;</b></samp><br>
+<samp class="xx"><b>&lt;/table&gt;</b></samp><br>
+<samp class="x">&lt;/center&gt;</samp><br>
+<samp>&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer22h.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+<h2>������� ������:</h2>
+<ul>
+<li><p>��� ��������� ������� �������� ������� ���������� �������� �������� �� �� �����. ��� ���� �������� ����������� �� �������� �������, ���������� ������� ����� � ��������, �������� � ��� ������ � �� ������ ��� ����������� "��'��������" � �� ���� ������.</p>
+</ul>
+
+
+<div class="url">
+<a href="test1.html" title="�� �����">&lt;&lt; ����</a> | 
+<a href="test2.html" title="�� �����">������ ���� &gt;&gt;</a>
+</div>
+</div>
+
+</body>
+</html>

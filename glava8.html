@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+	<html>
+	<head>
+	<title>ϳ������� HTML/CSS ��� ����������.</title>
+	<meta HTTP-EQUIV="Content-Type" Content="text/html; Charset=Windows-1251">
+	<link rel="stylesheet" href="../style.css" type="text/css"></script>
+	</head>
+	<body>   
+	<div class="header">
+	<h1 class="logo">ϳ������� HTML/CSS</h1>
+	</div>
+	<div class="left">
+
+<div class="fixed">
+<script type="text/javascript"> 
+function shiftSubDiv(n)
+{
+  var el = document.getElementById('subDiv'+n);
+ 
+  if ( el.style.display == 'none' )
+    el.style.display = 'block'
+  else
+    if ( el.style.display == 'block' )
+    el.style.display = 'none';
+};
+</script>
+<a href="index.html" class="menu" title="От автора.">Главная</a>
+<div class="navHeader" id="navHeader1" onClick="shiftSubDiv(1)">HTML</div> 
+<ul class="ul_none" id="subDiv1" style="display:block">
+<li><a href="glava h.html" class="activemenu" title="Вступ.">Вступ</a></li>
+<li><a href="glava 1h.html" class="menu" >Что такое HTML язык</a>  </li>
+<li><a href="glava 2h.html" class="menu" >Редактируем текст</a></li>
+<li><a href="glava 4h.html" class="menu" >Таблица</a></li>
+<li><a href="glava 5h.html" class="menu" >Ссылка</a></li>
+<li><a href="glava 6h.html" class="menu" >И ещё ...</a></li>
+<li><a href="glava 7h.html" class="menu" >Списки</a></li>
+<li><a href="glava 8h.html" class="menu" >Meta теги</a></li>
+<li><a href="glava 9h.html" class="menu" >Заглавный текс </a></li>
+<li><a href="glava 10h.html" class="menu" >И снова таблица ..</a></li>
+<li><a href="glava 11h.html" class="menu" >Фоновая музыка</a></li>
+<li><a href="glava 12h.html" class="menu" >Текст - логика и физика</a></li>
+<li><a href="glava 13h.html" class="menu" >Формы</a></li>
+<li><a href="glava 14h.html" class="menu" >Випадающее меню</a></li>
+</ul>
+<div class="navHeader" id="navHeader2" onClick="shiftSubDiv(2)">CSS</div> 
+<ul class="ul_none" id="subDiv2" style="display:none">
+<li><a href="glava1.html" class="menu" title="Глава 1   Начало CSS.">Начало CSS.</a></li>
+<li><a href="glava2.html" class="menu" title="Глава 2   Властивості тексту.">Возможности текста.</a></li>
+<li><a href="glava3.html" class="menu" title="Глава 3   Властивості шрифту.">Возможности шрифта.</a></li>
+<li><a href="glava4.html" class="menu" title="Глава 4   Колір і фон.">Цвет и фон.</a></li>
+<li><a href="glava5.html" class="menu" title="Глава 5   Межі елемента.">Грань элемента.</a></li>
+<li><a href="glava6.html" class="menu" title="Глава 6   Класи і id селектори.">Класы и id селекторы.</a></li>
+<li><a href="glava7.html" class="menu" title="Глава 7   Розміри елемента.">Розмеры элемента.</a></li>
+<li><a href="glava8.html" class="menu" title="Глава 8   Поля і відступи.">Поля и отступы.</a></li>
+<li><a href="glava9.html" class="menu" title="Глава 9   Курсори.">Курсоры.</a></li>
+<li><a href="glava10.html" class="menu" title="Глава 10   Форматування.">Форматирование.</a></li>
+<li><a href="glava11.html" class="menu" title="Глава 11   Поплавці.">Поплавки.</a></li>
+<li><a href="glava12.html" class="menu" title="Глава 12   Позиціонування.">Позицыонирование.</a></li>
+<li><a href="glava13.html" class="menu" title="Глава 13   Стиль списку.">Стиль списка.</a></li>
+<li><a href="glava14.html" class="menu" title="Глава 14   Полоса прокрутки.">Полоса прокрутки.</a></li>
+<li><a href="glava15.html" class="menu" title="Глава 15   Псевдокласи.">Псевдокласы.</a></li>
+<li><a href="glava16.html" class="menu" title="Глава 16   Псевдоелементи.">Псевдоэлементи.</a></li>
+</ul>
+</div>
+</div>
+<div class="center">
+   
+<p class="zag">����� 8</p>
+
+<h1>���� � �������.</h1>
+<p>� ����� ����� �� ���������� ��� ���� (���������� <samp><b>margin</b></samp>) � �������  (���������� <samp><b>padding</b></samp>) ��������. ̳� ����� �� �� ���������� ���� ����, ����� ��� � �� �� ��������� ����� ����������.</p> 
+
+<img src="../graphics/margin.gif" width="267" height="243" align="left" alt="���� � �������" vspace="5" hspace="30">
+
+<p>������� ����������� � ��� �������� ..</p> 
+<p>���� (<samp><b>margin</b></samp>) - �� ������� �� ��������� ��� �������� �� ������� ���� �������� ��� � �������� ������ .. �� ������� ���� ����� � ���� �������� ��� �������.</p>
+<p>³�������  (<samp><b>padding</b></samp>) - ��������� ������� �� ��������� ��� �������� �� ���� ����� ������, �������� ������� .. </p>
+<p>�� ������� ������ �������� �� �������, � ��� ���� ���� ������� �������� (border) ��� ����� ��� �� ��� ��������.</p>
+
+<p>³������  <samp><b>margin</b></samp> � <samp><b>padding</b></samp> ����������:</p>
+<ul>
+<li><samp><b>px</b></samp> - � ������� ��� ����-���� ����� ���������� CSS �������� �����.
+<li><samp><b>%</b></samp> - � ���������.
+<li><samp><b>auto</b></samp> - ����� ���� � ������� ����������� ������������� ���������.
+</ul>
+<p>������� �������� ������� �� � ����, �� �������� �� ������� �� ��������� ����� <samp><b>&lt;div&gt;</b></samp> � ������������ CSS.</p>
+
+<p>�������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;���� � �������&lt;/title&gt;</samp><br>
+<samp class="xx">&lt;style type="text/css"&gt;</samp><br>
+<samp class="xxx">div.block1 {</samp><br>
+<samp class="xxx">width: 260px;</samp><br>
+<samp class="xxx">background-color: #c5ffa0;</samp><br>
+<samp class="xxx">border: 2px solid #a68754</samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xxx">div.block2 {</samp><br>
+<samp class="xxx">background-color: #c0e4ff;</samp><br>
+<samp class="xxx">border: 8px solid #a68754;</samp><br>
+<samp class="xxx"><b>margin: 40px;</b></samp><br>
+<samp class="xxx"><b>padding: 20px</b></samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xx">&lt;/style&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;div class="block1"&gt;</samp><br>
+<samp class="xxx">&lt;div class="block2"&gt;</samp><br>
+<samp class="xxxx">&lt;samp&gt;���������� ����� � ���� �����, � ���� �������� ��� ���������! &lt;/samp&gt;</samp><br>
+<samp class="xxx">&lt;/div&gt;</samp><br>
+<samp class="xx">&lt;/div&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp><br>
+<div align="right"><a href="primer/primer40.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>��������� ������� �������� ������������ <samp><b>margin</b></samp> � <samp><b>padding</b></samp> � �� �����쳺��, �� �� ���� .. � ���� � ��� �������� ����� ��� ..</p>
+
+<h2>������ �������� margin � padding.</h2>
+
+<p>� ���������� ���� ������� ���������� ������������  <samp><b>margin</b></samp> � <samp><b>padding</b></samp> �� ������ ��������, �� ��������� ���� � ������� �������� � ��� �������� ���� �����. ��� ���� ��� ������� ���� ������ ���� � ������� ��� ����� � ����� ��������, ��������� ��������� ���, ��� ��� ������ ��������� ����� �����. ������� � ��������� �� ������� ������� ��������� ���� �����.</p>
+<p>��� ��������:</p>
+
+ <div style="background-color: #acdb82; border: 2px solid #008000; margin: 5px;">
+     <div style="border: solid #008000 2px; background-color: #c6f2de; margin: 5px; padding: 5px;">
+       <samp><b>margin: 5px</b>;</samp> - <i>���� ��������.</i>. <br>
+        ���� �������� - ���� ������� � ��� ����.
+     </div>
+ </div>
+ <div style="background-color: #acdb82; border: 2px solid #008000; margin: 5px;">
+   <div style="border: solid #008000 2px; background-color: #c6f2de; margin: 5px 40px; padding: 5px;">
+    <samp><b>margin: 5px 40px;</b></samp> - <i>��� ��������.</i> <br>
+    ����� �������� - ���������� ���� �� ������� � ������ ���.<br>
+����� �������� - ���������� ���� �� ��� � ����� ��� ��������.
+  </div>
+</div> 
+ <div style="background-color: #acdb82; border: 2px solid #008000; margin: 5px;">
+   <div style="border: solid #008000 2px; background-color: #c6f2de; margin: 5px 40px 20px; padding: 5px;">
+    <samp><b>margin: 5px 40px 20px;</b></samp> <i>- ��� ��������.</i><br> 
+      ����� �������� - ���������� ���� �� ������� ��� ��������.<br>
+����� �������� - ���������� ���� �� ��� � ����� ��� ��������.<br>
+���� �������� - ���������� ���� �� ������ ��� ��������.
+
+  </div>
+</div>
+<div style="background-color: #acdb82; border: 2px solid #008000; margin: 5px;"> 
+   <div style="border: solid #008000 2px; background-color: #c6f2de; margin: 5px 40px 20px 1px; padding: 5px;">
+     <samp><b>margin: 5px 40px 20px 1px;</b></samp> -<i> ������ ��������.</i><br> 
+      ����� �������� - ���������� ���� �� ������� ��� ��������.<br>
+����� �������� - ���������� ���� �� ����� ��� ��������.<br>
+���� �������� - ���������� ���� �� ������ ��� ��������.<br>
+�������� �������� - ���������� ���� �� ��� ��� ��������.
+
+   </div>
+</div>
+
+<p>� <samp><b>padding</b></samp> ������ ���������� �� ��� �� ���������, �� � � <samp><b>margin</b></samp>, ������� �� ��������� �������� �������� �� ����� ��������� ������ � ��������� �� ������� ��������� � �� �������.</p>
+
+<p>�������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;���� � ������� &lt;/title&gt;</samp><br>
+<samp class="xx">&lt;style type="text/css"&gt;</samp><br>
+<samp class="xxx">div.block1 {</samp><br>
+<samp class="xxx">width: 260px; </samp><br>
+<samp class="xxx">background-color: #c5ffa0; </samp><br>
+<samp class="xxx">border: 2px solid #a68754</samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xxx">div.block2 {</samp><br>
+<samp class="xxx">background-color: #c0e4ff; </samp><br>
+<samp class="xxx">border: 2px solid #a68754; </samp><br>
+<samp class="xxx"><b>margin:  20px 5px 20px 40px;</b></samp><br>
+<samp class="xxx"><b>padding: 5px 25px</b></samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xx">&lt;/style&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;div class="block1"&gt;</samp><br>
+<samp class="xxx">&lt;div class="block2"&gt;</samp><br>
+<samp class="xxxx">&lt;samp&gt;���������� ����� � ���� �����, � ���� �������� ��� ���������! &lt;/samp&gt;</samp><br>
+<samp class="xxx">&lt;/div&gt;</samp><br>
+<samp class="xxx">&lt;div class="block2"&gt;</samp><br>
+<samp class="xxxx">&lt;samp&gt;���� ��� ���, �� ������ ����� �����, ��� ���� ��� �����, �� ���� �� �����!&lt;/samp&gt;</samp><br>
+<samp class="xxx">&lt;/div&gt;</samp><br>
+<samp class="xx">&lt;/div&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp><br>
+<div align="right"><a href="primer/primer41.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<h2>������� ���������� margin � padding.</h2>
+
+<p>����������  CSS <samp><b>margin</b></samp> � <samp><b>padding</b></samp> � �������� � ����� ��� �������� ������������.</p>
+<p>� <samp><b>margin</b></samp> ��:</p>
+<ul>
+<li><samp><b>margin-top</b></samp> - ���� �� ������� ��� �������� ������,
+<li><samp><b>margin-left </b></samp> - ���� �� ��� ��� �������� ������,
+<li><samp><b>margin-right</b></samp> -  ���� �� ����� ��� �������� ������,
+<li><samp><b>margin-bottom</b></samp> - ���� �� ������ ��� �������� ������.
+</ul>
+
+<p>� � <samp><b>padding</b></samp> ��������:</p>
+
+<ul>
+<li><samp><b>padding-top</b></samp> - ³����� �� ������� ��� �������� �� ���� �����,
+<li><samp><b>padding-left</b></samp> - ³����� �� ��� ��� �������� �� ���� �����,
+<li><samp><b>padding-right</b></samp> - ³����� �� ����� ��� �������� �� ���� �����,
+<li><samp><b>padding-bottom</b></samp> - ³����� �� ������ ��� �������� �� ���� �����.
+</ul>
+
+<p>�� ����� �������� .. ���� ������ ������������ ��������� ������ ��� ���� �� ������ ����� ���� �������� ����� ������������ ����� � ������������� ���� ������������.</p>
+<p>�������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;���� � ������� &lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;div style="width: 250px; background-color: #c5ffa0; border: 2px solid #a68754"&gt;</samp><br>
+<samp class="xxx">&lt;div style="background-color: #c0e4ff; border: 2px solid #a68754; <b>margin-left:40px; padding-right: 50px</b>"&gt;</samp><br>
+<samp class="xxxx">&lt;samp&gt;���������� ����� � ���� �����, � ���� �������� ��� ���������! &lt;/samp&gt;</samp><br>
+<samp class="xxx">&lt;/div&gt;</samp><br>
+<samp class="xxx">&lt;br&gt;</samp><br>
+<samp class="xxx">&lt;div style="background-color: #c0e4ff; border: 2px solid #a68754; <b>margin-right:40px; padding-left: 50px</b>"&gt;</samp><br>
+<samp class="xxxx">&lt;samp&gt;���� ��� ���, �� ������ ����� �����, ��� ���� ��� �����, �� ���� �� �����! &lt;/samp&gt;</samp><br>
+<samp class="xxx">&lt;/div&gt;</samp><br>
+<samp class="xx">&lt;/div&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp><br>
+<div align="right"><a href="primer/primer42.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<h2>������� ������:</h2>
+
+<p>���� � ������� � ������ � �������� ��������� ������� �����, � ����� ������� ��� ������������� ������ ������������.
+
+</p>
+<ul>
+<li><p>�������� ��������, � ��� ��� �����, �������� ������� �� ����� �� �������� ��������, �������� �� ��������� ��������� �����. ����� � ���������� ������ � ��������� �������� ����� � "�'����".</p>
+<li><p>������������ ������ ������������� � �������� ���� � ������� �� ��� ������ ������� ��������, ��� � ��� �񳺿 ������� (���������� ��������) ������.</p>
+<li><p>���� �� ������� ������������ ����� ��������� ������� �� ��������� ��� ���� - �� ������� ������� ����� ����������, ����� �������� ������� ������� �������� � �������� ����� �� "���������" ����� � �����..</p>   
+</ul>
+<div class="url">
+<a href="test3.html" title="�� �����">&lt;&lt; ����</a> | 
+<a href="glava9.html" title="�� �������� �����">�������� ����� &gt;&gt;</a>
+</div>
+</div>
+</body>
+</html>

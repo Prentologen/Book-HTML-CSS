@@ -1,0 +1,326 @@
+	<!DOCTYPE HTML>
+	<html>
+	<head>
+	<title>ϳ������� HTML/CSS ��� ����������.</title>
+	<meta HTTP-EQUIV="Content-Type" Content="text/html; Charset=Windows-1251">
+	<link rel="stylesheet" href="../style.css" type="text/css"></script>
+	</head>
+	<body>   
+	<div class="header">
+	<h1 class="logo">ϳ������� HTML/CSS</h1>
+	</div>
+	<div class="left">
+
+<div class="fixed">
+<script type="text/javascript"> 
+function shiftSubDiv(n)
+{
+  var el = document.getElementById('subDiv'+n);
+ 
+  if ( el.style.display == 'none' )
+    el.style.display = 'block'
+  else
+    if ( el.style.display == 'block' )
+    el.style.display = 'none';
+};
+</script>
+<a href="index.html" class="menu" title="От автора.">Главная</a>
+<div class="navHeader" id="navHeader1" onClick="shiftSubDiv(1)">HTML</div> 
+<ul class="ul_none" id="subDiv1" style="display:block">
+<li><a href="glava h.html" class="activemenu" title="Вступ.">Вступ</a></li>
+<li><a href="glava 1h.html" class="menu" >Что такое HTML язык</a>  </li>
+<li><a href="glava 2h.html" class="menu" >Редактируем текст</a></li>
+<li><a href="glava 4h.html" class="menu" >Таблица</a></li>
+<li><a href="glava 5h.html" class="menu" >Ссылка</a></li>
+<li><a href="glava 6h.html" class="menu" >И ещё ...</a></li>
+<li><a href="glava 7h.html" class="menu" >Списки</a></li>
+<li><a href="glava 8h.html" class="menu" >Meta теги</a></li>
+<li><a href="glava 9h.html" class="menu" >Заглавный текс </a></li>
+<li><a href="glava 10h.html" class="menu" >И снова таблица ..</a></li>
+<li><a href="glava 11h.html" class="menu" >Фоновая музыка</a></li>
+<li><a href="glava 12h.html" class="menu" >Текст - логика и физика</a></li>
+<li><a href="glava 13h.html" class="menu" >Формы</a></li>
+<li><a href="glava 14h.html" class="menu" >Випадающее меню</a></li>
+</ul>
+<div class="navHeader" id="navHeader2" onClick="shiftSubDiv(2)">CSS</div> 
+<ul class="ul_none" id="subDiv2" style="display:none">
+<li><a href="glava1.html" class="menu" title="Глава 1   Начало CSS.">Начало CSS.</a></li>
+<li><a href="glava2.html" class="menu" title="Глава 2   Властивості тексту.">Возможности текста.</a></li>
+<li><a href="glava3.html" class="menu" title="Глава 3   Властивості шрифту.">Возможности шрифта.</a></li>
+<li><a href="glava4.html" class="menu" title="Глава 4   Колір і фон.">Цвет и фон.</a></li>
+<li><a href="glava5.html" class="menu" title="Глава 5   Межі елемента.">Грань элемента.</a></li>
+<li><a href="glava6.html" class="menu" title="Глава 6   Класи і id селектори.">Класы и id селекторы.</a></li>
+<li><a href="glava7.html" class="menu" title="Глава 7   Розміри елемента.">Розмеры элемента.</a></li>
+<li><a href="glava8.html" class="menu" title="Глава 8   Поля і відступи.">Поля и отступы.</a></li>
+<li><a href="glava9.html" class="menu" title="Глава 9   Курсори.">Курсоры.</a></li>
+<li><a href="glava10.html" class="menu" title="Глава 10   Форматування.">Форматирование.</a></li>
+<li><a href="glava11.html" class="menu" title="Глава 11   Поплавці.">Поплавки.</a></li>
+<li><a href="glava12.html" class="menu" title="Глава 12   Позиціонування.">Позицыонирование.</a></li>
+<li><a href="glava13.html" class="menu" title="Глава 13   Стиль списку.">Стиль списка.</a></li>
+<li><a href="glava14.html" class="menu" title="Глава 14   Полоса прокрутки.">Полоса прокрутки.</a></li>
+<li><a href="glava15.html" class="menu" title="Глава 15   Псевдокласи.">Псевдокласы.</a></li>
+<li><a href="glava16.html" class="menu" title="Глава 16   Псевдоелементи.">Псевдоэлементи.</a></li>
+</ul>
+</div>
+</div>
+
+
+<div class="center">
+   
+<p class="zag">����� 12</p>
+
+<h1>��������������.</h1>
+
+<p>��� ������� ����������� � ����� �������� ��������������. ��������������� ��������� ���������� ����������� ���� ������������ �� ������� ���� �� ������ �������� (�����). </p>
+<p>�������������� ���� ����������, ��������, ���������� � ���������.</p>
+
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="x">&lt;title&gt;��������������.&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;div style="float: left; background: #c00;  border-style: double; padding: 5px; height: 1500px;  width: 300px"&gt;</samp><br>
+<samp class="xxx">&lt;div style="<b>position: relative; left: 10px; top: 50px;</b> background: #c0c; border-style: double; padding: 5px; width: 200px"&gt;���� ������������� ���� ���� �������� ������&lt;/div&gt;</samp><br>
+<samp class="xx">&lt;/div&gt;</samp><br>
+<samp class="xx">&lt;div style="<b>position: absolute; left:200px; top: 350px;</b> background: #cc0; border-style: double; padding: 5px; width: 200px"&gt;���� ��������� ������������ � ��������� �� ���������� ������, ���� ��������� �������� �� ���� ���� ��������. �� ������ ����� ���� ���� ����������� �� ���� �������� �������. &lt;/div&gt;</samp><br>
+<samp class="xx">&lt;div style="<b>position: fixed; left: 150px; top: 150px;</b> background: #0cc; border-style: double; padding: 5px; width: 200px"&gt;� �� ���������� ����, ��� ��������� �� ���������� ������ ����� ��� ������������� ������� �� �� ����� ����� ���������. ����� ���� �������� Internet Explorer ��������� ���� ����������&lt;/div&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer54.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>����, ��� ����, �� � ������������� ����-���� ������� �� ����� ������������ ����������  <samp><b>position</b></samp>  � ���� �������� �������:</p>
+<ul>
+<li><samp><b>absolute</b></samp> - ��������� �������������� ��������.
+<li><samp><b>relative</b></samp> - ³������ �������������� ��������.
+<li><samp><b>fixed</b></samp> - Գ������� �������������� ��������.
+<li><samp><b>static</b></samp> - �������� �������������� ��������. (������� ������������� �� ��������.)
+<li><samp><b>inherit</b></samp> - ��������� �������� �������� ������.
+</ul>
+<p>����� ������� �������������� ..</p> 
+
+<h2>��������� ��������������.</h2>
+<p> ��������� ������������� �������  (<samp><b>position: absolute</b></samp>) ���������� �� ���������� ������ � ���������� �� ���� �������� � �� ������ ������������, ����� ������� ���� �� ������� �� ���� / ���� ���� ��������. ��� ������ ������ �������������� ���� ������� ���� ����������� ������ ������.</p> 
+<p> ��� ���� ��� ������������� ������� �� ���� / ���� ���� ��������, ��� ������������ ��� ���������� CSS:</p> 
+<ul>
+<li><samp><b>bottom</b></samp> - ³������ �� �������� ���� ���� ��������. 
+<li><samp><b>left</b></samp> - ³������ �� ����� ���� ���� ��������. 
+<li><samp><b>right</b></samp> - ³������ �� ������� ���� ���� ��������. 
+<li><samp><b>top</b></samp> - ³������ �� ��������� ���� ���� ��������. 
+</ul>
+<p>���� ������� ������ ���� ������ � �������, �������� ��� ����-���� ����� ��������� �������� ����� CSS, �������� �� �������������  - <samp><b>auto</b></samp>.</p> 
+
+<p>�������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;��������� ��������������.&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;div style="background: #0f0; border: #000000 2px solid; padding: 5px; margin: 10px; width: 300px; height: 200px;"&gt;&lt;h1&gt;���� �1&lt;/h1&gt;&lt;/div&gt;</samp><br>
+<samp class="xx">&lt;div style="background: #00f; border: #000000 2px solid; padding: 5px; margin: 10px; width: 500px; height: 100px;"&gt;&lt;h1&gt;���� �2&lt;/h1&gt;&lt;/div&gt;</samp><br>
+<samp class="xx">&lt;div style="<b>position: absolute; left:200px; top: 100px;</b> background: #f00; border: #000 2px solid; padding: 5px; width: 200px; height: 200px;"&gt;&lt;h1&gt;���� �3&lt;/h1&gt; ����� ���� ��������� �������������!  &lt;br&gt;&lt;br&gt; ���� 1 �� 2 ���� �� ��������� �� ���� ���� ������������. .&lt;/div&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer55.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>�� ������, � ������� ����� ���� ������ �� ���������� ������ �������� � ���� �� ����� �������� ���������, ���� ������� ������� ���� �� ������ �� ���� ������������ ������ �����.</p>
+
+<h2>³������ ��������������..</h2>
+<p>³������ �������������� (<samp><b>position: relative</b></samp>) ������� ���� �������� ���� ���� �������� ������ � �� ���������� �� ���������� ������.</p>
+<p>��� ���� �� � � ������� � ���������� ��������������� ������� �� ���� / ���� ������������ �������� �������� �� ��������� ������������:   <samp><b>bottom, left, right, top.</b></samp></p>
+<p>�������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;³������ ��������������.&lt;/title&gt;</samp><br>
+<samp class="xx">&lt;style type="text/css"&gt;</samp><br>
+<samp class="xxx">h1 {</samp><br>
+<samp class="xxxx">color: #008000;</samp><br>
+<samp class="xxxx">font-size:20px</samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xxx">div.blok1 {</samp><br>
+<samp class="xxxx">background: #c0e4ff;</samp><br>
+<samp class="xxxx">border: #000000 2px solid;</samp><br>
+<samp class="xxxx">padding: 5px;</samp><br>
+<samp class="xxxx">width: 500px;</samp><br>
+<samp class="xxxx">height: 400px;</samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xxx">div.blok2 { </samp><br>
+<samp class="xxxx"><b>position: relative;</b></samp><br>
+<samp class="xxxx"><b>left: 150px;</b></samp><br>
+<samp class="xxxx">background: #ffa0c5; </samp><br>
+<samp class="xxxx">border: #000 2px solid;</samp><br>
+<samp class="xxxx">padding: 5px; width: 250px;</samp><br>
+<samp class="xxxx">height: 200px;</samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xx">&lt;/style&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;div class="blok1"&gt;</samp><br>
+<samp class="xxx">&lt;h1&gt;������� ������ - ���� �1 &lt;/h1&gt;</samp><br>
+<samp class="xxx">&lt;div class="blok2"&gt;</samp><br>
+<samp class="xxxx">&lt;h1&gt;���� �2&lt;/h1&gt; </samp><br>
+<samp class="xxxx">����� ���� ������������� ���� ����� ���� �������� ������.</samp><br>
+<samp class="xxx">&lt;/div&gt;</samp><br>
+<samp class="xx">&lt;/div&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp><br>
+<div align="right"><a href="primer/primer56.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+<p>� ��� ���� ������� ������ ���� �� �������, �� ��� �������� �� ���� / ���� ���� ��������.</p>
+
+<h2>Գ������� ������������.</h2>
+
+<p>Գ������� ������������  <samp><b>(position: fixed)</b></samp> ����� �� ���������, ������� ���������� �� ���������� ������, ���� ���������� �������������� �� ���� ���� ��������, ��� ��� ������������� ������� ������� �� ����� ����� ���������.</p>
+<p>�������:</p>
+<div class="primer">
+<samp>���� style.css</samp><br><br>
+<samp class="x">h1 {</samp><br>
+<samp class="xx">color: #800;</samp><br>
+<samp class="xx">text-align: center; </samp><br>
+<samp class="xx">font-size:30px</samp><br>
+<samp class="x">}</samp><br>
+<samp class="x">h2 {</samp><br>
+<samp class="xx">color: #088;</samp><br>
+<samp class="xx">text-align: center; </samp><br>
+<samp class="xx">font-size:18px</samp><br>
+<samp class="x">}</samp><br>
+<samp class="x">div.blok1 {</samp><br>
+<samp class="xx">background-image: url(fon.gif);</samp><br>
+<samp class="xx">border: #000 2px solid;</samp><br>
+<samp class="xx">padding: 5px;</samp><br>
+<samp class="xx">width: 800px;</samp><br>
+<samp class="xx">height: 4000px</samp><br>
+<samp class="x">}</samp><br>
+<samp class="x">div.blok2 {</samp><br>
+<samp class="xx"><b>position: fixed;</b></samp><br>
+<samp class="xx"><b>left: 250px;</b></samp><br>
+<samp class="xx"><b>top: 300px;</b></samp><br>
+<samp class="xx">border: #080 6px double;</samp><br>
+<samp class="xx">padding: 5px;</samp><br>
+<samp class="xx">width: 300px</samp><br>
+<samp class="x">}</samp><br>
+<hr>
+<samp>���� index.html</samp><br><br>
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;Գ������� ��������������.&lt;/title&gt;</samp><br>
+<samp class="xx">&lt;link rel="stylesheet" href="style.css" type="text/css"&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;div class="blok1"&gt;</samp><br>
+<samp class="xxx">&lt;h1&gt;��� �� ������� &lt;/h1&gt;</samp><br>
+<samp class="xx">&lt;/div&gt;</samp><br>
+<samp class="xx">&lt;div class="blok2"&gt;</samp><br>
+<samp class="xxx">&lt;h2&gt;Գ�������� ���� � ���'������� �������� &lt;/h2&gt; </samp><br>
+<samp class="xxx">&lt;h1&gt;���� ����� !! &lt;/h1&gt; </samp><br>
+<samp class="xxx">Գ�������� ����, ��������� �� ���������� ������ ��������, ��� ������������� ������� �� �� ����� ����� ���������. ����� ���� �������� Internet Explorer ��������� ���� ����������.</samp><br>
+<samp class="xx">&lt;/div&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer57.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+
+<p>P.S. ����� ���� �������� Internet Explorer ��������� ���� ���������� � ������� ���������� �� ������� ��� �� ���� ���� ����� �� �������������.</p>
+
+<h2>z-index</h2>
+<img src="../graphics/z-index.gif" width="250" height="250" alt="z-index" align="right" vspace="5" hspace="30">
+<p>�� ��� ����������, ���� ������������� �������� ������ ����������� ���� ������ ������, ������� ��� ����� ����� ������������ �������, �� ������ ��������� ���������� ���� �� ������ ������� � �����.</p>
+<p>����������  <samp><b>z-index</b></samp> �������� ���-������� ��������� ��������� ��� ���� � ������� ������ (�� �� Z.), ������ ������� �������� ��������� �������� �� �������� ��� ���������� �� ���������� �����, � �� �� ��������.</p>
+
+<p>�������� ����������  <samp><b>z-index</b></samp>:</p>
+<ul>
+<li><samp><b>auto</b></samp> - �������� ������������ ���� �� ������ � ���� �������, ����� ���� ������� � ��� HTML. (�� �������������).
+<li><samp><b>���� �����</b></samp> - ��� ���� �� ��������, ��� ���� ������ ������� ����� ������� �� ��������� �� ��� ��������, �������� ���� �����.
+</ul>
+<p>�������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;z-index&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;div align="center" style="position: absolute; <b>z-index:5;</b> width: 350px; height: 100px; top: 120px; left: 0px; color: #0000ff; font-size:100px"&gt;z-index&lt;/div&gt;</samp><br>
+<samp class="xx">&lt;div style="position: absolute; <b>z-index:3;</b> width: 150px; height: 150px; top: 0px; left: 100px; background-color: #ff00ff"&gt;&nbsp;&lt;/div&gt;</samp><br>
+<samp class="xx">&lt;div style="position: absolute; <b>z-index:4;</b> width: 150px; height: 150px; top: 100px; left: 0px; background-color: #ff0000"&gt;&nbsp;&lt;/div&gt;</samp><br>
+<samp class="xx">&lt;div style="position: absolute; <b>z-index:2;</b> width: 150px; height: 150px; top: 100px; left: 200px; background-color: #ffff00"&gt;&nbsp;&lt;/div&gt;</samp><br>
+<samp class="xx">&lt;div style="position: absolute; <b>z-index:1;</b> width: 150px; height: 150px; top: 200px; left: 100px; background-color: #00ff00"&gt;&nbsp;&lt;/div&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer58.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>������� ��������  <samp><b>z-index</b></samp> ���� ���� � ����������, ����� �� �� �������� ��������� ������������� ��������� ��������.</p>
+<p>�� ��� ���������, �� ��� ������ ��������  <samp><b>z-index</b></samp>, �� ���������� ����� ����������� ��� �������, ���� � ��� HTML ��� ����� �����.</p>
+<p>�� � ������� 䳺 ��� <samp><b>z-index</b></samp> �����  <samp><b>auto</b></samp> ��� � � ���� ������� ���� �� ���������� � ����� �� ��������������� �� ��� �� ����� ��������.</p>
+<p>�� � ���� ����, �������� ��, ������ ���������������  <samp><b>z-index</b></samp> ���� ����� ������ � ��������� ������� ����������� �������� � HTML ���?</p>
+
+<p>������ �� �������:</p>
+
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;z-index&lt;/title&gt;</samp><br>
+<samp class="xx">&lt;style type="text/css"&gt;</samp><br>
+<samp class="xxx">body {background-color: #c5ffa0}</samp><br>
+<samp class="xxx">a {</samp><br>
+<samp class="xxxx">position: absolute;</samp><br>
+<samp class="xxxx"><b>z-index: auto;</b></samp><br>
+<samp class="xxxx">top: 100px;</samp><br>
+<samp class="xxxx">border: #000000 1px solid;</samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xxx">a:hover {</samp><br>
+<samp class="xxxx">position: absolute;</samp><br>
+<samp class="xxxx"><b>z-index:1;</b></samp><br>
+<samp class="xxxx">top: 80px;</samp><br>
+<samp class="xxxx">border: #800000 1px solid;</samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xx">&lt;/style&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;h2&gt;�������� �������� �� ������ &lt;/h2&gt;</samp><br>
+<samp class="xx">&lt;a href="#"  style="left: 10px"&gt;&lt;img src="karta1.gif"&gt;&lt;/a&gt;</samp><br>
+<samp class="xx">&lt;a href="#"  style="left: 30px"&gt;&lt;img src="karta2.gif"&gt;&lt;/a&gt;</samp><br>
+<samp class="xx">&lt;a href="#"  style="left: 50px"&gt;&lt;img src="karta3.gif"&gt;&lt;/a&gt;</samp><br>
+<samp class="xx">&lt;a href="#"  style="left: 70px"&gt;&lt;img src="karta4.gif"&gt;&lt;/a&gt;</samp><br>
+<samp class="xx">&lt;a href="#"  style="left: 90px"&gt;&lt;img src="karta5.gif"&gt;&lt;/a&gt;</samp><br>
+<samp class="xx">&lt;a href="#"  style="left: 110px"&gt;&lt;img src="karta6.gif"&gt;&lt;/a&gt;</samp><br>
+<samp class="xx">&lt;p style="position: absolute; left: 10px; top: 250px;"&gt;� ���������� IE6, �� ����� �� ����� ��������, ���������� &lt;b&gt;:hover&lt;/b&gt; ������ ���� ��� ��������, ���� � ����� ���������� ��� ������� / ���� ������������ ������ �� ������� ��������� (&lt;b&gt;a href="#"&lt;/b&gt;)&lt;/p&gt; </samp><br>
+<samp class="xx">&lt;p style="position: absolute; left: 10px; top: 300px;"&gt;���, IE ����� "��������" �������������� �������, ������ �� ���� ������ ��� �������� �� ����� �������� CSS.&lt;/p&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer59.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>�� ������ ����������  <samp><b>z-index</b></samp> �������� ���, �� �������� ����� �������.
+	
+<h2>������� ������:</h2>
+
+<p>������� ��������:</p>
+<ul>
+<li><p>������, �������� �� ���������  <samp><b>select</b></samp>, � Internet Exolorer ������������� ������ ����� ��������, ���������� �� ��, ��� ��������� �������� <samp><b>z-index</b></samp>.</p>
+<li><p>� �������  Netscape 4.x ����� ���� ������ ������������� ������ ��� ����� ��������, ��������� �� ��������  <samp><b>z-index</b></samp>..</p>
+<li><p>������� Netscape 4.x ����  <samp><b>(position: relative)</b></samp>  �� ��������� ���� ����, ������, ����������, ������� � �� ��������, � ��������� ��������������  <samp><b>(position: absolute)</b></samp> �� ������ � �������� � ���������� ����.</p>
+<li><p>����� ���� Internet Explorer, �� Internet Explorer 5.5, ��������� ����������  <samp><b>z-index</b></samp> ����������� �� ������ <samp><b>(frame)</b></samp> � ��������� �������  <samp><b>(iframe)</b></samp>.</p>
+<li><p>� IE 4 ��������� ��������������  <samp><b>(position: absolute)</b></samp> ����������� �� �������� � �������� �� ������, ��������� ��� ������ ��������� ���� ���������������� .. � ������� ��������������  <samp><b>(position: relative)</b></samp> �� ������� � ���������� �������  (<samp><b>td</b></samp> � <samp><b>th</b></samp>).</p> 
+<li><p>��� ��������� ������������ <samp><b>(position: fixed)</b></samp> � ����� ���� Internet Explorer ��� ������� .. �� ������ �������� ����� � ������ IE � ��� ��� ..</p>
+</ul>
+<p>��� ������ .. �� ���� ���������, �� ������������ �������� IE (��������������, ��� ���� �������� � ���������� � ������������ Windows Internet Explorer �� ���� � ���) ���������� � ������ ���� ��� ����� � ����� ��� ����� ���� ������ �����, ��� �� ����� � ���������. . ���� ��-������ ���� .</p>
+<div class="url">
+<a href="glava11.html" title="�� ������������ �����">&lt;&lt; ��������� �����</a> | 
+<a href="glava13.html" title="�� �������� �����">�������� ����� &gt;&gt;</a>
+</div>
+</div>
+
+</body>
+</html>

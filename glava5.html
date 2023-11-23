@@ -1,0 +1,503 @@
+<!DOCTYPE HTML>
+	<html>
+	<head>
+	<title>ϳ������� HTML/CSS ��� ����������.</title>
+	<meta HTTP-EQUIV="Content-Type" Content="text/html; Charset=Windows-1251">
+	<link rel="stylesheet" href="../style.css" type="text/css"></script>
+	</head>
+	<body>   
+	<div class="header">
+	<h1 class="logo">ϳ������� HTML/CSS</h1>
+	</div>
+	<div class="left">
+
+<div class="fixed">
+<script type="text/javascript"> 
+function shiftSubDiv(n)
+{
+  var el = document.getElementById('subDiv'+n);
+ 
+  if ( el.style.display == 'none' )
+    el.style.display = 'block'
+  else
+    if ( el.style.display == 'block' )
+    el.style.display = 'none';
+};
+</script>
+<a href="index.html" class="menu" title="От автора.">Главная</a>
+<div class="navHeader" id="navHeader1" onClick="shiftSubDiv(1)">HTML</div> 
+<ul class="ul_none" id="subDiv1" style="display:block">
+<li><a href="glava h.html" class="activemenu" title="Вступ.">Вступ</a></li>
+<li><a href="glava 1h.html" class="menu" >Что такое HTML язык</a>  </li>
+<li><a href="glava 2h.html" class="menu" >Редактируем текст</a></li>
+<li><a href="glava 4h.html" class="menu" >Таблица</a></li>
+<li><a href="glava 5h.html" class="menu" >Ссылка</a></li>
+<li><a href="glava 6h.html" class="menu" >И ещё ...</a></li>
+<li><a href="glava 7h.html" class="menu" >Списки</a></li>
+<li><a href="glava 8h.html" class="menu" >Meta теги</a></li>
+<li><a href="glava 9h.html" class="menu" >Заглавный текс </a></li>
+<li><a href="glava 10h.html" class="menu" >И снова таблица ..</a></li>
+<li><a href="glava 11h.html" class="menu" >Фоновая музыка</a></li>
+<li><a href="glava 12h.html" class="menu" >Текст - логика и физика</a></li>
+<li><a href="glava 13h.html" class="menu" >Формы</a></li>
+<li><a href="glava 14h.html" class="menu" >Випадающее меню</a></li>
+</ul>
+<div class="navHeader" id="navHeader2" onClick="shiftSubDiv(2)">CSS</div> 
+<ul class="ul_none" id="subDiv2" style="display:none">
+<li><a href="glava1.html" class="menu" title="Глава 1   Начало CSS.">Начало CSS.</a></li>
+<li><a href="glava2.html" class="menu" title="Глава 2   Властивості тексту.">Возможности текста.</a></li>
+<li><a href="glava3.html" class="menu" title="Глава 3   Властивості шрифту.">Возможности шрифта.</a></li>
+<li><a href="glava4.html" class="menu" title="Глава 4   Колір і фон.">Цвет и фон.</a></li>
+<li><a href="glava5.html" class="menu" title="Глава 5   Межі елемента.">Грань элемента.</a></li>
+<li><a href="glava6.html" class="menu" title="Глава 6   Класи і id селектори.">Класы и id селекторы.</a></li>
+<li><a href="glava7.html" class="menu" title="Глава 7   Розміри елемента.">Розмеры элемента.</a></li>
+<li><a href="glava8.html" class="menu" title="Глава 8   Поля і відступи.">Поля и отступы.</a></li>
+<li><a href="glava9.html" class="menu" title="Глава 9   Курсори.">Курсоры.</a></li>
+<li><a href="glava10.html" class="menu" title="Глава 10   Форматування.">Форматирование.</a></li>
+<li><a href="glava11.html" class="menu" title="Глава 11   Поплавці.">Поплавки.</a></li>
+<li><a href="glava12.html" class="menu" title="Глава 12   Позиціонування.">Позицыонирование.</a></li>
+<li><a href="glava13.html" class="menu" title="Глава 13   Стиль списку.">Стиль списка.</a></li>
+<li><a href="glava14.html" class="menu" title="Глава 14   Полоса прокрутки.">Полоса прокрутки.</a></li>
+<li><a href="glava15.html" class="menu" title="Глава 15   Псевдокласи.">Псевдокласы.</a></li>
+<li><a href="glava16.html" class="menu" title="Глава 16   Псевдоелементи.">Псевдоэлементи.</a></li>
+</ul>
+</div>
+</div>
+
+<div class="center">
+<p class="zag">����� 5</p>
+<h1>��� ��������.</h1>
+
+<p>� ����� ����� �� ���������� ��� ��, �� ������� �� ��������� CSS ����� - ������, ������� ���� �� ������ ��������. � HTML �� �������� ������ �� ������ �������� <samp><b>border</b></samp>, ����� ���� ����� ���� ����������� ������ �� �� ������� ���� (��������) �� � �� ������ �� �� ������� �� �� ���� ������������ �������.</p>
+<p>� CSS �� �������� ���� �� ���� ���������� ������ ���������� <samp><b>border</b></samp> � ������ �������� ���� ����������� ��� ����� � ������ ������� ����-����� (!) �������� ���������� �� �����.</p>
+
+
+<h2>����� �������.</h2>
+
+<p>���� � HTML ������ �� ���� ����� � ������ �������� ���� ������� ��������, �� � CSS �� ��� ������ ������� ���� �������� ����� �����.</p>
+
+<p>����������  <samp><b>border-style</b></samp> ���� ������������� �������� ���� � ����� ������������� ����� �������.</p>
+<ul>
+<li><samp><b>none</b></samp> - ���� ������� (�� �������������).
+<li><samp><b>dotted</b></samp> - ���� � ���� �����.
+<li><samp><b>dashed</b></samp> - ��������� ����.
+<li><samp><b>solid</b></samp> - �������� ����
+<li><samp><b>double</b></samp> - �������� ������
+<li><samp><b>groove</b></samp> - ���� "���������"
+<li><samp><b>ridge</b></samp> - ���� "������"
+<li><samp><b>inset</b></samp> - �������� ����
+<li><samp><b>outset</b></samp> - ��������� ����
+</ul>
+<p>�������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;����� ������� &lt;/title&gt;</samp><br>
+<samp class="xx">&lt;style type="text/css"&gt;</samp><br>
+<samp class="xxx">p {</samp><br>
+<samp class="xxx">background-color: #f5f5f5;</samp><br>
+<samp class="xxx">text-align: center;</samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xx">&lt;/style&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;p style="<b>border-style: none;</b>"&gt;���� ������� &lt;/p&gt;</samp><br>
+<samp class="xx">&lt;p style="<b>border-style: dotted;</b>"&gt;���� � ���� ����� &lt;/p&gt;</samp><br>
+<samp class="xx">&lt;p style="<b>border-style: dashed;</b>"&gt;��������� ����&lt;/p&gt;</samp><br>
+<samp class="xx">&lt;p style="<b>border-style: solid;</b>"&gt;�������� ���� &lt;/p&gt;</samp><br>
+<samp class="xx">&lt;p style="<b>border-style: double;</b>"&gt;������� ���� &lt;/p&gt;</samp><br>
+<samp class="xx">&lt;p style="<b>border-style: groove;</b>"&gt;���� "���������" &lt;/p&gt;</samp><br>
+<samp class="xx">&lt;p style="<b>border-style: ridge;</b>"&gt;���� "������" &lt;/p&gt;</samp><br>
+<samp class="xx">&lt;p style="<b>border-style: inset;</b>"&gt;�������� ���� &lt;/p&gt;</samp><br>
+<samp class="xx">&lt;p style="<b>border-style: outset;</b>"&gt;��������� ���� &lt;/p&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer26.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>����� ������� ���� ���� ������� �� ��� ��� ����� �������� ���������, ��� � ��� ����� ���� ���� ������ � ��������� �� ����, ������ ������� �������� ���������� <samp><b>border- style</b></samp>. ����� ������� ���� ���� �� ������ �� �������� �� ����� ����� ��������.</p>
+<p>� ������� � �������� ������� ���� ��� "�������" � ����������� ����� ����� �� �� ����� ������� ��������, �� �������� � ������� �����:</p>
+
+
+<table width="100%"  bgcolor="#e8e8e8" cellspacing="2" cellpadding="5" border="0" align="center">
+ <tr>
+  <th>����� �������</th><th>���������</th>
+ </tr>
+  <tr class="trc">
+  <td><b>1</b></td>
+  <td align="left">
+  <div style="border-style: solid;  border-width: 3px; border-color: #008000;">
+ <p>�������: <samp>div {<b>border-style: solid;</b>}</samp></p>
+  <ul>
+  <li>����� �������� - ���������� ������ ����� ������� ��� ��� ����� ��������.
+  </ul>
+  </div>
+  </td>
+ </tr>
+  <tr class="trn">
+  <td><b>2</b></td>
+  <td align="left">
+  <div style="border-style: solid double; border-width: 5px; border-color: #008000;">
+  <p>�������: <samp>div {<b>border-style: solid double;</b>}</samp></p>
+  <ul>
+  <li>����� �������� - ���������� ����� ������� � ������ ��� ��������.
+  <li>����� �������� - ���������� ����� ��� � ����� ��� ��������.
+  </ul>
+  </div>
+  </td>
+ </tr>
+  <tr class="trc">
+  <td><b>3</b></td>
+  <td align="left">
+  <div style="border-style: solid double dashed; border-width: 5px; border-color: #008000;">
+   <p>�������: <samp>div {<b>border-style: solid double dashed;</b>}</samp></p>
+  <ul>
+  <li>����� �������� - ���������� ����� ������� � ������ ��� ��������.
+  <li>����� �������� - ���������� ����� ��� � ����� ��� ��������.
+  <li>���� �������� - ���������� ����� ������ ��� ��������.
+  </ul>
+  </div>
+  </td>
+ </tr>
+   <tr class="trn">
+  <td><b>4</b></td>
+  <td align="left">
+  <div style="border-style: solid double dashed ridge; border-width: 5px; border-color: #008000;">
+   <p>�������: <samp>div {<b>border-style: solid double dashed ridge;</b>}</samp></p>
+  <ul>
+  <li>����� �������� - ���������� ����� ������� � ������ ��� ��������.
+  <li>����� �������� - ���������� ����� ��� � ����� ��� ��������.
+  <li>���� �������� - ���������� ����� ������ ��� ��������.
+  <li> �������� �������� - ���������� ����� ��� ��� ��������.
+  </ul>
+  </div>
+  </td>
+ </tr>
+</table>
+
+<h2>������� �������.</h2>
+
+<p>���������� <samp><b>border-width</b></samp> - ���������� ������ ��� ��������.</p> 
+<p>������ ������� ���� ���� ������ �� ��������� ��������� ���������:</p>
+<ul>
+<li><samp><b>thin</b></samp> - ����� ����
+<li><samp><b>medium</b></samp> - ������� ������� �������
+<li><samp><b>thick</b></samp> - ������� ������
+</ul>
+<p>� ����� � ������� ��� ����-���� ����� �������� ����� ��������� � CSS.</p>
+<p>�� �����㳺� � ������, ������� ������� ��� ���� ���� �� ������ �� �������� ������� � � ������� ������� ���������� �� ��� ��� �� ����� ����� ������� �� �������� � ������� �����.</p>
+
+<table width="100%"  bgcolor="#e8e8e8" cellspacing="2" cellpadding="5" border="0" align="center">
+ <tr>
+  <th>����� �������</th><th>���������</th>
+ </tr>
+  <tr class="trc">
+  <td><b>1</b></td>
+  <td align="left">
+  <div style="border-style: solid; border-color: #008000; border-width: 1px;">
+ <p>�������: <samp>div {border-style: solid; <b>border-width: 1px;</b>}</samp></p>
+  <ul>
+  <li>����� �������� - ���������� ����� ������� ������� � ��� ����.
+  </ul>
+  </div>
+  </td>
+ </tr>
+  <tr class="trn">
+  <td><b>2</b></td>
+  <td align="left">
+  <div style="border-style: solid; border-color: #008000; border-width: 1px 4px;">
+  <p>�������: <samp>div {border-style: solid; <b>border-width: 1px 4px;</b>}</samp></p>
+  <ul>
+  <li>����� �������� - ���������� ����� ������� ������� � ��� ����.
+  <li>����� �������� - ���������� ������� ��� � ����� ��� ��������.
+  </ul>
+  </div>
+  </td>
+ </tr>
+  <tr class="trc">
+  <td><b>3</b></td>
+  <td align="left">
+  <div style="border-style: solid; border-color: #008000; border-width: 1px 4px 7px;">
+   <p>�������: <samp>div {border-style: solid; <b>border-width: 1px 4px 7px;</b>}</samp></p>
+  <ul>
+  <li>����� �������� - ���������� ����� ������� ������� � ��� ����.
+  <li>����� �������� - ���������� ������� ��� � ����� ��� ��������.
+  <li>���� �������� - ���������� ������� ������ ��� ��������.
+  </ul>
+  </div>
+  </td>
+ </tr>
+   <tr class="trn">
+  <td><b>4</b></td>
+  <td align="left">
+  <div style="border-style: solid; border-color: #008000; border-width: 1px 4px 7px 5px;">
+   <p>�������: <samp>div {border-style: solid; <b>border-width: 1px 4px 7px 5px;</b>}</samp></p>
+  <ul>
+  <li>����� �������� - ���������� ����� ������� ������� � ��� ����.
+  <li>����� �������� - ���������� ������� ��� � ����� ��� ��������.
+  <li>���� �������� - ���������� ������� ������ ��� ��������.
+  <li>�������� �������� - ���������� ������� ��� ��� ��������.
+  </ul>
+  </div>
+  </td>
+ </tr>
+</table>
+
+<p>�������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;������� ������� &lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;div style="border-style: solid; <b>border-width: 3px 1px 10px 4px</b>"&gt;</samp><br>
+<samp class="xxx">������� �������� ������ �����:</samp><br>
+<samp class="xxx">&lt;ul&gt;</samp><br>
+<samp class="xxxx">&lt;li&gt;������ 3 �����</samp><br>
+<samp class="xxxx">&lt;li&gt;������ 1 ������</samp><br>
+<samp class="xxxx">&lt;li&gt;����� 10 ������</samp><br>
+<samp class="xxxx">&lt;li&gt;���� 4 ������</samp><br>
+<samp class="xxx">&lt;/ul&gt;</samp><br>
+<samp class="xx">&lt;/div&gt;</samp><br>
+<samp class="xx">&lt;br&gt;&lt;br&gt;</samp><br>
+<samp class="xx">&lt;div style="border-style: double; <b>border-width: thick</b>"&gt;� ����� ����� ������� � ��� ���� �������� ����� &lt;/div&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer27.html" target="_blank">�������� ������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<h2>���� �������.</h2>
+<p>���� ����� ��� �� ����� ������ ����������� ����������  <samp><b>border-color.</b></samp></p>
+<p>���� ������� ���� ���� �������� ��������:</p>
+<ul>
+<li><samp><b>#ff0000</b></samp> - �������������� �������� ������� RGB.
+<li><samp><b>red</b></samp> - ������ �������� �������.
+<li><samp><b>RGB(255,0,0)</b></samp> - �������� ������� RGB.
+<li><samp><b>transparent</b></samp> - �������� ������.
+</ul>
+<p>�� � ��� ���� �� � � �������� � �������� � ������, ���� ������� ��� ���� ���� �� ������ �� �������� ������� ������� ��� ������� "������" �������� ������� ���� ������� �� �������� � ������� �����.</p>
+
+<table width="100%"  bgcolor="#e8e8e8" cellspacing="2" cellpadding="5" border="0" align="center">
+ <tr>
+  <th>����� �������</th><th>���������</th>
+ </tr>
+  <tr class="trc">
+  <td><b>1</b></td>
+  <td align="left">
+  <div style="border-style: solid;  border-width: 3px; border-color: #008000;">
+ <p>�������: <samp>div {border-style: solid;  border-width: 3px; <b>border-color: #008000;</b>}</samp></p>
+  <ul>
+  <li>����� �������� - ���������� ������ ���� ������� � ��� ����.
+  </ul>
+  </div>
+  </td>
+ </tr>
+  <tr class="trn">
+  <td><b>2</b></td>
+  <td align="left">
+  <div style="border-style: solid; border-width: 3px; border-color: #008000 #0000ff;">
+  <p>�������: <samp>div {border-style: solid; border-width: 3px; <b>border-color: #008000 #0000ff;</b>}</samp></p>
+  <ul>
+  <li>����� �������� - ���������� ������ ���� ������� � ��� ����.
+  <li>����� �������� - ���������� ���� ��� � ����� ��� ��������.
+  </ul>
+  </div>
+  </td>
+ </tr>
+  <tr class="trc">
+  <td><b>3</b></td>
+  <td align="left">
+  <div style="border-style: solid; border-width: 3px; border-color: #008000 #0000ff #ff0000;">
+   <p>�������: <samp>div {border-style: solid; border-width: 3px; <b>border-color: #008000 #0000ff #ff0000;</b>}</samp></p>
+  <ul>
+  <li>����� �������� - ���������� ������ ���� ������� � ��� ����.
+  <li>����� �������� - ���������� ���� ��� � ����� ��� ��������.
+  <li>���� �������� - ���������� ���� ������ ��� ��������.
+  </ul>
+  </div>
+  </td>
+ </tr>
+   <tr class="trn">
+  <td><b>4</b></td>
+  <td align="left">
+  <div style="border-style: solid; border-width: 3px; border-color: #008000 #0000ff #ff0000 #ffff00;">
+   <p>�������: <samp>div {border-style: solid; border-width: 3px; <b>border-color: #008000 #0000ff #ff0000 #ffff00;</b>}</samp></p>
+  <ul>
+  <li>����� �������� - ���������� ������ ���� ������� � ��� ����.
+  <li>����� �������� - ���������� ���� ��� � ����� ��� ��������.
+  <li>���� �������� - ���������� ���� ������ ��� ��������.
+  <li>�������� �������� - ���������� ���� ��� ��� ��������.
+  </ul>
+  </div>
+  </td>
+ </tr>
+</table>
+<p>�� �� �� ����� ������ ����� ���������� ������� ������ .. �� �� ����� ������ � ������� ������ ��� ����� ���������, �� � �������� ��� � ������: - "CSS ��� ����������" ��� �� ����� ����������������, ����������� ����� ������� ������.</p>
+<div class="primer"> 
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;���� �������&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;div style="border-style: solid; border-width: 10px; <b>border-color: #ff0000 #ffff00 #00ff00 #0000ff;</b>"&gt;</samp><br>
+<samp class="xxx">&lt;p style="border-style: double; border-width: 5px; <b>border-color: #008000;</b>"&gt;������� &lt;/p&gt;</samp><br>
+<samp class="xxx">&lt;p style="border-style: double; border-width: 5px; <b>border-color: red;</b>"&gt;�������� &lt;/p&gt; </samp><br>
+<samp class="xxx">&lt;p style="border-style: double; border-width: 5px; <b>border-color: rgb(0,0,255);</b>"&gt;����� &lt;/p&gt;</samp><br>
+<samp class="xx">&lt;/div&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer28.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<h2>��� ������ ���� ������ � ����� ������.</h2>
+
+<p>��� ����, �� � ��������� �����, ���� � ������ ������� ��� ������ � ����� ��������, ������������ ������������� <samp><b>border-bottom, border-left, border-right, border-top</b></samp> top � �� ��������� "�������� �� ����" ������ ���� �������� �����:</p>
+
+
+<samp><b>border-bottom</b></samp> - ������� �����, ���� � ������ ������ ��� ��������.
+<ul>
+<li><samp><b>border-bottom-color</b></samp>	- ���������� ���� ������ ��� ��������.
+<li><samp><b>border-bottom-style</b></samp>	- ������� ����� ������ ��� ��������.
+<li><samp><b>border-bottom-width</b></samp> - ������� ������ ������ ��� ��������.
+</ul>
+<samp><b>border-left</b></samp> - ������� �����, ���� � ������ ��� ��� ��������.
+<ul>
+<li><samp><b>border-left-color</b></samp> - ���������� ���� ��� ��� ��������. 
+<li><samp><b>border-left-style</b></samp> - ������� ����� ��� ��� ��������. 
+<li><samp><b>border-left-width</b></samp> - ������� ������ ��� ��� ��������.
+</ul>
+<samp><b>border-right</b></samp> - ������� �����, ���� � ������ ����� ��� ��������.
+<ul>
+<li><samp><b>border-right-color</b></samp> - ���������� ���� ����� ��� ��������.
+<li><samp><b>border-right-style</b></samp> - ������� ����� ����� ��� ��������.
+<li><samp><b>border-right-width</b></samp> - ������� ������ ����� ��� ��������.
+</ul>
+<samp><b>border-top</b></samp> - ������� �����, ���� � ������ �������  ��� ��������.
+<ul>
+<li><samp><b>border-top-color</b></samp> - ���������� ���� �������  ��� ��������.
+<li><samp><b>border-top-style</b></samp> - ������� ����� �������  ��� ��������.
+<li><samp><b>border-top-width</b></samp> - ������� ������ �������  ��� ��������.
+</ul>
+
+<p>�� ���� ��������� ����� � ���, ����� � ��� ��������, �� ������ ���, ��� ���� �� � � �� ��������, �������������  <samp><b>border-style, border-width � border-color</b></samp>, ��� ���� �����, �� � ������ ������� ���������� ���������� ��� ������ � ����� ������� ��������.</p>
+<p>������ �������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;������ ���� &lt;/title&gt;</samp><br>
+<samp class="xx">&lt;style type="text/css"&gt;</samp><br>
+<samp class="xxx">div{ </samp><br>
+<samp class="xxxx"><b>border-left: 10px solid #008000;</b></samp><br>
+<samp class="xxxx">background: #c6f2de;</samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xx">&lt;/style&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;div&gt;</samp><br>
+<samp class="xxx">&lt;p&gt;� ����� ������� � ���������� div �� ��������� ����� ���� ���� ������ �� ��������� ���������� border-left ���������:&lt;/p&gt;</samp><br>
+<samp class="xxx">div{&lt;br&gt; </samp><br>
+<samp class="xxx">border-left: 10px solid #008000;&lt;br&gt; </samp><br>
+<samp class="xxx">background: #c6f2de;&lt;br&gt;</samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xxx">&lt;p&gt;������ � ���������� ����� ���� � ������� ���������� ���������� �����, ������� � ������� ��� ��� ��� �������� ������. &lt;/p&gt;</samp><br>
+<samp class="xxx">&lt;p&gt;�� ��������� � ��� ���:&lt;/p&gt;</samp><br>
+<samp class="xxx">div{&lt;br&gt; </samp><br>
+<samp class="xxx">border-left-color: #008000;&lt;br&gt; </samp><br>
+<samp class="xxx">border-left-style: solid;&lt;br&gt; </samp><br>
+<samp class="xxx">border-left-width: 10px;&lt;br&gt; </samp><br>
+<samp class="xxx">background: #c6f2de;&lt;br&gt;</samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xxx">&lt;p&gt;�� ���� ��� ��� ���� ������ �� ������? :)&lt;/p&gt;</samp><br>
+<samp class="xx">&lt;/div&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer29.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+<h2>Border</h2>
+<p>����������  <samp><b>border</b></samp> - ������� ������� ��������� ������� �����, ���� � ������� ��� ��������.</p> 
+<p>��� �� ������� <samp><b>border</b></samp> � �������, �������� �������� ������������ ���������� � ����-����� ������� ����� �����.</p>
+<p>�������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;border&lt;/title&gt;</samp><br>
+<samp class="xx">&lt;style type="text/css"&gt;</samp><br>
+<samp class="xxx">div{ </samp><br>
+<samp class="xxxx"><b>border: RGB(25, 125, 25) 6px ridge;</b></samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xx">&lt;/style&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;div&gt;</samp><br>
+<samp class="xxx">&lt;h3&gt;� �� ����� �� ��:&lt;/h3&gt;</samp><br>
+<samp class="xxx">&lt;p&gt;���� - ������ ����������� ��������� - ��������������� � �糿 �� ������� �������� ������� � ������ �������� �� ����� � �������.&lt;/p&gt;</samp><br>
+<samp class="xxx">... ... ...</samp><br>
+<samp class="xx">&lt;/div&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp><br>
+<div align="right"><a href="primer/primer30.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+<p>����� ���� �� ������ ����������� ���� ���������� ����� ����� ������� �������� ��� ����� ������ � ���, ������������ ������������� <samp><b>border-bottom, border-left, border-right, border-top.</b></samp></p>
+
+<h2>��� �������.</h2>
+
+<p>����������  CSS <samp><b>border-collapse</b></samp> ������� ����� ����������� ��� �������.</p> 
+<p>�� ������������� ����� ������� ������� �� ������ ����� (�� ���� �������� ������������ ������� HTML <samp><b>border</b></samp> ��� ���������� ���������� CSS), ��� ��� � ����� �������� �������� ����������� ������� ����, <samp><b>border-collapse</b></samp> ����� ������� ���������� ��� ���� � ��������� � ���� �������� �� ��������� ��������� ����� ����������</p> 
+
+<p>��������� ������ �������� ������� ���� �������� ��������� ������:</p> 
+<ul>
+<li><samp><b>separate</b></samp> - �������� ������� ����������� ���� �� ������ (�� �������������).
+<li><samp><b>collapse</b></samp> - �������� ������� �� ����� ������� �� �����.
+<li><samp><b>inherit</b></samp> - ���������� �������������� � ������ ��������. (������ ������ �� � ��� ���������.)
+</ul>
+<p>�������:</p>
+<div class="primer"> 
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;����� �������&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;table cellpadding="5" border="5"&gt;</samp><br>
+<samp class="xxx">&lt;caption&gt;������� � �������� �� ������������� &lt;/caption&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;������ &lt;/td&gt;&lt;td&gt;������ &lt;/td&gt;&lt;td&gt;������ &lt;/td&gt;&lt;td&gt;������ &lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;������ &lt;/td&gt;&lt;td&gt;������ &lt;/td&gt;&lt;td&gt;������ &lt;/td&gt;&lt;td&gt;������ &lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xx">&lt;/table&gt;</samp><br>
+<samp class="xx">&lt;hr&gt;</samp><br>
+<samp class="xx">&lt;table cellpadding="5" border="5" style="<b>border-collapse: collapse</b>"&gt;</samp><br>
+<samp class="xxx">&lt;caption&gt;� �� ������� ����������� ���������� CSS border-collapse � ��������� collapse&lt;/caption&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;������ &lt;/td&gt;&lt;td&gt;������ &lt;/td&gt;&lt;td&gt;������ &lt;/td&gt;&lt;td&gt;������ &lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;������ &lt;/td&gt;&lt;td&gt;������ &lt;/td&gt;&lt;td&gt;������ &lt;/td&gt;&lt;td&gt;������ &lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xx">&lt;/table&gt;  </samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp><br>
+<div align="right"><a href="primer/primer31.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+<p>����������  <samp><b>border-collapse</b></samp> ������������� ����� �� ���� <samp><b>&lt;table&gt;</b></samp> � ���������, � ���� ������� <samp><b>display</b></samp>�� �������� <samp><b>table</b></samp> ���  <samp><b>inline-table</b></samp>.��� ���������� <samp><b>display</b></samp> ������� � �������� �����.</p> 
+
+<h2>������� ������:</h2>
+<ul>
+<li><p>������ ����� ��� ���������: - "�� ������� ����������� ����, �� �����㳿 � ����� <samp><b>&lt;hr&gt;</b></samp> - ������������� �������� ����?".</p>
+<p>���� �� ������� �������� ������ �������� � ������������ ����� "��������" �������� ������ � ���� ��� ������ �������� (����������: <samp><b>border-left</b></samp> ��� <samp><b>border-right</b></samp>) ����������� �����, ���� ������ � ���� ��������� � ��� ����������� ����.</p>
+</ul>
+<div class="url">
+<a href="glava4.html" title="�� ������������ �����">&lt;&lt; ��������� �����</a> | 
+<a href="test2.html" title="�� �����">������ ���� &gt;&gt;</a>
+</div>
+</div>
+
+</body>
+</html>

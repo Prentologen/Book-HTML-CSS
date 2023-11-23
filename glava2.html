@@ -1,0 +1,406 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>ϳ������� HTML/CSS ��� ����������.</title>
+<meta HTTP-EQUIV="Content-Type" Content="text/html; Charset=Windows-1251">
+<link rel="stylesheet" href="../style.css" type="text/css"></script>
+</head>
+<body>
+
+<div class="header">
+<h1 class="logo">ϳ������� HTML/CSS</h1>
+</div>
+
+<div class="left">
+
+<div class="fixed">
+<script type="text/javascript"> 
+function shiftSubDiv(n)
+{
+  var el = document.getElementById('subDiv'+n);
+ 
+  if ( el.style.display == 'none' )
+    el.style.display = 'block'
+  else
+    if ( el.style.display == 'block' )
+    el.style.display = 'none';
+};
+</script>
+<a href="index.html" class="menu" title="От автора.">Главная</a>
+<div class="navHeader" id="navHeader1" onClick="shiftSubDiv(1)">HTML</div> 
+<ul class="ul_none" id="subDiv1" style="display:block">
+<li><a href="glava h.html" class="activemenu" title="Вступ.">Вступ</a></li>
+<li><a href="glava 1h.html" class="menu" >Что такое HTML язык</a>  </li>
+<li><a href="glava 2h.html" class="menu" >Редактируем текст</a></li>
+<li><a href="glava 4h.html" class="menu" >Таблица</a></li>
+<li><a href="glava 5h.html" class="menu" >Ссылка</a></li>
+<li><a href="glava 6h.html" class="menu" >И ещё ...</a></li>
+<li><a href="glava 7h.html" class="menu" >Списки</a></li>
+<li><a href="glava 8h.html" class="menu" >Meta теги</a></li>
+<li><a href="glava 9h.html" class="menu" >Заглавный текс </a></li>
+<li><a href="glava 10h.html" class="menu" >И снова таблица ..</a></li>
+<li><a href="glava 11h.html" class="menu" >Фоновая музыка</a></li>
+<li><a href="glava 12h.html" class="menu" >Текст - логика и физика</a></li>
+<li><a href="glava 13h.html" class="menu" >Формы</a></li>
+<li><a href="glava 14h.html" class="menu" >Випадающее меню</a></li>
+</ul>
+<div class="navHeader" id="navHeader2" onClick="shiftSubDiv(2)">CSS</div> 
+<ul class="ul_none" id="subDiv2" style="display:none">
+<li><a href="glava1.html" class="menu" title="Глава 1   Начало CSS.">Начало CSS.</a></li>
+<li><a href="glava2.html" class="menu" title="Глава 2   Властивості тексту.">Возможности текста.</a></li>
+<li><a href="glava3.html" class="menu" title="Глава 3   Властивості шрифту.">Возможности шрифта.</a></li>
+<li><a href="glava4.html" class="menu" title="Глава 4   Колір і фон.">Цвет и фон.</a></li>
+<li><a href="glava5.html" class="menu" title="Глава 5   Межі елемента.">Грань элемента.</a></li>
+<li><a href="glava6.html" class="menu" title="Глава 6   Класи і id селектори.">Класы и id селекторы.</a></li>
+<li><a href="glava7.html" class="menu" title="Глава 7   Розміри елемента.">Розмеры элемента.</a></li>
+<li><a href="glava8.html" class="menu" title="Глава 8   Поля і відступи.">Поля и отступы.</a></li>
+<li><a href="glava9.html" class="menu" title="Глава 9   Курсори.">Курсоры.</a></li>
+<li><a href="glava10.html" class="menu" title="Глава 10   Форматування.">Форматирование.</a></li>
+<li><a href="glava11.html" class="menu" title="Глава 11   Поплавці.">Поплавки.</a></li>
+<li><a href="glava12.html" class="menu" title="Глава 12   Позиціонування.">Позицыонирование.</a></li>
+<li><a href="glava13.html" class="menu" title="Глава 13   Стиль списку.">Стиль списка.</a></li>
+<li><a href="glava14.html" class="menu" title="Глава 14   Полоса прокрутки.">Полоса прокрутки.</a></li>
+<li><a href="glava15.html" class="menu" title="Глава 15   Псевдокласи.">Псевдокласы.</a></li>
+<li><a href="glava16.html" class="menu" title="Глава 16   Псевдоелементи.">Псевдоэлементи.</a></li>
+</ul>
+</div>
+</div>
+
+
+<div class="center">
+   
+<p class="zag">����� 2</p>
+<h1>���������� ������.</h1>
+<p>� ����� ����� ��� ���� ��� ��, �� ����� ������� � �������, ������������ �� �������� HTML, �� ������ � ��� ������ �����, � �� ���� ���������� CSS.</p>
+
+<p>�� �����..</p>
+
+<h2>����������� ������.</h2>
+
+<p>���� �� ���'�����, � ����� HTML, ��� ���� �� � �������� �����, ��������� �� ������ ������, �� ������������� �� ����, ��� ������ � ��� �����, ������� <samp><b>align</b></samp>align (�����������) � ���� � ���� �������� �������<samp><b>center</b></samp>(�� ������)</p> 
+<p>����� ���� ����� ������:</p>
+<samp class="x"><b>&lt;p align="center"&gt;����� �� ������&lt;/p&gt;</b></samp>
+<p>� CSS �� �������� ���� �� ���� ���������� <samp><b>text-align</b></samp>, ��� ������� ��������� ���� ���� �������� ������ (���������, ����� <samp><b>div</b></samp>)��� � ���� ��������.</p> 
+<samp><b>text-align</b></samp> (��� ���� �� � html������ ������� <samp><b>align</b></samp>) �� ��� ��������:
+<ul>
+<li><samp><b>left</b></samp> - �������� ����� �� ����� ���� �������� (�� �������������).
+<li><samp><b>right</b></samp> - �������� ����� �� ������� ����.
+<li><samp><b>center</b></samp> - �������� ����� �� ������.
+<li><samp><b>justify</b></samp> - �������� ����� �� ���� �����.
+</ul>
+<p>����� ��� ���� ��� �������� ����� ���� � ��������� �� ������ ��� ������ ���:</p>
+
+<samp class="x"><b>&lt;p style="text-align: center"&gt;����� �� ������ &lt;/p&gt;</b></samp>
+
+<p>- �� � ����� ������� ���� ��, �� ��������� ��������  <samp><b>style</b></samp>, ����������� CSS ������������� � HTML ���.</p>
+
+<p>� ��� � ������� ����� ��������������� ��� <samp><b>&lt;style&gt;</b></samp> � ��������� ���������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;����������� ������ &lt;/title&gt;</samp><br>
+<samp class="xx">&lt;style type="text/css"&gt;</samp><br>
+<samp class="xxx"><b>h1 { text-align: center }</b></samp><br>
+<samp class="xxx"><b>p { text-align: justify }</b></samp><br>
+<samp class="xx">&lt;/style&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;h1&gt;��� ��� ������ &lt;/h1&gt;</samp><br>
+<samp class="xx">&lt;p&gt;���� - ��������� ������� �� ����� ������! ��������� ���� � ����-������ ������ �� ���� ��� ������������� � ����� � 1956 ����. ��� ������ ����� ������� 12 ���, � � ������ ������� 4,2 �����, �� �� ���� ����� �� ���������� ������������� �����.&lt;/p&gt;</samp><br>
+<samp class="xx">&lt;p&gt;����� � ����������� �������� �������� �������� � ���� ���� ������� ���'���� � ������� ����������. ���������� ������ ���� ������, �� ���� - "�������, ��� ��������� ��� ����� � ��������� � ��������".&lt;/p&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp><br>
+<div align="right"><a href="primer/primer4.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+	
+<h2>���������� ������.</h2>
+
+<p>����������  <samp><b>text-decoration</b></samp> �������� ���������� �����, ��������� ���� ���� ��� ����� ������� � ����� ������������� ������� ���������� ������.</p> 
+
+<p>������ ��������:</p>
+<ul>
+<li><samp><b>blink</b></samp> - ����� ���� �������.
+<li><samp><b>line-through</b></samp> - ������ ����� �������������.
+<li><samp><b>overline</b></samp> - ������������� ������.
+<li><samp><b>underline</b></samp> - ϳ���������� ������.
+<li><samp><b>none</b></samp> - ����� ��� ����������.
+</ul>
+<p>�������� ���:</p>
+
+<samp class="x"><b>&lt;a href="index.html" style="text-decoration:none"&gt;��������� ��� �����������&lt;/a&gt;</b></samp>
+
+<p>�������:</p>
+<div class="primer">
+���� mystyle.css<br><br>
+<samp class="x">h1 {text-align: center}</samp><br>
+<samp class="x">h3 {text-align: left; <b>text-decoration: underline</b>}</samp><br>
+<samp class="x"><b>a {text-decoration: underline</b>}</samp><br>
+<samp class="x"><b>a:hover {text-decoration:none</b>}</samp><br>
+<samp class="x">p {text-align: justify}</samp>
+<hr>
+���� index.html<br><br>
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;����������  ������&lt;/title&gt;</samp><br>
+<samp class="xx">&lt;link rel="stylesheet" href="mystyle.css" type="text/css"&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;h3&gt;����:&lt;/h3&gt;</samp><br>
+<samp class="xx">&lt;a href="index.html"&gt;��� ��� ������.&lt;/a&gt;&lt;br&gt;</samp><br>
+<samp class="xx">&lt;a href="elephant.html"&gt;������ �����.&lt;/a&gt;</samp><br>
+<samp class="xx">&lt;hr&gt;</samp><br>
+<samp class="xx">&lt;h1&gt;��� ��� ������ &lt;/h1&gt;</samp><br>
+<samp class="xx">&lt;p&gt; ���� - ��������  � � �&lt;/p&gt;</samp><br> 
+<samp class="xx">&lt;p&gt;����� � � � �&lt;/p&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp><br>
+<div align="right"><a href="primer/primer5.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+<p>�������� ����� �� ��������� ���� CSS � ����� �� "����������" ��������� ������� <samp><b>&lt;a&gt;</b></samp>, ������� ������ �� ���� ������ ��� <samp><b>a {text-decoration: underline}</b></samp> ������� ���� �����������, ���� ����� ���� ����� � �� ������, ��� �� ��� <samp><b>&lt;a&gt;</b></samp> ���������� �� �������������, � ������ ��� ��������������� ��� ������ ���������� <samp><b>hover</b></samp> � ���������� ����������� <samp><b>a:hover {text-decoration:none}</b></samp></p>
+<p>����� ���������� ����� �� ��, �� ������������� �� ����� �������� ���� ����� ���� � ���� ������� ���� ���������� ���� ������ �� ��� �������. ��� ���� � ������� ������� ������ �� ���� � �������� � ���� �� ����������� ������, �� ������� ������ ��������� ����� � ���� ��� "�����".</p> 
+<p>���, �� ����� ������ ������ .. ��� <a href="glava15.html" title="����� 15   ����������� .">����������� </a> ���� ��� � �������� �����.</p>
+
+<h2>³����� ������� �����.</h2>
+
+<p>����������  <samp><b>text-indent</b></samp> - ���� ������ ������� ����� � ���������� ����� � ����� ����, ������� ������ ������ "����� �����".</p>
+
+<p>³������ �� ����� ���� ���� �������� ��� � �������� ������ (����� � ���� �������� ���� � �������) ���� ���� ������ � �������� �� ������ ���� �������� ��� � �������� ����� ��������� � CSS.</p>
+  
+<p>� ������� ����� ������� ������� �� ����� ���� �������� � �������<samp><b>(px)</b></samp>:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;�������� �����&lt;/title&gt;</samp><br>
+<samp class="xx">&lt;style type="text/css"&gt;</samp><br>
+<samp class="xxx">h1 {text-align: center}</samp><br>
+<samp class="xxx">p {text-align: justify; <b>text-indent: 20px</b>}</samp><br>
+<samp class="xx">&lt;/style&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;h1&gt;��� ��� ������ &lt;/h1&gt;</samp><br>
+<samp class="xx">&lt;p&gt;���� - �������� ������� �� ����� ������! ��������� ���� � ����-������ ������ �� ���� ��� ������������� � ����� � 1956 ����. ��� ������ ����� ������� 12 ���, � � ������ ������� 4,2 �����, �� �� ���� ����� �� �������� ������������� �����.&lt;/p&gt;</samp><br>
+<samp class="xx">&lt;p&gt;����� � ����������� �������� �������� �������� � ���� ���� ������� ���'���� � ������� ����������. ���������� ������ ���� ������, �� ���� - "�������, ��� ��������� ��� ����� � ��������� � ��������".&lt;/p&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp><br>
+<div align="right"><a href="primer/primer6.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<h2>������������� ������</h2>
+
+<p>���������� <samp><b>text-transform</b></samp> ���������� ������� � ����������� ���������� �����, ������� �� �������� ��� ���������� �� ������ � ������ � ��������� �� ������������ �������� ����� ����������.</p> 
+
+<p>��������:</p>
+<ul>
+<li><samp><b>none</b></samp> - ����� ������������ ��� ����-���� ���. (�� �������������)
+<li><samp><b>capitalize</b></samp> - ����� ����� � ����� ������������ � ����������� �������.
+<li><samp><b>lowercase</b></samp> - �� ������� �������������� � ������ ������.
+<li><samp><b>uppercase</b></samp> - �� ������� �������������� � ����� �����. 
+</ul>
+<p>�������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;������������� ������ &lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;p style="<b>text-transform: capitalize</b>"&gt;����������� ��'������� �����&lt;/p&gt;</samp><br>
+<samp class="xx">&lt;p style="<b>text-transform: lowercase</b>"&gt;��� ���&lt;/p&gt;</samp><br>
+<samp class="xx">&lt;p style="<b>text-transform: uppercase</b>"&gt;��� ���&lt;/p&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp><br>
+<div align="right"><a href="primer/primer7.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<h2>����������� �����������</h2>
+
+<p>����������� ����������� ������ � ����� ���������� ���������� <samp><b>vertical-align</b></samp></p>
+
+<p>������ �������� ���������� <samp><b>vertical-align:</b></samp></p>
+<ul>
+<li><samp><b>baseline</b></samp> - ������� ������ ���� �������� �� ������� ���� ������. 
+<li><samp><b>bottom</b></samp> - ������� ������� �� ������ ������� �����.
+<li><samp><b>middle</b></samp> - ������� �������� �������� �� ������� ���� ������ � ���� �������� ������ ������������ ��������.
+<li><samp><b>sub</b></samp> - ������ ������ (����� ������ �� ���������).
+<li><samp><b>super</b></samp> - ������� ������ (����� ������ �� ���������). 
+<li><samp><b>text-bottom</b></samp> - ����� ���� �������� ����������� �� �������� ���� �����.
+<li><samp><b>text-top</b></samp> - ������ ���� �������� ����������� �� ��������� ���� �����.
+<li><samp><b>top</b></samp> - ������� ������� �� ������� ������� �����.
+</ul>
+<p>������ ���� - �� ����, �� ��� �������������� "������" ������� � ���������� �����, ��������� ����� "�" ������ ����� �� ��� ����, � ��� ���� ����� "�" ������ �� ��� ��, ��� ������� ���� ..</p>
+
+<p>��������� �� ������� � �������� �����:</p>
+
+<img src="../graphics/baseline.gif" alt="������ ����">
+
+<p>��� ���� ����������� ����������� �������� ���� ����� ���� ���������� � ��������, ������� ��� ����-���� ����� ��������� � CSS �������� �����, ������� �� ������� ������ �������� �� ���������, ��� � ��������� ��������.</p>
+
+<p>�������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;����������� ����������� ������&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;font size="+3"&gt;� � � &lt;/font&gt;</samp><br>
+<samp class="xx">&lt;span style="<b>vertical-align: +5px</b>"&gt;����� �� ���� &lt;/span&gt;</samp><br>
+<samp class="xx">&lt;span style="<b>vertical-align: bottom</b>"&gt;� ����� &lt;/span&gt;</samp><br>
+<samp class="xx">&lt;span style="<b>vertical-align: top</b>"&gt;� �������.. &lt;/span&gt;</samp><br>
+<samp class="xx">&lt;span style="<b>vertical-align: 50%</b>"&gt;�� ���������� �� ����?&lt;/span&gt;</samp><br>
+<samp class="xx">&lt;hr&gt;</samp><br>
+<samp class="xx">������� ����: H&lt;span style="<b>vertical-align: sub</b>"&gt;2&lt;/span&gt;O</samp><br>
+<samp class="xx">&lt;hr&gt;</samp><br>
+<samp class="xx">&lt;span&gt;�&lt;/span&gt;</samp><br>
+<samp class="xx">&lt;span style="<b>vertical-align: -10px</b>"&gt;�&lt;/span&gt;</samp><br>
+<samp class="xx">&lt;span style="<b>vertical-align: -20px</b>"&gt;�&lt;/span&gt;</samp><br>
+<samp class="xx">&lt;span style="<b>vertical-align: -30px</b>"&gt;�&lt;/span&gt;</samp><br>
+<samp class="xx">&lt;span style="<b>vertical-align: -40px</b>"&gt;�&lt;/span&gt;</samp><br>
+<samp class="xx">&lt;span style="<b>vertical-align: -50px</b>"&gt;�&lt;/span&gt;</samp><br>
+<samp class="xx">&lt;span style="<b>vertical-align: -60px</b>"&gt;�&lt;/span&gt;</samp><br>
+<samp class="xx">&lt;span style="<b>vertical-align: -70px</b>"&gt;�&lt;/span&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp><br>
+<div align="right"><a href="primer/primer8.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<h2>������ � ����������� �����.</h2>
+
+<p>�������� �����, � ����-����� ���������� �������� ���������� �� ������������� ���������� �� ����� � ������ ���������� ������, �� �������� ����� �������������� �����������, � ��� ���� ������������ ���� (����� ������) ������ �� ���������.</p>
+
+<p>����������  <samp><b>white-space</b></samp> ���� ������ ���� <samp><b>&lt;pre&gt;</b></samp>, ���������� ���������� �� �� ������ �� ���������, ���� ����� ����� ��� ����, � ��� ���� �������� ��� ��������� ����������� �����.</p>
+ 
+<p>���� ���� �������� ��������:</p>
+<ul>
+<li><samp><b>normal</b></samp> - ����� ���������� �� �������� (���� ������ ������������), �������� ����� ������������ �����������. (�� �������������)
+<li><samp><b>nowrap</b></samp> - ��������� ����������� ����������� �����.
+<li><samp><b>pre</b></samp> - ������ ����� � ���� ������ � ����� �� ��� ��������. ������ � �������� ����� �� �����������.
+</ul>
+<p>�������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;������ � ����������� ����� &lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;p style="<b>white-space: pre</b>"&gt;</samp><br>   
+<samp>
+����.<br>
+<br>
+���� �������� �����.<br>
+���� �� �������� ����<br>
+� ������: - ������� �����,<br>
+� �� ��, � �� ������!<br>
+
+<br>
+</samp>
+<samp class="xxxxx">�. �. ������.</samp><br>
+<samp class="xx">&lt;/p&gt;</samp><br>
+<samp class="xx">&lt;hr&gt;</samp><br>
+<samp class="xx">&lt;p style="<b>white-space: nowrap</b>"&gt;</samp><br>   
+<samp>�� ������ ����������� �����, ���� ������ �� �������� ���������� � ������ �����, �� ������������� � ��������� ����, ������� ������� �� ���� �� ��������� �����, ����� �� ��������� ���������� �� ������, �� ��������� �������� nowrap ���������� white-space. ��� �� �����, �� ��� ���������, � ���� �������� �'������� ������������� ����� ��������� .. � �����, ��������, �� �� �������?</samp><br>
+<samp class="xx">&lt;/p&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp><br>
+<div align="right"><a href="primer/primer9.html" target="_blank">�������� ������</a>&nbsp;&nbsp;</div> 
+</div>
+<p>��� ������������ nowrap ����� � ��������� ���� ����� ���������� �� ��������� ����� �������������� ��� <samp><b>&lt;br&gt;</b></samp></p>
+
+<h2>³������ �� �������.</h2>
+
+<p>����������  <samp><b>word-spacing</b></samp> ���� ������� �� ������� (������� ������� �� ���������� �������) � �����.</p> 
+
+<p>��������:</p>
+<ul>
+<li><samp><b>normal</b></samp> - ��������� �������. (�� �������������)
+<li><samp><b>px</b></samp> - ³������ �������� � ������� ��� ����-���� ����� �������� ����� ��������� � CSS.
+</ul>
+<p>�������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;³������ �� ������� &lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;p align="left" style="<b>word-spacing: 10px</b>"&gt;³������ �� ������� ������� ������ �������� &lt;/p&gt;</samp><br>
+<samp class="xx">&lt;p align="left" style="<b>word-spacing: -10px</b>"&gt;³������ �� ������� ���� ���� ��'���� �������� &lt;/p&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp><br>
+<div align="right"><a href="primer/primer10.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<h2>̳���������� �������.</h2> 
+
+<p>� ��� ���������� <samp><b>letter-spacing</b></samp> �������� ������� �� ��������� � ����� � ��� ���� �� � ���� <samp><b>word-spacing</b></samp> ���� ������ ���������� ����������:</p> 
+<ul>
+<li><samp><b>normal</b></samp> - ��������� �������. (�� �������������)
+<li><samp><b>px</b></samp> - ³������ �������� � ������� ��� ����-���� ����� �������� ����� ��������� � CSS.
+</ul>
+<p>�������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;³������ �� ��������� &lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;p style="<b>letter-spacing: 5px</b>"&gt;³������ �� ������� ������� �'��� ������� &lt;/p&gt;</samp><br>
+<samp class="xx">&lt;p style="<b>letter-spacing: -3px</b>"&gt;� ��� �����, ����� ��'���� ��������, ������ ���������� ���� �� ���� &lt;/p&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp><br>
+<div align="right"><a href="primer/primer11.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<h2>����������</h2>
+
+<p>���������� - �� ������� �� ������� ������.</p>
+<p>³������ �� ������� ������ ����� ������ �������������� ���������� <samp><b>line-height</b></samp>, ������� �� ����� ���������� ���������:</p>
+<ul>
+<li><samp><b>normal</b></samp> - ����� (�� �������������).
+<li><samp><b>%</b></samp> - ³������. �� ��� ������� �������� ������ ������
+<li><samp><b>0.5</b></samp> - �������. ���� ���� ����������� ����-��� ����� ����� ����. ���, ��������� ������� 0.5 ���� ���������� ����������� ����������� �������, � 2 - ���������.
+<li><samp><b>px</b></samp> - ϳ���� �� ����-�� ���� ������� �����, ������� � CSS.
+</ul>
+<p>�������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;����������&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;div style="<b>line-height: 150%</b>"&gt;</samp><br>
+<samp class="xxx">����� ������ &lt;br&gt; �����  ������  &lt;br&gt; �����  �����  &lt;br&gt; �����  ���������  &lt;br&gt; �����  �����</samp><br>
+<samp class="xx">&lt;/div&gt;</samp><br>
+<samp class="xx">&lt;hr&gt;</samp><br>
+<samp class="xx">&lt;div style="<b>line-height: 0.5</b>"&gt;</samp><br>
+<samp class="xxx">����� ������ &lt;br&gt; �����  ������  &lt;br&gt; �����  �����  &lt;br&gt; �����  ���������  &lt;br&gt; �����  �����</samp><br>
+<samp class="xx">&lt;/div&gt;</samp><br>
+<samp class="xx">&lt;hr&gt;</samp><br>
+<samp class="xx">&lt;div style="<b>line-height: 25px</b>"&gt;</samp><br>
+<samp class="xxx">����� ������ &lt;br&gt; �����  ������  &lt;br&gt; �����  �����  &lt;br&gt; �����  ���������  &lt;br&gt; �����  �����</samp><br>
+<samp class="xx">&lt;/div&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp><br>
+<div align="right"><a href="primer/primer12.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<h2>������� ������:</h2>
+<ul>
+<li><p>��� ����������� ������, ���������� - <samp><b>text-decoration</b></samp>, ������ ��������� �������������� ����������� ������ �� ���� ������ � ����� ��������� �������, �� ���� ��������, �� ����� ����� � ����������.</p>
+<li><p>� ��� ����� ������� ��������������� ��������  <samp><b>nowrap</b></samp> ����������  <samp><b>white-space</b></samp>, �������� ������� �����? ����� ������������� ����� ��������� ���� ���� ������ ..</p>
+<li><p>��������������  <a href="glava15.html#hover" title="����� 15   �����������.   &quot;����������  hover&quot;">����������  hover</a> � �������� � ������ ���������� � �� ��������� CSS ������������� ����� ��������� ������ ������� ������.</p>
+</ul>
+<div class="url">
+<a href="glava1.html" title="�� ������������ �����">&lt;&lt; ��������� �����</a> | 
+<a href="glava3.html" title="�� �������� �����">�������� ����� &gt;&gt;</a>
+</div>
+</div>
+
+</body>
+</html>

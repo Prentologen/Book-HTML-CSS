@@ -1,0 +1,430 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<Title> ϳ������� HTML/CSS ��� ����������. </Title>
+<link rel="stylesheet" href="../style.css" type="text/css"></script>
+</head>
+<body>
+<div class="header">
+<H1 class = "logo"> ϳ������� HTML/CSS </h1>
+</div>
+<div class="left">
+<div class="fixed">
+<script type="text/javascript"> 
+function shiftSubDiv(n)
+{
+  var el = document.getElementById('subDiv'+n);
+ 
+  if ( el.style.display == 'none' )
+    el.style.display = 'block'
+  else
+    if ( el.style.display == 'block' )
+    el.style.display = 'none';
+};
+</script>
+<a href="index.html" class="menu" title="От автора.">Главная</a>
+<div class="navHeader" id="navHeader1" onClick="shiftSubDiv(1)">HTML</div> 
+<ul class="ul_none" id="subDiv1" style="display:block">
+<li><a href="glava h.html" class="activemenu" title="Вступ.">Вступ</a></li>
+<li><a href="glava 1h.html" class="menu" >Что такое HTML язык</a>  </li>
+<li><a href="glava 2h.html" class="menu" >Редактируем текст</a></li>
+<li><a href="glava 4h.html" class="menu" >Таблица</a></li>
+<li><a href="glava 5h.html" class="menu" >Ссылка</a></li>
+<li><a href="glava 6h.html" class="menu" >И ещё ...</a></li>
+<li><a href="glava 7h.html" class="menu" >Списки</a></li>
+<li><a href="glava 8h.html" class="menu" >Meta теги</a></li>
+<li><a href="glava 9h.html" class="menu" >Заглавный текс </a></li>
+<li><a href="glava 10h.html" class="menu" >И снова таблица ..</a></li>
+<li><a href="glava 11h.html" class="menu" >Фоновая музыка</a></li>
+<li><a href="glava 12h.html" class="menu" >Текст - логика и физика</a></li>
+<li><a href="glava 13h.html" class="menu" >Формы</a></li>
+<li><a href="glava 14h.html" class="menu" >Випадающее меню</a></li>
+</ul>
+<div class="navHeader" id="navHeader2" onClick="shiftSubDiv(2)">CSS</div> 
+<ul class="ul_none" id="subDiv2" style="display:none">
+<li><a href="glava1.html" class="menu" title="Глава 1   Начало CSS.">Начало CSS.</a></li>
+<li><a href="glava2.html" class="menu" title="Глава 2   Властивості тексту.">Возможности текста.</a></li>
+<li><a href="glava3.html" class="menu" title="Глава 3   Властивості шрифту.">Возможности шрифта.</a></li>
+<li><a href="glava4.html" class="menu" title="Глава 4   Колір і фон.">Цвет и фон.</a></li>
+<li><a href="glava5.html" class="menu" title="Глава 5   Межі елемента.">Грань элемента.</a></li>
+<li><a href="glava6.html" class="menu" title="Глава 6   Класи і id селектори.">Класы и id селекторы.</a></li>
+<li><a href="glava7.html" class="menu" title="Глава 7   Розміри елемента.">Розмеры элемента.</a></li>
+<li><a href="glava8.html" class="menu" title="Глава 8   Поля і відступи.">Поля и отступы.</a></li>
+<li><a href="glava9.html" class="menu" title="Глава 9   Курсори.">Курсоры.</a></li>
+<li><a href="glava10.html" class="menu" title="Глава 10   Форматування.">Форматирование.</a></li>
+<li><a href="glava11.html" class="menu" title="Глава 11   Поплавці.">Поплавки.</a></li>
+<li><a href="glava12.html" class="menu" title="Глава 12   Позиціонування.">Позицыонирование.</a></li>
+<li><a href="glava13.html" class="menu" title="Глава 13   Стиль списку.">Стиль списка.</a></li>
+<li><a href="glava14.html" class="menu" title="Глава 14   Полоса прокрутки.">Полоса прокрутки.</a></li>
+<li><a href="glava15.html" class="menu" title="Глава 15   Псевдокласи.">Псевдокласы.</a></li>
+<li><a href="glava16.html" class="menu" title="Глава 16   Псевдоелементи.">Псевдоэлементи.</a></li>
+</ul>
+</div>
+</div>
+<div class="center">
+
+<p class="zag">����� 8</p>
+
+<h1>Meta ����</h1>
+
+<p>� ������� ����� ����� ���������, ��� ��������� ������� html ���������, � ������� ��� ��, �� ��� html ��������� ������� ���� ��� ����� ������ ����:</p>
+<samp><b>&lt;html&gt;</b></samp> - ������� ���������<br>
+<samp class="x"><b>&lt;head&gt;</b></samp> - ������� ������<br>
+<samp class="x"><b>&lt;/head&gt;</b></samp> - �������� ������<br>
+<samp class="x"><b>&lt;body&gt;</b></samp> - ������� ���<br>
+<samp class="x"><b>&lt;/body&gt;</b></samp>- �������� ���<br>
+<samp><b>&lt;/html&gt;</b></samp> - ����� ���������
+
+<p>�� �� ������ <samp><b>&lt;body&gt; &lt;/body&gt;</b></samp> ��������� ���������� ���������� ��� ��������� �� ����� � ��������� ��� ������, � �� ������ <samp><b>&lt;head&gt; &lt;/head&gt;</b></samp> �������� �������� ���������� ���������� ��� ��������� ������ � �������� ��� �� ����� ������������. ��� �� � �� �� ���������� ���� � ��� ���� ���� �������? ³�����, ��������� � ����������� � ����� �����.</p>
+<p>� ����� <samp><b>&lt;title&gt;</b></samp> �� ��� ������, �� ��������� ����� �� ������� ��'� ��������� � ��������� �������. ����� ����� ���  <samp><b>&lt;meta&gt;</b></samp> (������� ���� �� ������) �� ��������� ����� �� � ������ ��������� �� ���� �������� ���������� �� ����� �������.</p>
+<samp class="x"><b>&lt;meta&gt;</b></samp> ��� �� �������� ��������:
+<ul>
+<li><samp><b>http-equiv</b></samp>  - ����� �������� �� ��� �������� �������� ���� ���������, ������� �� ����� ���� �����.<br>
+<li><samp><b>name</b></samp> - ������������ ��'�. (������������� � ��� � ��������� <samp><b>content</b></samp>)<br>
+<li><samp><b>content</b></samp> - ������������� ����, ���'����� � ���� ��'�� (<samp><b>name</b></samp>)
+</ul>
+<p>����� �� ��������� ������ ������� � ���� ������. </p>
+
+<h2>��������� ������� � ����</h2>
+<p>������� (���� �������� � ��������):</p>
+<div class="primer">
+<samp class="x"><b>&lt;meta http-equiv="Content-Type" Content="text/html; Charset=Windows-1251"&gt;</b></samp>
+</div>
+<p>�������� ������� ����� ��������� �� ����� � ��������� html ���������. ����� ����� ����� �������� ��������� � ��� ���� �������� ���� ������� - ������ ��������� � ��������� ���������, � ������ ������� �� �������� ��� Windows. ���� ��� ����� �� ������ � ��������� �������, �� � ������ ���������� �� ���� ����� �� ����� ������� ������������ � ������ ����������� ������ "���������" � ����� ������������ ��� �� ����� ��������. ��������, ���������� ���� ����������� �� ������ ��������� ������� � ������� <b> ���-> ��������-> �������� </b>, �� �� ����� �� ����� ��� �� �������, �� � ����� ��������� ������ ����� ��������.</p>
+<p>
+����� ��������� �� "�������" ���� �����:<br>
+<samp><b>&lt;meta http-equiv="Content-Type"</b></samp> - ������� �� � ����� ���� ��� �� ������ ��������� <samp><b>Content-Type</b></samp> - ����� �����<br>
+<samp><b>Content="text/html;</b></samp> - � ���� ���� �������<br>
+<samp><b>Charset=Windows-1251"&gt;</b></samp> - �������� ��� Windows - �������� �� <samp><b>1251</b></samp> ��������� ��������� ���������, ��� ��������� ��������� ��������� ���� ���������  <samp><b>Charset=Windows-1252</b></samp> 
+</p>
+<p>� ����� ��� �������� ���-������� ������������ ��������������� ��������� <strong>UTF 8</strong></p>
+<p>����� ������ � ����� ��������� ��� ���:</p>
+<div class="primer">
+<samp class="x"><b>&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;</b></samp>
+</div>
+
+<p>�������:</p>
+<div class="primer">
+<samp><b>&lt;meta http-equiv="Content-Language" Content="ru"&gt;</b></samp>
+</div>
+<p>� ����� ����� ������� ��� �� �� ���� <samp><b>Language</b></samp> ��������� � ��������� <samp><b>Content="ua"</b></samp></p>
+<p>����������� ��������� ���� � ��������� ��������� ���� ��������� �� ������ �������.</p>
+
+<h2>���������� ��� ��������</h2>
+
+<p>�������:</p>
+<div class="primer">
+<samp><b>&lt;meta name="author" Content="����� ������"&gt;</b></samp><br>
+<samp><b>&lt;meta name="copyright" Content=""��� � ������" ����� ������"&gt;</b></samp>
+</div>
+<p>���� ����������� ���������� ��� ����� ��� �������� ����� ������������� � ��������� html ����, ��� <samp><b>name="author"</b></samp> ����� ��'� ������ �������, �  <samp><b>name="copyright"</b></samp> ��������� ����� (�������) � ����� ���� ����������� �������, ��'�, �� ������� ������ �����, ����� �����, ������ .. � �. �. ��� ���� ��������� � ��������� ��������� ����� ���� �� ������ ��������� �������� �������� ������ ��� ������ ������ ����� �� ����� ������, ������ �����, ������...</p>
+
+<p>�������:</p>
+<div class="primer">
+<samp><b>&lt;meta name ="Generator" Content="Microsoft Notepad"&gt;</b></samp>
+</div>
+<p>���� ������ ������ ������� �� ��������� ����� html ��������� ���� �������� ���� �������. </p>
+
+<h2>���� ������� � ������ �����</h2>
+
+<p>�������:</p>
+<div class="primer">
+<samp><b>&lt;meta name="description" Content="���������� �������� �� �������� ������ ���� � �����!"&gt;</b></samp>
+</div>
+<p><samp><b>Description</b></samp> - �������� ���� �������. ����� ���� ��������� ��������������� ���������� ��������� ��� ��������� � ����������� ������, �� ����� ��� ������, ���������� ��� ���� �� ���� �����������.</p>
+
+<p>�������:</p>
+<div class="primer">
+<samp><b>&lt;meta name="keywords" Content ="����, ������, ����, ��, ������, �������, ��������, ������, ���������, ������, �������, ������, �����, ����������, ������, ���, �����'���, ������, ������, �����, �������, ����, �����"&gt;</b></samp>
+</div>
+<p><samp><b>Keywords</b></samp> - ������ ����� ���-�������, ����� ���� ���������� ��� ��������� �����.</p>
+<p>����� �� �� ������ � ����-��� �������� ������� ���� � ����������� ��� �� �� ����� ������� � � ���� � ������ :) �� ����� � ����� �� ������ ������� � ����� "�����"? �� ������� �� �� ����: "�� ������� �����'��� ����?" ��� "���������� ������ �� ������� �����" ��� ��� ���� ��������� ������ ����� � ��� ������� ����������� ����� ������������ ��������� ����� ���������� �� ��, �� �� �� ���� �������� ������� ������� ��������� �� ��� ���� � ������ ������ ���������� ������. �������� �������� ������ ������������ �� ���� ������ ���� �� ���� ��� ���� ����� ����� ���� � ������ �� ������ �������, ��� ��� � �� ����� ��� ���������. ���, ���������� �� ��������� ����� �� ������ ���� ��� �������.</p>
+<p>���'������ �� ���� <samp><b>description</b></samp> �� ������� ������������ �� ������� ����� 200 �������, � ������ ����� <samp><b>keywords</b></samp> 1000 �������, ������ �� ���� ������ ���'����� ��� ���������� ���� ������� ���������� ���������.</p>
+
+<h2>�����</h2> 
+<p>�������:</p>
+<div class="primer">
+<samp><b>&lt;meta name="Publisher-Email" Content="���_e-mail@������.�����"&gt;</b></samp><br>
+<samp><b>&lt;meta name="Publisher-URL" Content="http://www.���_����/"&gt;</b></samp>
+</div>
+<p>����� �������� .. ��� ��������� ������ ���� ������� �������� <samp><b>Publisher-Email</b></samp> � ����� ����� <samp><b>Publisher-URL</b></samp></p>
+
+<h2>��������� �������</h2>
+<p>�������:</p>
+<div class="primer">
+<samp><b>&lt;meta name ="revisit-after" Content="15 days"&gt;</b></samp>
+</div>
+<p>���� ����� ������� �� ������ ���� �� �� ���� ������� ��������� � / ��� ���������� ������������� ������, �� ����� ���� � �������� ����� ���� ��������� ���� �������. ���� �������� ��������� ������� ������ �������� ��������� ��� ���� � ����������� ���� ����. � ������ ������� �� ������� ��� ��, �� ��������� ���������� ���� �� ������� �� ����� ������ ���� �� 15 ����, ������ �� ����������� �������� ����� ����� ���� ����� ��� �� ������ � ���� ��������� "�� ��� � ����" ��� � �'��������� ����, ��� ���� ��� ��������� �� ������ � ��� �� ��������..</p>
+
+<h2>��� 䳿 ��������� � ���</h2>
+<p>�������:</p>
+<div class="primer">
+<samp><b>&lt;meta http-equiv="expires" content="Sun, 24 jan 2010 12:28:36 GMT+03:00"&gt;</b></samp>
+</div>
+<p>��� ���� ��� ���������� ������������ �������, � ��� ���� ��������� ������ ������� �������� ��������� ��������� ������������ ������� � ��� (�� �������� ����), � ��� ���������� ���������� ������������ �� �� � �������, � ������������� � ����. �������� ���� ������� ������ ����� .. ��� � ���� "���", ������ � ���� �� � ������� ���� ������������ ��� �������� ����������, ����-��� �������. �����, ���������, ��� ���� � ������� ��������� ������� �������� �������, � ���������� ������, ������ ��������� �����, ��� �������� ����������, �� ��� ���������� � ����� � ���� !! � �� ����������� � ���� "���" ������ ��� ���� �� "�������" ��������� � ����� �� �����������.</p>
+<p>��� ���� ��� ��������� ������� ������� ������������� �� �� ���� ������� �� � ��������� �����, � � ������� ���������� ���� ��� � ������ �����������, �� ��������� ���� �����, ����� ����� �� ��� (��: ��: ��) � ������� ���� (<samp> <b> GMT + 03: 00 </b> </samp> - ��� �������� + ��� ������). ���� ����� � ��� ��� ����� �� ���������. ����� ��� ������� ������� ��������� ������� ���� ����������� � �������, ���� ��������� ���� � ��� ������ ��� �����������, � ������� � ���� ���� ���������� ��� �� �� ������.</p> 
+
+<p>����� �� ������ ������� �������� ������� ��������� �� ���������� ��� �� ����� � ��� �����</p>
+<center>
+<table border="0" width="100%">
+ <tr>
+  <td valign="top">
+  <table width="100%"  bgcolor="#e8e8e8" cellspacing="2" cellpadding="5" border="0" align="center">
+ <tr>
+  <th>�����:</th><th>�� �����������:</th><th>����������:</th>
+ </tr>
+  <tr class="trc">
+  <td>ѳ����</td><td>January</td><td>Jan</td>
+ </tr>
+  <tr class="trn">
+  <td>�����</td><td>February</td><td>Feb</td>
+ </tr>
+ <tr class="trc">
+  <td>��������</td><td>March</td><td>Mar</td>
+ </tr>
+ <tr class="trn">
+  <td>������</td><td>April</td><td>Apr</td>
+ </tr>
+ <tr class="trc">
+  <td>�������</td><td>May</td><td>May</td>
+ </tr>
+ <tr class="trn">
+  <td>�������</td><td>June</td><td>Jun</td>
+ </tr>
+ <tr class="trc">
+  <td>������</td><td>July</td><td>Jul</td>
+ </tr>
+ <tr class="trn">
+  <td>�������</td><td>August</td><td>Aug</td>
+ </tr>
+ <tr class="trc">
+  <td>��������</td><td>September</td><td>Sep</td>
+ </tr>
+ <tr class="trn">
+  <td>�������</td><td>October</td><td>Oct</td>
+ </tr>
+ <tr class="trc">
+  <td>��������</td><td>November</td><td>Nov</td>
+ </tr>
+ <tr class="trn">
+  <td>�������</td><td>December</td><td>Dec</td>
+ </tr>
+</table>
+</td>
+
+  <td valign="top">
+  <table width="100%"  bgcolor="#e8e8e8" cellspacing="2" cellpadding="5" border="0" align="center">
+ <tr>
+  <th>��� �����:</th><th>�� �����������:</th><th>����������:</th>
+ </tr>
+  <tr class="trc">
+  <td>��������</td><td>Monday</td><td>Mon</td>
+ </tr>
+  <tr class="trn">
+  <td>³������</td><td>Tuesday</td><td>Tue</td>
+ </tr>
+ <tr class="trc">
+  <td>������</td><td>Wednesday</td><td>Wed</td>
+ </tr>
+ <tr class="trn">
+  <td>�������</td><td>Thursday</td><td>Thu</td>
+ </tr>
+ <tr class="trc">
+  <td>�'������</td><td>Friday</td><td>Fri</td>
+ </tr>
+ <tr class="trn">
+  <td>������</td><td>Saturday</td><td>Sat</td>
+ </tr>
+ <tr class="trc">
+  <td>�����</td><td>Sunday</td><td>Sun</td>
+ </tr>
+</table>
+
+</td>
+ </tr>
+</table>
+</center>
+<p>�������� <samp><b>content</b></samp> ����� ����������� �������� <samp><b>"0" &lt;meta http-equiv="Expires" content="0"&gt;</b></samp> � ����� ������� ������� ������ ���� ��������������� � �������. </p>
+
+<p>� �� .. ���� ������� ������ ������ ���������� ����������� �������� �� ������� ��������� �����. - �� ���������� ����.. </p>
+
+<p>�������:</p>
+<div class="primer">
+<samp><b>&lt;meta http-equiv="pragma" content="no-cache"&gt;</b></samp>
+</div>
+<p>� ����� ����� ����� ���������� �������� �������� �� �������.</p>
+
+<h2></h2>
+<p>�������:</p>
+<div class="primer">
+<samp><b>&lt;meta name="robots" content="Index,follow"&gt;</b></samp>
+</div>
+<p>����� ���� ��� ����������� ��� ������ ���������� ������ 򳺿 �� ���� �������.</p> 
+
+<p>������ �������� ������ ������:</p>
+
+<ul>
+<li><samp><b>Index</b></samp> - ����������� �������
+<li><samp><b>Noindex</b></samp> - �� ����������� �������
+<li><samp><b>Follow</b></samp> - ������������ ������������� �� �������
+<li><samp><b>Nofollow</b></samp> -  �� ������������ ������������� �� �������
+<li><samp><b>All</b></samp> - ����������� ������� � ������������ ������������� �� ������� (�� �������������)
+<li><samp><b>None</b></samp> - �� ����������� ������� � �� ������������ ������������� �� �������
+</ul>
+
+<h2>������������ ������� �� ���� �������</h2>
+<p>�������:</p>
+<div class="primer">
+<samp><b>&lt;meta http-equiv="Refresh" content="10; URL=http://www.mysite/index.html"&gt;</b></samp>
+</div>
+<p>���� ������ � ������� ������ �� �������� ������ URL ������ ������ ����� �� ����� ���� � �� ������� ���� �������� ������� �� ������ ����:</p>
+<div class="primer">
+<samp>&lt;html&gt;</samp><br> 
+<samp class="x">&lt;head&gt;</samp><br> 
+<samp class="xx">&lt;meta http-equiv="Content-Type" Content="text/html; Charset=Windows-1251"&gt;</samp><br>
+<samp class="xx"><b>&lt;meta http-equiv="Refresh" content="10; URL=http://www.mysite/index.html"&gt;</b></samp><br>
+<samp class="xx">&lt;title&gt;�������������&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;font size="+1"&gt;</samp><br>
+<samp class="xxx">������ ����� ���� ������, ����� 10 ������ ��� ������� ���� ����������� ��������������� �� ����� �������:&lt;br&gt;</samp><br>
+<samp class="xxx">&lt;a href="http://www.mysite.ru/index.html"&gt;&lt;b&gt;http://www.mysite.ru/&lt;/b&gt;&lt;/a&gt;&lt;br&gt;</samp><br> 
+<samp class="xxx">��������� &lt;a href="http://www.mysite.ru/index.html"&gt;�����&lt;/a&gt; ��� ���� ��� �������� ������� �������.&lt;br&gt;</samp><br>
+<samp class="xxx">��������� ��������� �� ���������� ����������.</samp><br>
+<samp class="xx">&lt;/font&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer58.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div> 
+<p>��������� � �������� ����� � ��������:</p>
+
+<samp><b>&lt;meta http-equiv="Refresh" content="10; URL=http://www.mysite/index.html"&gt;</b></samp><br><br>
+
+<samp><b>meta http-equiv="Refresh"</b></samp> - Refresh (³���������) ����� �������� �� ���� ������� ��������� �������<br> 
+<samp><b>content="10;</b></samp> - ������� ����� ������ ������� ������ (� ������ ������� ������)<br>
+<samp><b>URL=http://www.mysite/index.html"</b></samp>- ������ ���� / ���� ������� �� ��� ��� �������.
+
+<p>�������:</p>
+<div class="primer">
+<samp><b>&lt;meta http-equiv="Refresh" content="30"&gt;</b></samp>
+</div>
+<p>� ��� ���� � ��������� <samp><b>Refresh</b></samp> URL ������ ��������, �� �������� � �������, �� ��� ������� ���� ������� ����� ����� 30 ������ (�� ��� �� 30 .. ������ ��������� ����� ������ � ���� ..) ���������� ���� ���� �������.</p>
+<p>����� ����� ������ ��������������� � �������� �������, �� ���������� ��� ��� �� ������ ������� � ������ ��������� ���������.</p>
+
+<h2>������ ��� ������� �� ���������</h2>
+
+<p>�������:</p>
+<div class="primer">
+<samp><b>&lt;meta http-equiv ="Page-Enter" Content="RevealTrans(Duration=1.0, Transition=0)"&gt;</b></samp><br>
+<samp><b>&lt;meta http-equiv ="Page- Exit " Content="RevealTrans(Duration=3.0, Transition=23)"&gt;</b></samp>
+</div>
+<p>���� ��������� ��������� �������� ������ ��� ������� � ������ ������� �� ����.</p>
+<ul>
+<li><samp><b>Page-Enter</b></samp> - ����� ����� �������
+<li><samp><b>Page- Exit</b></samp> - ����� ��������� �������
+</ul>
+<p>� ����:</p>
+<ul>
+<li><samp><b>Duration</b></samp> - ��� 䳿 ������ � ��������
+<li><samp><b>Transition</b></samp> - ���� � ������ ������������ ������ (�� 0 �� 23) ������������� � �������:
+</ul>
+<table width="100%"  bgcolor="#e8e8e8" cellspacing="2" cellpadding="5" border="0" align="center">
+  <tr>
+    <th>�����</th><th>���� ������</th><th>�����</th><th>���� ������</th>
+  </tr>
+  <tr class="trc">
+    <td>0</td><td>������������ ���������</td><td>12</td><td>����������</td>
+  </tr>
+  <tr class="trn">
+    <td>1</td><td>������������ �������</td><td>13</td><td>����������� �������� ���������</td>
+  </tr>
+  <tr class="trc">
+    <td>2</td><td>���� ���������</td><td>14</td><td>����������� �������� �������</td>
+  </tr>
+  <tr class="trn">
+    <td>3</td><td>���� �������</td><td>15</td><td>������������� �������� ���������</td>
+  </tr>
+  <tr class="trc">
+    <td>4</td><td>������ ������</td><td>16</td><td>������������� �������� �������</td>
+  </tr>
+  <tr class="trn">
+    <td>5</td><td>������ ����</td><td>17</td><td>������� ���� - ����</td>
+  </tr>
+  <tr class="trc">
+    <td>6</td><td>������ ������</td><td>18</td><td>������� ���� - �����</td>
+  </tr>
+  <tr class="trn">
+    <td>7</td><td>������ ����</td><td>19</td><td>������� ������ - ����</td>
+  </tr>
+  <tr class="trc">
+    <td>8</td><td>����������� �����</td><td>20</td><td>������� ������ - �����</td>
+  </tr>
+  <tr class="trn">
+    <td>9</td><td>������������� �����</td><td>21</td><td>�������� ������������� �����</td>
+  </tr>
+  <tr class="trc">
+    <td>10</td><td>����� �������������</td><td>22</td><td>�������� ����������� �����</td>
+  </tr>
+  <tr class="trn">
+    <td>11</td><td>����� �����������</td><td>23</td><td>���������� ���� ������</td>
+  </tr>
+</table>
+
+<p>�������:</p>
+<div class="primer">
+���� page1.html<br><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;meta http-equiv=&quot;Content-Type&quot; Content=&quot;text/html; Charset=Windows-1251&quot;&gt;</samp><br>
+<samp class="xx"><b>&lt;meta http-equiv =&quot;Page-Enter&quot; Content=&quot;RevealTrans(Duration=1.0, Transition=12)&quot;&gt;</b></samp><br>
+<samp class="xx">&lt;title&gt;������ �������� �������&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body bgcolor=&quot;#c5ffa0&quot;&gt;</samp><br>
+<samp class="xx">&lt;center&gt;</samp><br>
+<samp class="xxx">&lt;h2&gt;�� ������:&lt;/h2&gt;</samp><br>
+<samp class="xxx">&lt;font size=&quot;+1&quot;&gt;������ �������� � ������ ������� �� ���� �������� �� � ��� ���������.&lt;/font&gt;&lt;hr&gt;&lt;br&gt;</samp><br>
+<samp class="xxx">&lt;font size=&quot;+1&quot;&gt;��������� �� &quot;�������&quot; ��� ������� �� �������� �������&lt;br&gt;</samp><br>
+<samp class="xxx">� ������� ����� �������� �� ������ ������� �� ����.&lt;/font&gt;&lt;br&gt;&lt;br&gt;</samp><br>
+<samp class="xxx">&lt;a href=&quot;page2.html&quot;&gt;&lt;font size=&quot;+2&quot;&gt;&quot;�������&quot;&lt;/font&gt;&lt;/a&gt;</samp><br>
+<samp class="xx">&lt;/center&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<hr>
+���� page2.html<br><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;meta http-equiv=&quot;Content-Type&quot; Content=&quot;text/html; Charset=Windows-1251&quot;&gt;</samp><br>
+<samp class="xx"><b>&lt;meta http-equiv =&quot;Page-Enter&quot; Content=&quot;RevealTrans(Duration=2.0, Transition=23)&quot;&gt;</b></samp><br>
+<samp class="xx">&lt;title&gt;������ �������� �������&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body bgcolor=&quot;#c0e4ff&quot;&gt;</samp><br>
+<samp class="xx">&lt;center&gt;</samp><br>
+<samp class="xxx">&lt;h2&gt;�� ������:&lt;/h2&gt;</samp><br>
+<samp class="xxx">&lt;font size=&quot;+1&quot;&gt;������ �������� � �������� ���-������� ���� ����� ����� ��� ������� &lt;br&gt;</samp><br>
+<samp class="xxx">�� ������ ������� �� ���� ��� � �� ��������� ������ &quot;�����&quot; &quot;������&quot;. &lt;br&gt;</samp><br>
+<samp class="xxx">��� ������� ������� �������, � ����� �� ��� ����������������&lt;br&gt;</samp><br>
+<samp class="xxx">������� �������� ����� �� �����.&lt;/font&gt;&lt;hr&gt;&lt;br&gt;</samp><br>
+<samp class="xxx">&lt;font size=&quot;+1&quot;&gt;��������� �� &quot;�������&quot; ��� ������� �� �������� �������&lt;br&gt;</samp><br>
+<samp class="xxx">� ������� ����� �������� �� ������ ������� �� ����.&lt;/font&gt;&lt;br&gt;&lt;br&gt;</samp><br>
+<samp class="xxx">&lt;a href=&quot;page1.html&quot;&gt;&lt;font size=&quot;+2&quot;&gt;&quot;�������&quot;&lt;/font&gt;&lt;/a&gt;</samp><br>
+<samp class="xx">&lt;/center&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>   
+<div align="right"><a href="primer/primer59.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+
+<h2>������� ������:</h2>
+<ul>
+<li><p>�� ��� ������� ��� �� �� ���� ���� ����� ������������� ���� � �������� �������� �� ��������� ������ ��� ������ � ��������� �������, ������ ���� ���� ����� ���� ���� ��������.. </p>
+<li><p>��������� <samp><b>Refresh</b></samp> (������������ ������� �� ���� �������) ����� ��������������� �� ����� ���������� .. ���� ������ �������������� ���� ��� ��������� ����� ���� "�����������" ����� ���, �� ��������� ������� � � ����� �����������. ����� �������� ������ �� ����� ���� � ��� ���� "������ �� ������ ����� � ����������� .." :) � ��� ��� �� ��� ���� ��������, �������, ������ .. � ������� ������� �������� �� ���������� ���� ���� "� ��� ����" ��� � ���� ���������� �� �����. ҳ���� ������ ���'������ ��� ������ ������� ���-�������: ������� �� �����������!</p>
+</ul>
+
+
+<div class="url">
+<a href="test3.html" title="�� �����">&lt;&lt; ����</a> | 
+<a href="glava9h.html" title="�� ���������� ������">�������� ����� &gt;&gt;</a>
+</div>
+</div>
+</body>
+</html>

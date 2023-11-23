@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<Title> ϳ������� HTML/CSS ��� ����������. </Title>
+<link rel="stylesheet" href="../style.css" type="text/css"></script>
+</head>
+<body>
+<div class="header">
+<H1 class = "logo"> ϳ������� HTML/CSS </h1>
+</div>
+<div class="left">
+<div class="fixed">
+<script type="text/javascript"> 
+function shiftSubDiv(n)
+{
+  var el = document.getElementById('subDiv'+n);
+ 
+  if ( el.style.display == 'none' )
+    el.style.display = 'block'
+  else
+    if ( el.style.display == 'block' )
+    el.style.display = 'none';
+};
+</script>
+<a href="index.html" class="menu" title="От автора.">Главная</a>
+<div class="navHeader" id="navHeader1" onClick="shiftSubDiv(1)">HTML</div> 
+<ul class="ul_none" id="subDiv1" style="display:block">
+<li><a href="glava h.html" class="activemenu" title="Вступ.">Вступ</a></li>
+<li><a href="glava 1h.html" class="menu" >Что такое HTML язык</a>  </li>
+<li><a href="glava 2h.html" class="menu" >Редактируем текст</a></li>
+<li><a href="glava 4h.html" class="menu" >Таблица</a></li>
+<li><a href="glava 5h.html" class="menu" >Ссылка</a></li>
+<li><a href="glava 6h.html" class="menu" >И ещё ...</a></li>
+<li><a href="glava 7h.html" class="menu" >Списки</a></li>
+<li><a href="glava 8h.html" class="menu" >Meta теги</a></li>
+<li><a href="glava 9h.html" class="menu" >Заглавный текс </a></li>
+<li><a href="glava 10h.html" class="menu" >И снова таблица ..</a></li>
+<li><a href="glava 11h.html" class="menu" >Фоновая музыка</a></li>
+<li><a href="glava 12h.html" class="menu" >Текст - логика и физика</a></li>
+<li><a href="glava 13h.html" class="menu" >Формы</a></li>
+<li><a href="glava 14h.html" class="menu" >Випадающее меню</a></li>
+</ul>
+<div class="navHeader" id="navHeader2" onClick="shiftSubDiv(2)">CSS</div> 
+<ul class="ul_none" id="subDiv2" style="display:none">
+<li><a href="glava1.html" class="menu" title="Глава 1   Начало CSS.">Начало CSS.</a></li>
+<li><a href="glava2.html" class="menu" title="Глава 2   Властивості тексту.">Возможности текста.</a></li>
+<li><a href="glava3.html" class="menu" title="Глава 3   Властивості шрифту.">Возможности шрифта.</a></li>
+<li><a href="glava4.html" class="menu" title="Глава 4   Колір і фон.">Цвет и фон.</a></li>
+<li><a href="glava5.html" class="menu" title="Глава 5   Межі елемента.">Грань элемента.</a></li>
+<li><a href="glava6.html" class="menu" title="Глава 6   Класи і id селектори.">Класы и id селекторы.</a></li>
+<li><a href="glava7.html" class="menu" title="Глава 7   Розміри елемента.">Розмеры элемента.</a></li>
+<li><a href="glava8.html" class="menu" title="Глава 8   Поля і відступи.">Поля и отступы.</a></li>
+<li><a href="glava9.html" class="menu" title="Глава 9   Курсори.">Курсоры.</a></li>
+<li><a href="glava10.html" class="menu" title="Глава 10   Форматування.">Форматирование.</a></li>
+<li><a href="glava11.html" class="menu" title="Глава 11   Поплавці.">Поплавки.</a></li>
+<li><a href="glava12.html" class="menu" title="Глава 12   Позиціонування.">Позицыонирование.</a></li>
+<li><a href="glava13.html" class="menu" title="Глава 13   Стиль списку.">Стиль списка.</a></li>
+<li><a href="glava14.html" class="menu" title="Глава 14   Полоса прокрутки.">Полоса прокрутки.</a></li>
+<li><a href="glava15.html" class="menu" title="Глава 15   Псевдокласи.">Псевдокласы.</a></li>
+<li><a href="glava16.html" class="menu" title="Глава 16   Псевдоелементи.">Псевдоэлементи.</a></li>
+</ul>
+</div>
+</div>
+<div class="center">
+
+<p class="zag">����� 9</p>
+<h1>��������� &lt;!DOCTYPE&gt;</h1>
+
+<p>��������� � ���� ����������� ��� � ��� �� ������ .. ������ �� ��� ��������� <samp><b>&lt;!DOCTYPE&gt;</b></samp> ������� ���� �������� �� ������ ������� ������ ��������� .. �� �� ������ �� � ���� ��� ���������..</p>
+<p>���� ������� ������������� ���������, ����� ����� �� � �������� ���� ���� � ��� � ��� ��������� .. �'��������� ��� ����� - ���� ��������� <samp><b>&lt;footer&gt;</b>, <b>&lt;header&gt;</b>, <b>&lt;video&gt;</b></samp>.., ���� ������� ��������, ���������� � ������������ � ������������, ��������� ����: <samp><b>&lt;center&gt;</b>, <b>&lt;font&gt;</b>, <b>&lt;frameset&gt;</b></samp>.., �� � ���� ���������� � ����������, ��������� ������� ����������..</p>
+<p>��� ��� ��� ���� �������� ���������:  <samp>Internet Explorer 6.0</samp>, <samp>Opera 8.0</samp>,<samp>Chrome 5.0</samp> ... �� ����������� �� ��� �������� - ���������� ���� ���������, �� ����������� � ������� ���� �������, ��������� ������� �������� �� ����� ����������� �� ��� ���������.</p>
+<p>����� ����� ��� ����� ����������.</p>
+<p>��������� ��������� HTML ���� (� �� ����� HTML), ����� ������������, ��������� ����������� <b>World Wide Web Consortium</b>, W3C - ���������� ��������� ��������, ��������� ����: <a href="http://www.w3.org/"  target="_blank">(www.w3.org)</a>. � ������ ���������� ���� ����������� �� ������ � ����������, �� ������ ������������ <b> ���:</b><a href="http://ru.wikipedia.org/wiki/����������_���������_�������"  target="_blank">(http://ru.wikipedia.org/wiki/����������_��������_������) </a>, ��� � �������� �������� ��� ��� ��, �� �� ����������� ��������� ����� ������������ HTML, �� �����, ������, �� � �������.</p>
+<p>��� �������� ������������:</p>
+<ul>
+<li><samp><b>HTML 3.2</b>- 14 ���� 1997 ����;</samp>  <a href="http://www.w3.org/TR/REC-html32"target="_blank">(http://www.w3.org/TR/REC-html32)</a>
+<li><samp><b>HTML 4.0 </b>- 18 ������ 1997 ����;</samp>  <a href="http://www.w3.org/TR/REC-html40-971218/" target="_blank">(http://www.w3.org/TR/REC-html40-971218)</a>
+<li><samp><b>HTML 4.01</b>  - 24 ������ 1999 ����;</samp> <a href="http://www.w3.org/TR/html401/" target="_blank">(http://www.w3.org/TR/html401)</a>
+<li><samp><b><i>HTML 5</i></b> - � ����������.</samp> 28 ������ 2014 <a href="http://www.w3.org/TR/html5/" target="_blank">(http://www.w3.org/TR/html5)</a>
+</ul>
+<p>���� ���� ����������� ������� ���������� �� ���-������� ��� ��������� �����, ��� � ���������� ��������. ֳ ��������� �������� ��� ���� ��� �� ������ �� � ������� ����� ��� ����������� ����, �� ��� ������ ������ �������� ������ ������ � ��������� ��������� ������� ���� ������ .. � ����� ������ ������� ����� ����, ��� ����� �� ��� ��� ��� ������, ��� �� ��� ����� ���� ������ .. ����������� �� <samp><b>&lt;!DOCTYPE&gt;</b></samp>.</p>
+<p>����, ��������� <samp><b>&lt;!DOCTYPE&gt;</b></samp> ����� �� ��� ���������  - <samp><b>DTD</b> (document type definition - ���� ���� ���������)</samp> ��� ��������� ���� ������������� ����������, ������ ������� �������� ���������, ����� ���� ���������� ��� ��������� �� �� ���� �������.</p>
+<p>����� ������������ ������� ������� <samp><b>&lt;!DOCTYPE&gt;</b></samp></p>
+
+<div class="primer">
+<samp><b>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</b></samp>
+</div>
+
+<p>- ������� DTD. �������������� ����� ���������, ���-������� ������� � ������� �������� ������������ HTML 4.01 �� ��������������� ���� � ��������, ��������� ������������� �� "��������", � ����� �� ������� ��������������� ������.</p>
+
+<div class="primer">
+<samp><b>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</b></samp>
+</div>
+
+<p>- ���������� ��������� HTML. ��� ������ ��������� ������������ "��������" ��� ��������� ���������, �������� ���� ������ ���� � ��������, ������� ������������� HTML 4.01 �� "��������". </p>
+
+<div class="primer">
+<samp><b>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"&gt;</b></samp>
+</div>
+
+<p>- �����, �� � HTML-�������� ���������������� ������. </p>
+
+<div class="primer">
+<samp><b>&lt;!DOCTYPE html&gt;</b></samp>
+</div>
+
+<p>- � ����� ��������� �������, �� ��������������� ������������ HTML 5.</p>
+
+<p>������� � ���� ������� ���������<samp><b>&lt;!DOCTYPE&gt;</b></samp>, ��������� ��� XHTML, ���� ������������ ������� ��� HTML.</p>
+<p>��������� <samp><b>&lt;!DOCTYPE&gt;</b></samp> �������� ������������� �� ������ ������� ��������� ����� ����� <samp><b>&lt;html&gt;</b></samp></p>
+<p>�� �������� �� �������:</p>
+<div class="primer">
+<samp><b>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</b></samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;&amp;lt;!DOCTYPE&amp;gt;&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;center&gt;</samp><br>
+<samp class="xxx">&lt;font face="arial" size="+2" color="#ff0000"&gt;</samp><br>
+<samp class="xxxx">����� �������� ������ ���� � �������� �������� ������������� HTML 4.01</samp><br>
+<samp class="xxx">&lt;/font&gt;</samp><br>
+<samp class="xxx">&lt;br&gt;&lt;br&gt;</samp><br>
+<samp class="xxx">&lt;font face="arial" size="+1" color="#0fff00"&gt;��� ���� ��� ��� �������� ������� �������� �� ��������� ��� ��������� ���������� ��������� &amp;lt;!DOCTYPE&amp;gt;&lt;/font&gt; </samp><br>
+<samp class="xx">&lt;/center&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer60.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<h2>������� ������:</h2>
+<ul>
+<li><p>������ �������������� ��������� <b>&lt;!DOCTYPE&gt;</b> ��� ��� ����� �������.</p>
+<li><p>�������� ���� ��� �� ��������� - "������������ ���������" �� ��������� ����������� ������. ��������� <b>���:</b> <a href="http://validator.w3.org/" target="_blank">(http://validator.w3.org)</a></p>
+<li><p>������������ ������������� - ������������ HTML ��������� <b>&lt;!DOCTYPE&gt;</b> ���� �������� �� ��������� ����������, ������ ������ � �������� ��� ����� ��������� ���������. � ������� ������� ��� �������, �� �� �������������� ������ ����� ��������� ���������� <b>&lt;!DOCTYPE&gt;</b></p>
+</ul>
+
+
+<div class="url">
+<a href="glava8h.html" title="�� ������������ ������">&lt;&lt; ��������� �����</a> |  
+<a href="test4.html" title="�� �����">������ ���� &gt;&gt;</a>
+</div>
+</div>
+</body>
+</html>

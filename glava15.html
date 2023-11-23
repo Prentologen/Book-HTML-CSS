@@ -1,0 +1,377 @@
+		<!DOCTYPE HTML>
+		<html>
+		<head>
+		<title>ϳ������� HTML/CSS ��� ����������.</title>
+		<meta HTTP-EQUIV="Content-Type" Content="text/html; Charset=Windows-1251">
+		<link rel="stylesheet" href="../style.css" type="text/css"></script>
+		</head>
+		<body>   
+		<div class="header">
+		<h1 class="logo">ϳ������� HTML/CSS</h1>
+		</div>
+		<div class="left">
+
+<div class="fixed">
+<script type="text/javascript"> 
+function shiftSubDiv(n)
+{
+  var el = document.getElementById('subDiv'+n);
+ 
+  if ( el.style.display == 'none' )
+    el.style.display = 'block'
+  else
+    if ( el.style.display == 'block' )
+    el.style.display = 'none';
+};
+</script>
+<a href="index.html" class="menu" title="От автора.">Главная</a>
+<div class="navHeader" id="navHeader1" onClick="shiftSubDiv(1)">HTML</div> 
+<ul class="ul_none" id="subDiv1" style="display:block">
+<li><a href="glava h.html" class="activemenu" title="Вступ.">Вступ</a></li>
+<li><a href="glava 1h.html" class="menu" >Что такое HTML язык</a>  </li>
+<li><a href="glava 2h.html" class="menu" >Редактируем текст</a></li>
+<li><a href="glava 4h.html" class="menu" >Таблица</a></li>
+<li><a href="glava 5h.html" class="menu" >Ссылка</a></li>
+<li><a href="glava 6h.html" class="menu" >И ещё ...</a></li>
+<li><a href="glava 7h.html" class="menu" >Списки</a></li>
+<li><a href="glava 8h.html" class="menu" >Meta теги</a></li>
+<li><a href="glava 9h.html" class="menu" >Заглавный текс </a></li>
+<li><a href="glava 10h.html" class="menu" >И снова таблица ..</a></li>
+<li><a href="glava 11h.html" class="menu" >Фоновая музыка</a></li>
+<li><a href="glava 12h.html" class="menu" >Текст - логика и физика</a></li>
+<li><a href="glava 13h.html" class="menu" >Формы</a></li>
+<li><a href="glava 14h.html" class="menu" >Випадающее меню</a></li>
+</ul>
+<div class="navHeader" id="navHeader2" onClick="shiftSubDiv(2)">CSS</div> 
+<ul class="ul_none" id="subDiv2" style="display:none">
+<li><a href="glava1.html" class="menu" title="Глава 1   Начало CSS.">Начало CSS.</a></li>
+<li><a href="glava2.html" class="menu" title="Глава 2   Властивості тексту.">Возможности текста.</a></li>
+<li><a href="glava3.html" class="menu" title="Глава 3   Властивості шрифту.">Возможности шрифта.</a></li>
+<li><a href="glava4.html" class="menu" title="Глава 4   Колір і фон.">Цвет и фон.</a></li>
+<li><a href="glava5.html" class="menu" title="Глава 5   Межі елемента.">Грань элемента.</a></li>
+<li><a href="glava6.html" class="menu" title="Глава 6   Класи і id селектори.">Класы и id селекторы.</a></li>
+<li><a href="glava7.html" class="menu" title="Глава 7   Розміри елемента.">Розмеры элемента.</a></li>
+<li><a href="glava8.html" class="menu" title="Глава 8   Поля і відступи.">Поля и отступы.</a></li>
+<li><a href="glava9.html" class="menu" title="Глава 9   Курсори.">Курсоры.</a></li>
+<li><a href="glava10.html" class="menu" title="Глава 10   Форматування.">Форматирование.</a></li>
+<li><a href="glava11.html" class="menu" title="Глава 11   Поплавці.">Поплавки.</a></li>
+<li><a href="glava12.html" class="menu" title="Глава 12   Позиціонування.">Позицыонирование.</a></li>
+<li><a href="glava13.html" class="menu" title="Глава 13   Стиль списку.">Стиль списка.</a></li>
+<li><a href="glava14.html" class="menu" title="Глава 14   Полоса прокрутки.">Полоса прокрутки.</a></li>
+<li><a href="glava15.html" class="menu" title="Глава 15   Псевдокласи.">Псевдокласы.</a></li>
+<li><a href="glava16.html" class="menu" title="Глава 16   Псевдоелементи.">Псевдоэлементи.</a></li>
+</ul>
+</div>
+</div>
+
+<div class="center">
+   
+<p class="zag">����� 15</p>
+
+<h1>�����������.</h1>
+
+<p>����������� - �� ������� ����������, �� ���������� �������� ����� �������� � ��������� �� �� �����������, � ��� ���� ��������� ����� �������� (����) � ���������� ������ ���������, �� �������� ��������� ������ ������� ����� �������� � ������. ��������� ��������� ������������ ����������� � ���������, ��� ����� ��� ���� ��� ��������� �� �� ��������.</p>
+<p>��� ������ ��� �����������:</p>
+<ul>
+<li><b>hover</b> - ����� �������� �� ���� ��������� ������ ����.
+<li><b>active</b> - ����� ��� ��������� ��� ��� ��������, ��� ������� �� ��� �� �� ����������.
+<li><b>visited</b> - ����� ��� ������� �������� ���������.
+<li><b>link</b> - ����� ��� ������� ���������� ���������.
+<li><b>focus</b> - ����� �������� ����������� � �����.
+<li><b>first-child</b> - ����� ������� ���������� ��������.
+<li><b>lang</b> - ������� ����, �� ��������������� � �������� ���������.
+</ul>
+<p>��� ������� ����������� �� ������ ���������� �����, � ����� ���� ��� ��� ���������.</p>
+<p>���� ���� ��� ����������� ��� �� ����� ���������� �� �������� � ��������� ���� ����� ������� ������������� ��������� ������ ����������: </p>
+<samp class="x"><b>a:hover { color:#ff0000</b>}</samp><br><br>
+<samp class="x">��:</samp><br><br>
+<samp class="x"><b>a</b> - ������� (��������), � ������� ��� �� ����� �� ������� ����������� ���������� � ������ ������� �� ���������.</samp><br>
+<samp class="x"><b>:hover</b> - ���� ��������� ������ �������� ��� ����������.</samp><br>
+<samp class="x"><b>{color:#ff0000}</b> - �� � ���� ���������� ����� � �������� ������.</samp>
+<p>� ���� ��� ����� ����� ���� �������� ��� ��, �� ���� ������� �������� �� ���� ��������� - �� ���� ����������.</p>
+<p>��� ������ �� ������ �� �������, ����������������, ����������� <b>hover</b>.</p>
+
+<h2>����������  hover.</h2>
+
+<p>�� �� ���, �������, �����������, ����������  <b>hover</b> ����������� � ���� �������, ���� �� ������� ������� ������ ����..</p>
+<p>�� � ���� ��� ����������� ������ ������ �������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;����������� &lt;/title&gt;</samp><br>
+<samp class="xx">&lt;style type="text/css"&gt;</samp><br>
+<samp class="xxx">.menu {</samp><br>
+<samp class="xxxx">display: block;</samp><br>
+<samp class="xxxx">width: 180px; </samp><br>
+<samp class="xxxx">background-color:#fff8dc;</samp><br>
+<samp class="xxxx">color:#008; </samp><br>
+<samp class="xxxx">font-size: 16px; </samp><br>
+<samp class="xxxx">text-decoration: none;</samp><br>
+<samp class="xxxx">padding: 3px;</samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xxx"><b>.menu:hover</b> {</samp><br>
+<samp class="xxxx">display: block;</samp><br>
+<samp class="xxxx">width: 180px; </samp><br>
+<samp class="xxxx">background-color:#b8860b;</samp><br>
+<samp class="xxxx">color:#fff;</samp><br>
+<samp class="xxxx">padding: 3px;</samp><br>
+<samp class="xxxx">font-size: 16px;</samp><br>
+<samp class="xxxx">text-decoration: none;</samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xxx"><b>tr:hover</b> {</samp><br>
+<samp class="xxxx">background-color:#b8860b;</samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xx">&lt;/style&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;p&gt;���  �� ���� �������� �� �����? &lt;/p&gt;</samp><br>
+<samp class="xx">&lt;a href="#" class="menu"&gt;������� &lt;/a&gt;</samp><br>
+<samp class="xx">&lt;a href="#" class="menu"&gt;����� ����� &lt;/a&gt;</samp><br>
+<samp class="xx">&lt;a href="#" class="menu"&gt;������  �����&lt;/a&gt;</samp><br>
+<samp class="xx">&lt;a href="#" class="menu"&gt;�������  �����&lt;/a&gt;</samp><br>
+<samp class="xx">&lt;a href="#" class="menu"&gt;����� ����� �� ������ &lt;/a&gt;</samp><br>
+<samp class="xx">&lt;hr&gt;</samp><br>
+<samp class="xx">&lt;p&gt;� ��� �� ���� ��������� ���� .. ����� � ������� ����������� ��� ��������� �� ��� ��������.&lt;/p&gt;</samp><br>
+<samp class="xx">&lt;table border="1" bordercolor="#ccc" width="600" cellpadding="1" cellspacing="0"&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;������&lt;/td&gt;&lt;td&gt;+&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;+&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;������&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;+&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;+&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�������&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;+&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;+&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xx">&lt;/table&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer65.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+<p>ʳ���� ��� ��������� ���� ..</p>
+
+<p>�� �� ������� ������� �� �������� ����������� ���� ��������� �� ����� ����-���� ������� - ���, ��� �  <a href="glava6.html">����</a> ��� <a href="glava6.html" >�������������</a>. ��� � ������� �� ����� <samp><b>.menu</b></samp> ������������ ����������  <samp><b>hover</b></samp> � ��������� ������ ������ �������:</p>
+<samp class="x"><b>.menu:hover { color:#ff0000;}</b></samp><br>
+<p>�� �� ����������� � ��������㳿?</p>
+<p>�������� ������� �� ������� �������� �� ������ ����������� �������� ����� � ��������� �� ����������� � ������������ ����� (�������� � ����� <samp><b>.menu</b></samp> ), � ����� ����� �� �!</p>
+<p>����������  <samp><b>hover</b></samp> ���� ���� ������������ �� ����-����� ��������, ���������� �� �����, ��� � ������ �������, ��� ���� ��� ������������ ����������� ����� ������� �� ����������� ���� �� ����<samp><b>&lt;tr&gt;</b></samp>. ����� ��� ���������, �� ������� Internet Explorer 6 � ���� ���� ����� ���� ������� ����������  <samp><b>hover</b></samp> ���� ��� �������� - ��� <samp><b>&lt;a&gt;</b></samp>, ��� ��, ���������, ����� �������, ��� ��������� �� ��� �������, � ��������� IE6 � ����� ������������ �� ������!</p>
+
+<h2>����������� � ���������.</h2>
+
+<p>���������� ������ ��� ����������� ��������� ��� ������ � �����������.</p>
+<ul>
+<li><b>active</b> - ����� ��������� ���������.
+<li><b>visited</b> - ����� ��� ������� �������� ���������.
+<li><b>link</b> - ����� ��� ������� ���������� ���������.
+</ul>
+<p>�������� ������ �������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;����������� � ��������� &lt;/title&gt;</samp><br>
+<samp class="xx">&lt;style type="text/css"&gt;</samp><br>
+<samp class="xxx">a:<b>link</b> {color:#0000ff}</samp><br>
+<samp class="xxx">a:<b>active</b> {color:#ff0000}</samp><br>
+<samp class="xxx">a:<b>visited</b> {color:#008000}</samp><br>
+<samp class="xx">&lt;/style&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt; </samp><br>
+<samp class="xx">&lt;a href="#1"&gt;��������� �� ������ ��� &lt;/a&gt;</samp><br>
+<samp class="xx">&lt;a href="#2"&gt;��������� �� ������ ��� &lt;/a&gt;</samp><br>
+<samp class="xx">&lt;a href="#3"&gt;��������� �� ����� ��� &lt;/a&gt;</samp><br>
+<samp class="xx">&lt;hr&gt;</samp><br>
+<samp class="xx">&lt;a name="1"&gt;&lt;h4&gt;������ ��� &lt;/h4&gt;&lt;/a&gt;</samp><br>
+<samp class="xx">&lt;p&gt;���������� link, � ����� �������, �����, �� �� �� ������� ��������� ������� ������������ ����� ��������&lt;/p&gt; </samp><br>
+<samp class="xx">&lt;a name="2"&gt;&lt;h4&gt;������ ��� &lt;/h4&gt;&lt;/a&gt;</samp><br>
+<samp class="xx">&lt;p&gt;��������� ������ � ���������� �� ���� � �� ���������� ��������, ��� �������� ������ ����������� active.&lt;/p&gt;</samp><br>
+<samp class="xx">&lt;a name="3"&gt;&lt;h4&gt;����� ��� &lt;/h4&gt;&lt;/a&gt;</samp><br>
+<samp class="xx">&lt;p&gt;visited - ���������� ����, � ����� �������, �������� ��� ��, �� �� ������� ��������� ������� ������������ ������� ��������.&lt;/p&gt; </samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer66.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+<p>����� ������� ���� ��������.
+
+</p>
+<p>����������  <samp><b>active</b></samp> ���������� ���������� ������ ����� � ��� ������ ���� �� ��������� �������, ����� � ��� ������ ���� ���������� �������� �� ���������, ��� �� �� �������� ������ ����.  �������  <b>active</b> - �� ����� ��������� � ������ ���� �� ���.</p>
+<p>�������� ������ ��� ���'������, �� �� ��������� �������� ���������� �������� �����, ��� ���, ����������  <samp><b>visited</b></samp> ����� ����� ��������� ��� ������� ����������� ������������.</p>
+<p>���������� <samp><b>link</b></samp> ����� ����� ���������, ��� �� ������ �� ����������� ������������. ����� ���������, �� ����� ������� ������ �� �������  <samp><b>a {...}</b></samp> � <samp><b>a:link {...}</b></samp> ����, ��� �� ������������ ������ ����������� � ����� ������� ����� ������ �� �����.</p>
+<p>�� ��� ������������� ���� ����������� ���������� ��� ������ � �����������, ����� ����������  <samp><b>active</b></samp> ���� ���� ������������ �� ����-����� �������� - ��������� ���� �����, ��� �������� Internet Explorer 6 � �����.</p>
+
+<h2>����������  focus.</h2>
+
+<p>����� ���������� ������� ����� ��������, ���� ��� �������� � �����. ����� ������ ��� ��, �� ���� �����? .. �� � ������� � ������� � ���糺�, ����� ����� � CSS ���������, �� ������ ��'���, � ������� �������, ����������� � ����� ����� ����������� - �����������. ������ ���������� ������ ���� ����  <b><samp>&lt;a&gt; &lt;input&gt; &lt;select&gt;</samp></b> � <b><samp>&lt;textarea&gt;</samp></b>.</p>
+<p>��������� �� �������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;����������  focus&lt;/title&gt;</samp><br>
+<samp class="xx">&lt;style type="text/css"&gt;</samp><br>
+<samp class="xxx">input:<b>focus</b> {color: red}</samp><br>
+<samp class="xx">&lt;/style&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;form&gt;</samp><br>
+<samp class="xxx">&lt;input type="text" value="������ ����� � �� �����" size="30"&gt;</samp><br>
+<samp class="xx">&lt;/form&gt;</samp><br>
+<samp class="xx">&lt;p&gt;�����? � ����� �������� �� ���������� ���� �� ������ ��� ����� �������� �����.&lt;/p&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer67.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+<p>� ������� ����� � ���������� ���  <b><samp>&lt;input&gt;</samp></b> �������� ������, ��� �� ����� ������� ������ ����� - ����� ��� ���� ���������� ������ �� ������ ���� � ����� �������� �����, �� ����������� ��������.</p>
+<p>��� � ���� �����-����� ..</p>
+
+<h2>����������  first-child.</h2>
+
+<p>�����, � ��� �������� CSS �� ��� ��������, �� �� �������� ����� ��������� �� ��������� ��� ������� � �� ������� ������ ���� ������ � ��� ����� �������� ��������, �� ���������:</p>
+
+<samp class="x"><b>&lt;div&gt;</b><i>- ���� ������</i></samp><br>
+<samp class="xx"><b>&lt;p&gt;&lt;/p&gt;</b><i> - ������ �������� �������</i></samp><br>
+<samp class="xx"><b>&lt;p&gt;&lt;/p&gt;</b><i> - ������ �������� �������</i></samp><br>
+<samp class="x"><b>&lt;/div&gt;</b></samp>
+
+<p>��� ��� ����������  <samp><b>first-child</b></samp> ��������� ����� ������� ���������� �������� ���� ����������� � ������������ ���������.</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;����������  first-child&lt;/title&gt;</samp><br>
+<samp class="xx">&lt;style type="text/css"&gt;</samp><br>
+<samp class="xxx">div {</samp><br>
+<samp class="xxxx">margin: 20px;</samp><br>
+<samp class="xxxx">padding: 30px;</samp><br>
+<samp class="xxxx">background-color: #c0e4ff;</samp><br>
+<samp class="xxxx">border: 2px solid #008000</samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xxx">p {</samp><br>
+<samp class="xxxx">color: #555;</samp><br>
+<samp class="xxxx">background-color: #dcdcdc;</samp><br>
+<samp class="xxxx">border: 2px solid #555</samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xxx">p<b>:first-child</b> {</samp><br>
+<samp class="xxxx">color: #f00;</samp><br>
+<samp class="xxxx">background-color: #c5ffa0;</samp><br>
+<samp class="xxxx">border: 2px solid #008000</samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xx">&lt;/style&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;div&gt;</samp><br>
+<samp class="xxx">&lt;p&gt;������ �������� �������� - �� �������� ���������� first-child&lt;/p&gt; </samp><br>
+<samp class="xxx">&lt;p&gt;������ �������� �������� &lt;/p&gt;</samp><br>
+<samp class="xxx">&lt;p&gt;����� �������� �������� &lt;/p&gt;</samp><br>
+<samp class="xx">&lt;/div&gt; </samp><br>
+<samp class="xx">&lt;div&gt;</samp><br>
+<samp class="xxx">&lt;p&gt;� ��� ������ �������� �������� ������� ���� ���� ������ ��� ����� &lt;/p&gt; </samp><br>
+<samp class="xxx">&lt;p&gt;������ �������� �������� &lt;/p&gt;</samp><br>
+<samp class="xx">&lt;/div&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer68.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>�������� ����� �� ��� ����, �� ���� � ����� ������ ����� ��������� ����������� ����� ����-���� ����� ���, ��������� <samp><b>&lt;h1&gt;</b></samp> ���������, �� ����������  <samp><b>first-child</b></samp> ��� �� ��� �� �� ������� ��������� .. ��� �� ��� �������� �� �� � ������, ��� ������� � ����� ������ ��� ������.</p>
+<p>������������ ����� ���������� � ��� ��������, ���� ������� ������ ����� ����� ��� ������� � ��������� ��������, ��������� ������� "�������" - ���� ����� �� ������� ��������� ��� ��������� ������ ����� ������ �� ��� �������� �����, ������� ������ ����� � ������� ... � �. �.</p>
+
+<h2>���� ������.</h2>
+
+<p>����������  <samp><b>lang</b></samp> ������� ���� ������ ���� �� ������ �������� ��� ��������� � ������.</p>
+<p>���� �� ���'����� � ����� HTML, ���� ��������� ���������� ��������:  <samp><b>charset</b></samp> - <strong>��������� ��������� </strong> � <samp><b>content</b></samp> - <strong>���� ���������</strong> ��� ���� <samp><b>&lt;meta&gt;</b></samp>.</p>
+<div class="primer">
+<samp><b>&lt;meta http-equiv="Content-Type" Content="text/html; Charset=Windows-1251"&gt;</b></samp><br>
+<samp><b>&lt;meta http-equiv="Content-Language" Content="ru"&gt;</b></samp>
+</div>
+<p>
+��� ��� ��� ���� ��� ��������� ���� ������ ������� ���������� ����� �������������� ���������� 
+<samp><b>lang()</b></samp> - � ������� ������ ����� ������ � ��������� ����.</p>
+<p>���� ���� ����:</p>
+<ul>
+<li><samp><b>ua</b> - ����������</samp>
+<li><samp><b>en</b> - ����������</samp>
+<li><samp><b>de</b> - ͳ�������</samp>
+<li><samp><b>fr</b> - �����������</samp>
+<li><samp><b>it</b> - ����������</samp> 
+</ul>
+<p>��� ����� �������� ���:</p>
+<samp class="x"><b>span:lang(en) {font-style: italic}</b></samp><br>
+<p>- ��� �� �������, �� ����� ������ � ��������� <samp><b>&lt;span&gt;</b></samp> ��������� � �� �� ������� ������������ ��������.</p>
+
+<p>�������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;����������  lang&lt;/title&gt;</samp><br>
+<samp class="xx">&lt;meta http-equiv="Content-Type" Content="text/html; Charset=Windows-1251"&gt;</samp><br>
+<samp class="xx">&lt;meta http-equiv="Content-Language" Content="ru"&gt;</samp><br>
+<samp class="xx">&lt;style type="text/css"&gt;</samp><br>
+<samp class="xxx">p:<b>lang(ua)</b> {color: #00f;} </samp><br>
+<samp class="xxx">p:<b>lang(en</b>) {color: #f00;} </samp><br>
+<samp class="xx">&lt;/style&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;p <b>lang="ua"</b>&gt;���������� ����� �������� ����� &lt;/p&gt;</samp><br>
+<samp class="xx">&lt;p <b>lang="en"</b>&gt;English text is chosen red&lt;/p&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp><br>
+<div align="right"><a href="primer/primer69.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>�������� �����, �� � ���, � ������ ������� ���������, �� ������� �� ��������� <samp><b>lang</b></samp> ���������������� ���� � ���� �����: <samp><b>&lt;p lang="en"&gt;�����&lt;/p&gt;</b></samp> ���������� � ����� CSS.</p>
+<p>��� ���� ���������� <samp><b>lang</b></samp> �������� ��������� ��� ����� ��� ����� (��� <samp><b>&lt;q&gt;</b></samp>) �� ��������� �������� <samp><b>quotes</b></samp> - �����. � ��� ������ ��������������� ������� �����, � ����� ������ ������ ����� ������.</p>
+<p>�������� ���:</p>
+<samp class="x"><b>q:lang(en) {quotes: "\201C" "\201D"}</b></samp>
+<p>� �������� ������ ���� ��������  <samp><b>quotes</b></samp> ��������� ������ ������� /�� ��� ������ ����� /� ��� ������� � ������� �����..</p>
+
+<p>�������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;����������  lang. ������.&lt;/title&gt;</samp><br>
+<samp class="xx">&lt;meta http-equiv="Content-Type" Content="text/html; Charset=Windows-1251"&gt;</samp><br>
+<samp class="xx">&lt;meta http-equiv="Content-Language" Content="ru"&gt;</samp><br>
+<samp class="xx">&lt;style type="text/css"&gt;</samp><br>
+<samp class="xxx">div {</samp><br>
+<samp class="xxxx">color:#000;</samp><br>
+<samp class="xxxx">font-size: 24px;</samp><br>
+<samp class="xxx">}</samp><br>
+<samp class="xxx"><b>q:lang(en) {quotes: "\201C" "\201D"}</b></samp><br>
+<samp class="xxx"><b>q:lang(de) {quotes: "\201E" "\201C"}</b></samp><br>
+<samp class="xxx"><b>q:lang(fr) {quotes: "\00AB" "\00BB"}</b></samp><br>
+<samp class="xxx"><b>q:lang(ua) {quotes: "�����.." "..�����"}</b></samp><br>
+<samp class="xx">&lt;/style&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;div&gt;</samp><br>
+<samp class="xxx">&lt;p&gt;�������� ����� �� ��� ����� ��� �����:&lt;p&gt;</samp><br>
+<samp class="xxx">&lt;q&gt;������ �� ������������� &lt;/q&gt;&lt;br&gt;</samp><br>
+<samp class="xxx">&lt;q <b>lang="fr"</b>&gt;����������  ������&lt;/q&gt;&lt;br&gt;</samp><br>
+<samp class="xxx">&lt;q <b>lang="de"</b>&gt;ͳ������  ������&lt;/q&gt;&lt;br&gt;</samp><br>
+<samp class="xxx">&lt;q <b>lang="en"</b>&gt;���������  ������&lt;/q&gt;&lt;br&gt;</samp><br>
+<samp class="xxx">&lt;q <b>lang="ua"</b>&gt;���������  ������&lt;/q&gt;&lt;br&gt;</samp><br>
+<samp class="xx">&lt;/div&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer70.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<h2>������� ������:</h2>
+
+<ul>
+<li><p>����������� �� ����� ������������� � HTML �������� �� ��������� ��������  <samp><b>style</b></samp>. ����� ����� �� ��������� ����  <samp><b>&lt;style&gt;</b></samp> � ����� ��������� ��� ����������� CSS �����.</p>
+<li><p>���� ��������, ������� �����������, ���� �� ���������, � �������� ��� ���, ���������:</p>
+<samp class="x"><b>:hover {color: #ff0}</b></samp> 
+<p>- �� �� ���� ��������, �� �� ������ ����������� ���� ������������ �� �� �������� ���������.</p>
+<li><p>������� IE6 � ����� ������ ��������� �� �����������.</p> 
+</ul>
+<div class="url">
+<a href="test5.html" title="�� �����">&lt;&lt; ����</a> | 
+<a href="glava16.html" title="�� �������� �����">�������� ����� &gt;&gt;</a>
+</div>
+</div>
+</body>
+</html>

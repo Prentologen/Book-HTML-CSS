@@ -1,0 +1,649 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<Title> ϳ������� HTML/CSS ��� ����������. </Title>
+<link rel="stylesheet" href="../style.css" type="text/css"></script>
+</head>
+<body>
+<div class="header">
+<H1 class = "logo"> ϳ������� HTML/CSS </h1>
+</div>
+<div class="left">
+<div class="fixed">
+<script type="text/javascript"> 
+function shiftSubDiv(n)
+{
+  var el = document.getElementById('subDiv'+n);
+ 
+  if ( el.style.display == 'none' )
+    el.style.display = 'block'
+  else
+    if ( el.style.display == 'block' )
+    el.style.display = 'none';
+};
+</script>
+<a href="index.html" class="menu" title="От автора.">Главная</a>
+<div class="navHeader" id="navHeader1" onClick="shiftSubDiv(1)">HTML</div> 
+<ul class="ul_none" id="subDiv1" style="display:block">
+<li><a href="glava h.html" class="activemenu" title="Вступ.">Вступ</a></li>
+<li><a href="glava 1h.html" class="menu" >Что такое HTML язык</a>  </li>
+<li><a href="glava 2h.html" class="menu" >Редактируем текст</a></li>
+<li><a href="glava 4h.html" class="menu" >Таблица</a></li>
+<li><a href="glava 5h.html" class="menu" >Ссылка</a></li>
+<li><a href="glava 6h.html" class="menu" >И ещё ...</a></li>
+<li><a href="glava 7h.html" class="menu" >Списки</a></li>
+<li><a href="glava 8h.html" class="menu" >Meta теги</a></li>
+<li><a href="glava 9h.html" class="menu" >Заглавный текс </a></li>
+<li><a href="glava 10h.html" class="menu" >И снова таблица ..</a></li>
+<li><a href="glava 11h.html" class="menu" >Фоновая музыка</a></li>
+<li><a href="glava 12h.html" class="menu" >Текст - логика и физика</a></li>
+<li><a href="glava 13h.html" class="menu" >Формы</a></li>
+<li><a href="glava 14h.html" class="menu" >Випадающее меню</a></li>
+</ul>
+<div class="navHeader" id="navHeader2" onClick="shiftSubDiv(2)">CSS</div> 
+<ul class="ul_none" id="subDiv2" style="display:none">
+<li><a href="glava1.html" class="menu" title="Глава 1   Начало CSS.">Начало CSS.</a></li>
+<li><a href="glava2.html" class="menu" title="Глава 2   Властивості тексту.">Возможности текста.</a></li>
+<li><a href="glava3.html" class="menu" title="Глава 3   Властивості шрифту.">Возможности шрифта.</a></li>
+<li><a href="glava4.html" class="menu" title="Глава 4   Колір і фон.">Цвет и фон.</a></li>
+<li><a href="glava5.html" class="menu" title="Глава 5   Межі елемента.">Грань элемента.</a></li>
+<li><a href="glava6.html" class="menu" title="Глава 6   Класи і id селектори.">Класы и id селекторы.</a></li>
+<li><a href="glava7.html" class="menu" title="Глава 7   Розміри елемента.">Розмеры элемента.</a></li>
+<li><a href="glava8.html" class="menu" title="Глава 8   Поля і відступи.">Поля и отступы.</a></li>
+<li><a href="glava9.html" class="menu" title="Глава 9   Курсори.">Курсоры.</a></li>
+<li><a href="glava10.html" class="menu" title="Глава 10   Форматування.">Форматирование.</a></li>
+<li><a href="glava11.html" class="menu" title="Глава 11   Поплавці.">Поплавки.</a></li>
+<li><a href="glava12.html" class="menu" title="Глава 12   Позиціонування.">Позицыонирование.</a></li>
+<li><a href="glava13.html" class="menu" title="Глава 13   Стиль списку.">Стиль списка.</a></li>
+<li><a href="glava14.html" class="menu" title="Глава 14   Полоса прокрутки.">Полоса прокрутки.</a></li>
+<li><a href="glava15.html" class="menu" title="Глава 15   Псевдокласи.">Псевдокласы.</a></li>
+<li><a href="glava16.html" class="menu" title="Глава 16   Псевдоелементи.">Псевдоэлементи.</a></li>
+</ul>
+</div>
+</div>
+<div class="center">
+
+<p class="zag">����� 10</p>
+<h1>� ����� ������� ..</h1>
+<p>���� ����� � ������������ 4 ����� <a href="glava4.html" >��� �������</a>, ������ � �� �� ���� � ������ ������. ��-�����, �������� ����� � ��� ���� ������ ������ � "������������" .. ��-�����, �� ����, �� � �� �� ��� ������ �������� � �������� ������� � ��� ������� ��������� �� ���� .. ��������, �� �� ������, �� ���������� ��������, ������, � ������� �������������! ���� �����, ���� � ��� �������� �������� �������� ��� HTML, �� ���������� � ���� ������� ��������, ������� ��� ������ �������� ����, ����� ���������� ����� �����, ���� � �������.   </p>
+<p>������, ����������� �� �������..</p>
+
+<p>�� "�������" ��� �������� ������ �������� ������� ��� ���� ��������� ����� �������:</p>
+
+<table border="1" width="400" cellpadding="3" cellspacing="0">
+ <tr>
+   <td>�������</td><td>�����</td><td>����</td><td>���������</td><td>����</td>
+ </tr>
+ <tr>
+   <td>������ ���</td><td>4,7</td><td>0,7</td><td>49,8</td><td>214</td>
+ </tr>
+ <tr>
+   <td>������</td><td>2,8</td><td>3,2</td><td>4,7</td><td>58</td>
+ </tr>
+ <tr>
+   <td>��������</td><td>2</td><td>0,1</td><td>19,7</td><td>83</td>
+ </tr>
+ <tr>
+   <td>�������</td><td>11,4</td><td>49,3</td><td>9</td><td>489</td>
+ </tr>
+ <tr>
+   <td>�����:</td><td>20,9</td><td>53,3</td><td>83,2</td><td>844</td>
+ </tr>
+</table>
+
+<p>�� �� �, ������� ��������� ��� ���..</p>
+<h2>��������� �������.</h2>
+
+<p>����-��� �������� ������� ���� ���� ��������� �� ���������. ��� ���� ��� ������� ������� ������� ���������� ������� ������ ��������� ���� <samp><b>&lt;td&gt;</b></samp> ��������������� ��� <samp><b>&lt;th&gt;</b></samp>.</p>
+<p>���������, ��� ���:</p>
+<samp class="x">&lt;table&gt;</samp><br>
+<samp class="xx">&lt;tr&gt;</samp><br>
+<samp class="xxx"><b>&lt;th&gt;�� ������ � ����������&lt;/th&gt;</b></samp><br> 
+<samp class="xx">&lt;/tr&gt;</samp><br>
+<samp class="x">&lt;/table&gt;</samp>
+
+<p>�� �������, ����� ������ ������ �� ��������� ������������ ���������� ������ ������� �� ������ ������.</p>
+<p>�� �� ������� �������� ������� ���� �������� ���� ������� �����������? �������� �������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML"&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;��������� �������&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;table border="1" width="400" cellpadding="3" cellspacing="0"&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx"><b>&lt;th&gt;</b>�������<b>&lt;/th&gt;&lt;th&gt;</b>�����<b>&lt;/th&gt;&lt;th&gt;</b>����<b>&lt;/th&gt;&lt;th&gt;</b>���������<b>&lt;/th&gt;&lt;th&gt;</b>����<b>&lt;/th&gt;</b></samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx"><b>&lt;th&gt;</b>������ ���<b>&lt;/th&gt;</b>&lt;td&gt;4,7&lt;/td&gt;&lt;td&gt;0,7&lt;/td&gt;&lt;td&gt;49,8&lt;/td&gt;&lt;td&gt;214&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx"><b>&lt;th&gt;</b>������<b>&lt;/th&gt;</b>&lt;td&gt;2,8&lt;/td&gt;&lt;td&gt;3,2&lt;/td&gt;&lt;td&gt;4,7&lt;/td&gt;&lt;td&gt;58&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx"><b>&lt;th&gt;</b>��������<b>&lt;/th&gt;</b>&lt;td&gt;2&lt;/td&gt;&lt;td&gt;0,1&lt;/td&gt;&lt;td&gt;19,7&lt;/td&gt;&lt;td&gt;83&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;th&gt;�������&lt;/th&gt;&lt;td&gt;11,4&lt;/td&gt;&lt;td&gt;49,3&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;489&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx"><b>&lt;th&gt;</b>�����:<b>&lt;/th&gt;</b>&lt;td&gt;20,9&lt;/td&gt;&lt;td&gt;53,3&lt;/td&gt;&lt;td&gt;83,2&lt;/td&gt;&lt;td&gt;844&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xx">&lt;/table&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer61.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>�� ���� <samp><b>&lt;th&gt;</b></samp> ������ ��������������� ��� ��� �������� �� � �� ���� <samp><b>&lt;td&gt;</b></samp> ��� ��� �� �������� � 4 ��� ���� ������������� �� ����, � ������ ��������� ��:</p>
+<ul>
+<li><samp><b>width</b></samp> - ������ ������ � ��������� ��� �������.
+<li><samp><b>height</b></samp> - ������ ������ � ��������� ��� �������.
+
+<li><samp><b>align</b></samp> - ������� ����� � ��������:
+<ul>
+<li><samp><b>left</b></samp> - �� ����� ����.
+<li><samp><b>right</b></samp> - �� ������� ����.
+<li><samp><b>center</b></samp> - �� ������.
+<li><samp><b>justify</b></samp> - �� ����� � ������� ����.
+</ul>
+<li><samp><b>valign</b></samp> - ������� ����� � �������� �� ��������:
+<ul>
+<li><samp><b>top</b></samp> - �� ��������� ����.
+<li><samp><b>middle</b></samp> - �� ������.
+<li><samp><b>bottom</b></samp> - �� �������� ����.
+<li><samp><b>baseline</b></samp> - �� ������� ����.
+</ul>
+<li><samp><b>colspan</b></samp> - ������� �������� ������� ��������.
+<li><samp><b>rowspan</b></samp> - ������� ���� ������� ��������.
+<li><samp><b>bgcolor</b></samp> - ���� ���� ������.
+<li><samp><b>background</b></samp> - ���� ������� ������� � ��������.
+<li><samp><b>bordercolor</b></samp> - ���� �������.
+<li><samp><b>title</b></samp> - ��������� �������
+<li><samp><b>nowrap</b></samp> - ��������� ����������� ����� � ��������.
+</ul>
+
+<p>����� ��������, � ���� ����� ���..</p>
+
+<h2>����� ������� � �� ����</h2>
+<p>��� <samp><b>&lt;caption&gt;</b></samp> �������� ���������� �������, �������� �� ������� �������. ����� ��� ������� ��������������� ��������� ������� ������ ����<samp><b>&lt;table&gt;</b></samp></p>
+
+<samp class="x">&lt;table&gt;</samp><br>
+<samp class="xx"><b>&lt;caption&gt;����� �������&lt;/caption&gt;</b></samp><br> 
+<samp class="xx">&lt;tr&gt;</samp><br>
+<samp class="xxx">&lt;td&gt;������&lt;/td&gt;</samp><br> 
+<samp class="xx">&lt;/tr&gt;</samp><br>
+<samp class="x">&lt;/table&gt;</samp><br>
+<p>��� �������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML"&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;����� �������&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;table border="1" width="400" cellpadding="3" cellspacing="0"&gt;</samp><br>
+<samp class="xxx"><b>&lt;caption&gt;</b>&lt;b&gt;����������� �������� �������� ����������:&lt;/b&gt;<b>&lt;/caption&gt;</b></samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;th&gt;�������&lt;/th&gt;&lt;th&gt;�����&lt;/th&gt;&lt;th&gt;����&lt;/th&gt;&lt;th&gt;���������&lt;/th&gt;&lt;th&gt;����&lt;/th&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;th&gt;������ ���&lt;/th&gt;&lt;td&gt;4,7&lt;/td&gt;&lt;td&gt;0,7&lt;/td&gt;&lt;td&gt;49,8&lt;/td&gt;&lt;td&gt;214&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;th&gt;������&lt;/th&gt;&lt;td&gt;2,8&lt;/td&gt;&lt;td&gt;3,2&lt;/td&gt;&lt;td&gt;4,7&lt;/td&gt;&lt;td&gt;58&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;th&gt;��������&lt;/th&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;0,1&lt;/td&gt;&lt;td&gt;19,7&lt;/td&gt;&lt;td&gt;83&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;th&gt;�������&lt;/th&gt;&lt;td&gt;11,4&lt;/td&gt;&lt;td&gt;49,3&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;489&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;th&gt;�����:&lt;/th&gt;&lt;td&gt;20,9&lt;/td&gt;&lt;td&gt;53,3&lt;/td&gt;&lt;td&gt;83,2&lt;/td&gt;&lt;td&gt;844&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xx">&lt;/table&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer62.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>�� ���� <samp><b>&lt;caption&gt;</b></samp> ���� ���� ������������ ������� <samp><b>align</b></samp> - ����������� ����� ������� �� ���������� � ��������� ���������� <samp><b>left</b>, <b>right</b> � <b>center</b></samp>, � ����� ������� <samp><b>valign</b></samp> ���� �������� �� ���� �� �� ��������������� ����� ������ - <samp><b>top</b></samp> ��� ����� - <samp><b>bottom</b></samp> �������.</p>
+<p>����� ���� ���������, �� ���� �������� � ����� ��������� ���������� �� ������, ��� ���������, �����:</p>
+<samp class="x"><b>&lt;caption align="left"&gt;�����&lt;/caption&gt;</b></samp>
+<p>- ��� �������� IE � Opera ��������� ����� ������ ������� �� �� ����� ����, � ��� �������� Firefox �� ����������, �� ����� ��� ���������� ���� �� ���� �������.</p>
+<p>��� ���� ����� ������� ��� �� �������� ���� ����� ��������� �� ��������� �������� <samp><b>summary</b></samp> ���� <samp><b>&lt;table&gt;</b></samp></p>
+<p>��� ���:</p>
+<samp class="x"><b>&lt;table summary="���� �������"&gt;</b></samp>
+<p>����� ���� ���� �� ������������ � �� ���������� �� ����� ���������� ����������, ����� ���� ���� ����������� ���������� ���������, � ��� ���� ������� ����������.</p>
+<p>�������:</p>
+
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML"&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;���� �������&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;table border="1" width="400" cellpadding="3" cellspacing="0" <b>summary="����������� �������� �������� ����������"</b>&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;th&gt;�������&lt;/th&gt;&lt;th&gt;�����&lt;/th&gt;&lt;th&gt;����&lt;/th&gt;&lt;th&gt;���������&lt;/th&gt;&lt;th&gt;����&lt;/th&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;th&gt;������ ���&lt;/th&gt;&lt;td&gt;4,7&lt;/td&gt;&lt;td&gt;0,7&lt;/td&gt;&lt;td&gt;49,8&lt;/td&gt;&lt;td&gt;214&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;th&gt;������&lt;/th&gt;&lt;td&gt;2,8&lt;/td&gt;&lt;td&gt;3,2&lt;/td&gt;&lt;td&gt;4,7&lt;/td&gt;&lt;td&gt;58&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;th&gt;��������&lt;/th&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;0,1&lt;/td&gt;&lt;td&gt;19,7&lt;/td&gt;&lt;td&gt;83&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;th&gt;�������&lt;/th&gt;&lt;td&gt;11,4&lt;/td&gt;&lt;td&gt;49,3&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;489&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;th&gt;�����:&lt;/th&gt;&lt;td&gt;20,9&lt;/td&gt;&lt;td&gt;53,3&lt;/td&gt;&lt;td&gt;83,2&lt;/td&gt;&lt;td&gt;844&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xx">&lt;/table&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer69.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<h2>���������� �����.</h2>
+<p>����������� � ������: <samp><b>&lt;thead&gt;</b>, <b>&lt;tbody&gt;</b> � <b>&lt;tfoot&gt;</b></samp>. ���� ���� ������� ����� ������� ��� ����� ������� (��� <samp><b>&lt;tr&gt;</b></samp>) ���������� ��� ����� ��������� � ������ ���� ���������.</p>
+<p>���:</p>
+<ul>
+<li>��� <samp><b>&lt;thead&gt;</b></samp> - (³� ����. Table head - "������" �������) ����������� ��� ����������� ������ ��� ������ ������� ����� � �������, ������� ��� ����� "�����" �������.
+<li>��� <samp><b>&lt;tbody&gt;</b></samp> - (³� ����. Table body - "���" �������), �� ������� ��� ����� �������� ���������� ����� � ������� � �������� ������.
+<li>��� <samp><b>&lt;tfoot&gt;</b></samp> - (³� ����. Table footer - ������ ���������� �������) ������� "�����" �������, �� ���������� � ������ ��� �������� ������ �����.
+</ul>
+<p>��� ��������� ����� ������ ������������ ����� ����:</p>
+
+<p>���� ���� ������ ���� ����������� ����� ��������� ������� - ����������<samp><b>&lt;table&gt;</b></samp>.</p>
+<p>���� <samp><b>&lt;thead&gt;</b></samp> � <samp><b>&lt;tfoot&gt;</b></samp> ����������� ��������������� ����� ���� ��� ��� ������ �������, �� ��� <samp><b>&lt;tbody&gt;</b></samp> �� ������� �� �����������.</p>
+<p>��������� ������� ��� ������������ ��� ����� ����� ���� ������� ��������� ��� ���:</p>
+
+<samp class="x">&lt;table&gt;</samp><br>
+<samp class="xx"><b>&lt;thead&gt;</b></samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;������&lt;/td&gt; </samp><br>
+<samp class="xxx">&lt;/tr&gt; </samp><br>
+<samp class="xx"><b>&lt;/thead&gt;</b></samp><br>
+<samp class="xx"><b>&lt;tbody&gt;</b></samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt; ���&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt; </samp><br>
+<samp class="xx"><b>&lt;/tbody&gt;</b></samp><br>
+<samp class="xx"><b>&lt;tfoot&gt;</b></samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;�����&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt; </samp><br>
+<samp class="xx"><b>&lt;/tfoot&gt;</b></samp><br>
+<samp class="x">&lt;/table&gt;</samp>
+
+<p>����� ������ ������ ������� ���� ��������� <samp><b>&lt;thead&gt;</b></samp> ����� <samp><b>&lt;tbody&gt;</b></samp> � <samp><b>&lt;tfoot&gt;</b></samp>, ���� ���� �� ������ ������������ � ���� ���������� ���� � ������. � ��� ���<samp><b>&lt;tfoot&gt;</b></samp> ����� ������� ������ � <samp><b>&lt;tbody&gt;</b></samp>, � �� ������� ����� ���� � ����� ��� ��� ���� ���������� ������ ������������ ����� �������.</p>
+<p>�� ����� ����� ����������� ������������� �������� ����������� ������ � ���������<samp><b>align</b></samp> � <samp><b>valign</b></samp>, ��������� ���� ���� ����� ������ � ����� �� ��������� <samp><b>bgcolor</b></samp>, ������ ������� �� ���������<samp><b>title</b></samp>, ����� �� �������� ��������� � ��� ��������� ���� ����� <samp><b>align</b></samp> � <samp><b>title</b></samp>.</p>
+<p>������ ������ ���������� .. � �� ��������:</p>
+<ul>
+<li><i><samp><b>char</b></samp> - ����������� ���� �������� �������.</i>
+<li><i><samp><b>charoff</b></samp> - ���� ������� ��������� �������.</i>
+</ul>
+<p>��� �� �������� ������ �� ��������� �� � ������ � ������ ��������! ����� � ��� �� � ����� ������.</p>
+<p>��� ����� �������� �� ������ ������� ���� ���������� ����� ���� �� ��������� ��� ��������� ������ �� �������? ³����� ����� �����, � ���� �������� �������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML"&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;���������� �����&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;table border="1" width="400" cellpadding="3" cellspacing="0"&gt;</samp><br>
+<samp class="xxx">&lt;caption&gt;&lt;b&gt;����������� �������� �������� ����������:&lt;/b&gt;&lt;/caption&gt;</samp><br>
+<samp class="xxx"><b>&lt;thead bgcolor ="#deb887" title="�����"&gt;</b></samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;�������&lt;/th&gt;&lt;th&gt;�����&lt;/th&gt;&lt;th&gt;����&lt;/th&gt;&lt;th&gt;���������&lt;/th&gt;&lt;th&gt;����&lt;/th&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx"><b>&lt;/thead&gt;</b></samp><br>
+<samp class="xxx"><b>&lt;tbody align="left" bgcolor ="#faebd7" title="����������� �������� �������� ����������"&gt;</b></samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;������ ���&lt;/th&gt;&lt;td&gt;4,7&lt;/td&gt;&lt;td&gt;0,7&lt;/td&gt;&lt;td&gt;49,8&lt;/td&gt;&lt;td&gt;214&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;������&lt;/th&gt;&lt;td&gt;2,8&lt;/td&gt;&lt;td&gt;3,2&lt;/td&gt;&lt;td&gt;4,7&lt;/td&gt;&lt;td&gt;58&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;��������&lt;/th&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;0,1&lt;/td&gt;&lt;td&gt;19,7&lt;/td&gt;&lt;td&gt;83&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;�������&lt;/th&gt;&lt;td&gt;11,4&lt;/td&gt;&lt;td&gt;49,3&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;489&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx"><b>&lt;/tbody&gt;</b></samp><br>
+<samp class="xxx"><b>&lt;tfoot align="left" bgcolor ="#f5f5dc" title="�����:"&gt;</b></samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;�����:&lt;/th&gt;&lt;td&gt;20,9&lt;/td&gt;&lt;td&gt;53,3&lt;/td&gt;&lt;td&gt;83,2&lt;/td&gt;&lt;td&gt;844&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx"><b>&lt;/tfoot&gt;</b></samp><br>
+<samp class="xx">&lt;/table&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer63.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>����� ������, ����� ������ �������<samp><b>&lt;thead&gt;</b>, <b>&lt;tbody&gt;</b> � <b>&lt;tfoot&gt;</b></samp>..</p>
+<p>������� ����������� ����� ���� �� ������ ����������� ����� � �����, � �� � ���� ����� ������� ������ � ��������, ��������� ����� ���� ��� �������, ����� �� ������� ��������� ��� �� ����� ��� ������� �����, � ������ ������� ���� ��� �񳺿 ����� .. � ������ ����� ? �� �� � � �����, �� �� �� �� ������ � CSS..</p>
+<p>�������� �� ����� ���� ���� �����, ���� ���������, �� ��������� �� ����-����� ���� ��������� ������� ������� <samp><b>style</b></samp>, �� ��������� ����� ����� ������� ��������� ���, �� ��������� ������� ���� ��� ������ �������� .. � �� � �� ����� ������� ��� <samp><b>&lt;style&gt;</b></samp> ������� �������� � �������� ����� CSS, ���� ��� �� �������� ��� �� �� ������.</p>
+<p>������ ������ ���� �� ������������� ��� ��� �������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML"&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;���������� ����� � CSS&lt;/title&gt;</samp><br>
+<i><samp class="xx">&lt;style type="text/css"&gt;</samp><br>
+<samp class="xxx">table {width: 600px; margin: 30px; border: #b8860b 6px ridge; border-collapse: collapse;}</samp><br>
+<samp class="xxx">td,th,tr {border: #b8860b 2px outset; padding: 3px;}</samp><br>
+<samp class="xxx">caption{font: italic bold 16px Arial; padding: 10px;}</samp><br>
+<samp class="xxx"><b>thead</b> {background-color: #deb887; text-align: center;}</samp><br>
+<samp class="xxx"><b>tbody</b> {background-color: #faebd7; text-align: left;}</samp><br>
+<samp class="xxx"><b>tfoot</b> {background-color: #f5f5dc; text-align: left; font: italic 14px Arial;}</samp><br>
+<samp class="xxx">tr:hover {background-color:#b8860b; color: #ffffff;}</samp><br>
+<samp class="xx">&lt;/style&gt;</samp></i><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;table&gt;</samp><br>
+<samp class="xxx">&lt;caption&gt;����������� �������� �������� ����������:&lt;/caption&gt;</samp><br>
+<samp class="xxx">&lt;<b>thead</b> title="�����"&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;�������&lt;/th&gt;&lt;th&gt;�����&lt;/th&gt;&lt;th&gt;����&lt;/th&gt;&lt;th&gt;���������&lt;/th&gt;&lt;th&gt;����&lt;/th&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx"><b>&lt;/thead&gt;</b></samp><br>
+<samp class="xxx">&lt;<b>tbody</b> title="����������� �������� �������� ����������"&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;������ ���&lt;/th&gt;&lt;td&gt;4,7&lt;/td&gt;&lt;td&gt;0,7&lt;/td&gt;&lt;td&gt;49,8&lt;/td&gt;&lt;td&gt;214&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;th&gt;������&lt;/th&gt;&lt;td&gt;2,8&lt;/td&gt;&lt;td&gt;3,2&lt;/td&gt;&lt;td&gt;4,7&lt;/td&gt;&lt;td&gt;58&lt;/td&gt;</samp><br>
+<samp class="xxxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;��������&lt;/th&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;0,1&lt;/td&gt;&lt;td&gt;19,7&lt;/td&gt;&lt;td&gt;83&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;�������&lt;/th&gt;&lt;td&gt;11,4&lt;/td&gt;&lt;td&gt;49,3&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;489&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx"><b>&lt;/tbody&gt;</b></samp><br>
+<samp class="xxx">&lt;<b>tfoot</b> title="�����:"&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;�����:&lt;/th&gt;&lt;td&gt;20,9&lt;/td&gt;&lt;td&gt;53,3&lt;/td&gt;&lt;td&gt;83,2&lt;/td&gt;&lt;td&gt;844&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx"><b>&lt;/tfoot&gt;</b></samp><br>
+<samp class="xx">&lt;/table&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer64.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+<p>�������� � ������ ������� ������� �������� ���� ���� �������� �� ��������� ������ CSS.</p>
+
+
+<h2>���������� ��������.</h2>
+
+<p>��������� ����� �� ����� ������, ��� � ������� ������� �� ��������� ����   <samp><b>&lt;col&gt;</b></samp> �/��� <samp><b>&lt;colgroup&gt;</b></samp> ���� ���� ���������� ��������� ������� ��������� �������� ������� �� ��������� ��������� ��������:</p>
+<ul>
+<li><samp><b>width</b></samp> - ������ ������� � ��������� ��� �������.
+<li><samp><b>align</b></samp> - ������� ����� � ��������:
+<ul>
+<li><samp><b>left</b></samp> - �� ����� ����. 
+<li><samp><b>right</b></samp> - �� ������� ����. 
+<li><samp><b>center</b></samp> - �� ������. 
+<li><samp><b>justify</b></samp> - �� ����� � ������� ����.
+</ul>
+<li><samp><b>valign</b></samp> - ������� ����� � �������� �� ��������:
+<ul>
+<li><samp><b>top</b></samp> - �� ��������� ����.
+<li><samp><b>middle</b></samp> - �� ������. 
+<li><samp><b>bottom</b></samp> - �� �������� ����.
+<li><samp><b>baseline</b></samp> - �� ������� ����.
+</ul>
+<li><samp><b>bgcolor</b></samp> - ���� ���� ������.
+<li><samp><b>span</b></samp> - ʳ������ ��������, �� ���� ��� ������������� ���������.
+</ul>
+<p>������� �������� ������� ���� ������ ������� ��� ����������� �������� �������� ����������, ���� � ��� ���������� � �'��� ��������, �������, ���� ���� <samp><b>&lt;table&gt;</b></samp> ��� ��������, ���� ����:</p>
+<b>
+<samp class="x">&lt;col width="140" bgcolor="#deb887"&gt;</samp><br>
+<samp class="x">&lt;col width="100" bgcolor="#faebd7"&gt;</samp><br>
+<samp class="x">&lt;col width="100" bgcolor="#faebd7"&gt;</samp><br>
+<samp class="x">&lt;col width="100" bgcolor="#faebd7"&gt;</samp><br>
+<samp class="x">&lt;col width="60" bgcolor="#f5f5dc"&gt;</samp>
+</b>
+<p>��� ����� ������� ��� ��� <samp><b>&lt;col&gt;</b></samp> � ����������� �����������, �� ������ ��� �� ���� ��� ������� �������. ������ ��� - ����� ����� ������� � ��� �� �������..</p>
+<p>�������� �����, �� � ����� ������� �����, ����� � �������� ������� ����� ������� ��������� <samp><b>width="100" bgcolor="#faebd7"</b></samp> ��� ��� ��� �� ����������� ����� �������� ������� ������ ����� ������������ ���������<samp><b>span</b></samp>, ���� ����� ��� ������� ��������� ������� �� ��������� ���������. � ������ ������� ����� ���� ���� ��������� ������:</p>
+
+<samp class="x">&lt;col width="140" bgcolor="#deb887"&gt;</samp><br>
+<samp class="x">&lt;col <b>span="3"</b> width="100" bgcolor="#faebd7"&gt;</samp><br>
+<samp class="x">&lt;col width="60" bgcolor="#f5f5dc"&gt;</samp><br>
+
+<p>����� ����� �� �������, �� ��� �������, ��������� � �����, ����� �������� ������ � ���� ����. �����, ���� ����� ������� ���� ���� �'�������? �� �� �� ��������� ���.</p>
+<p>�� � ��� ������ ������� ������� ����� �������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML"&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;���������� ��������&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;table width="500" border="1" cellpadding="3" cellspacing="0"&gt;</samp><br>
+<samp class="xxx">&lt;caption&gt;&lt;b&gt;����������� �������� �������� ����������:&lt;/b&gt;&lt;/caption&gt;</samp><br>
+<samp class="xxx"><b>&lt;col width="140" bgcolor="#deb887"&gt;</b></samp><br>
+<samp class="xxx"><b>&lt;col span="3" width="100" bgcolor="#faebd7"&gt;</b></samp><br>
+<samp class="xxx"><b>&lt;col width="60" bgcolor="#f5f5dc"&gt;</b></samp><br>
+<samp class="xxx">&lt;thead title="�����"&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;�������&lt;/th&gt;&lt;th&gt;�����&lt;/th&gt;&lt;th&gt;����&lt;/th&gt;&lt;th&gt;���������&lt;/th&gt;&lt;th&gt;����&lt;/th&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;/thead&gt;</samp><br>
+<samp class="xxx">&lt;tbody align="left" title="����������� �������� �������� ����������"&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;������ ���&lt;/th&gt;&lt;td&gt;4,7&lt;/td&gt;&lt;td&gt;0,7&lt;/td&gt;&lt;td&gt;49,8&lt;/td&gt;&lt;td&gt;214&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;������&lt;/th&gt;&lt;td&gt;2,8&lt;/td&gt;&lt;td&gt;3,2&lt;/td&gt;&lt;td&gt;4,7&lt;/td&gt;&lt;td&gt;58&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;��������&lt;/th&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;0,1&lt;/td&gt;&lt;td&gt;19,7&lt;/td&gt;&lt;td&gt;83&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;�������&lt;/th&gt;&lt;td&gt;11,4&lt;/td&gt;&lt;td&gt;49,3&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;489&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;/tbody&gt;</samp><br>
+<samp class="xxx">&lt;tfoot align="left" title="�����:"&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;�����:&lt;/th&gt;&lt;td&gt;20,9&lt;/td&gt;&lt;td&gt;53,3&lt;/td&gt;&lt;td&gt;83,2&lt;/td&gt;&lt;td&gt;844&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;/tfoot&gt;</samp><br>
+<samp class="xx">&lt;/table&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer65.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>��� <samp><b>&lt;colgroup&gt;</b></samp> ��������� ���������� ���� <samp><b>&lt;col&gt;</b></samp> � �� ����� ��� � ��������, ��� ��� ���� ���������� ������� �� �� ���� ����� ������:</p>
+<b>
+<samp class="x">&lt;colgroup width="140" bgcolor="#deb887"&gt;</samp><br>
+<samp class="x">&lt;colgroup span="3" width="100" bgcolor="#faebd7"&gt;</samp><br>
+<samp class="x">&lt;colgroup width="60" bgcolor="#f5f5dc"&gt;</samp>
+</b>
+<p>����� ������ ������ �� � �� ��������. �����, ���� �������� ��� � � .. ��-�����, <samp><b>&lt;colgroup&gt;</b></samp> ���� ������� ������� ��� ���� <samp><b>&lt;col&gt;</b></samp>, ����������� ����:</p>
+
+<b>
+<samp class="x">&lt;colgroup&gt;</samp><br>
+<samp class="xx">&lt;col&gt;</samp><br>
+<samp class="x">&lt;/colgroup&gt;</samp><br>
+</b>
+
+<p>��-�����, ���� �� �� ���� <samp><b>&lt;table&gt;</b></samp> ����������� ������� <samp><b>rules</b></samp> � ���������<samp><b>groups</b></samp> (��� �� ������� ���� ��� �����) ����� ���� ���������� ����� ��� ������������<samp><b>&lt;colgroup&gt;</b></samp>.</p>
+<p>������ ����� ������ �� ���� ������ ����.</p>
+<p>�������:</p> 
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML"&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;colgroup&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;table  border="1"&gt;</samp><br>
+<samp class="xxx"><b>&lt;colgroup bgcolor="#deb887" align="left"&gt;</b></samp><br>
+<samp class="xxxx">&lt;col span="3" width="20"&gt;</samp><br>
+<samp class="xxx"><b>&lt;/colgroup&gt;</b></samp><br>
+<samp class="xxx"><b>&lt;colgroup bgcolor="#faebd7" align="center"&gt;</b></samp><br>
+<samp class="xxxx">&lt;col span="2" width="40"&gt;</samp><br>
+<samp class="xxxx">&lt;col width="60"&gt;</samp><br>
+<samp class="xxx"><b>&lt;/colgroup&gt;</b></samp><br>
+<samp class="xxx"><b>&lt;colgroup bgcolor="#f5f5dc" align="right"&gt;</b></samp><br>
+<samp class="xxxx">&lt;col width="20"&gt;</samp><br>
+<samp class="xxxx">&lt;col width="30"&gt;</samp><br>
+<samp class="xxxx">&lt;col width="50"&gt;</samp><br>
+<samp class="xxx"><b>&lt;/colgroup&gt;</b></samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;20&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;td&gt;60&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;td&gt;50&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;20&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;td&gt;60&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;td&gt;50&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;20&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;td&gt;60&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;td&gt;50&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;tr&gt;</samp><br>
+<samp class="xxxx">&lt;td&gt;20&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;td&gt;60&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;td&gt;50&lt;/td&gt;</samp><br>
+<samp class="xxx">&lt;/tr&gt;</samp><br>
+<samp class="xx">&lt;/table&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer66.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+<p>�������� �����, �� � ����� ������� ������� ������� ������� �� ��� ����� �� ��������� <samp><b>&lt;colgroup&gt;</b></samp>, � ��� ������ �� ������� ���� ���� � ����� �����������, � ������ ������� �� ������ �� ��������� ���� <samp><b>&lt;col&gt;</b></samp>, �� ����������� ��������� ���������� <samp><b>&lt;colgroup&gt;</b></samp>.</p>
+<p>�� � � ������� � ������������ �����, ������� ���������� � �������� ����� ���������� ������ �� ��� ����� ���� ��� �������.</p>
+
+<h2>��� �������.</h2>
+<p>������ � ����� <a href="glava4.html">"�������"</a> �� � ���� ������������� � ���������� <samp><b>border</b></samp> - ������ ������� � <samp><b>bordercolor</b></samp> - ���� �������, ��� �� �� ���� ���� ����������� ����������� �� �������� ������� .. � �� ��� ��������: <samp><b>frame</b></samp> � <samp><b>rules</b></samp> ��� ��� �� � ���������� ����.</p>
+<p>������� � �������� <samp><b>frame</b></samp> - �����, ����� ������� ������������� �� ���� <samp><b>&lt;table&gt;</b></samp> � ����� �� ��, �� ��� ���������� �������� ��� �������, ����� ����� ������� ���� �������, � �� �� �� �������� ����������</p>
+<p>������� <samp><b>frame</b></samp> ���� �������� ����� �������:</p>
+<ul>
+<li><samp><b>void</b></samp> - �� ���������� ��� ������� �������.
+<li><samp><b>border</b></samp> - ���������� ��� ������� ������� (�� �������������).
+<li><samp><b>hsides</b></samp> - ���������� ����� ������������� ������� ������ � �����.
+<li><samp><b>vsides</b></samp> - ���������� ����� ����������� ������� ������ � ��������.
+<li><samp><b>above</b></samp> - ���������� ����� ������ ���� �������.
+<li><samp><b>below</b></samp> - ���������� ����� ����� ���� �������.
+<li><samp><b>lhs</b></samp> - ���������� ����� ��� ������.
+<li><samp><b>rhs</b></samp> - ���������� ����� ����� ����.
+</ul>
+<p>�������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML"&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;frame&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;table border="8" <b>frame="hsides"</b> width="400" cellpadding="3" cellspacing="0"&gt;</samp><br>
+<samp class="xxx">&lt;caption&gt;&lt;b&gt;����������� �������� �������� ����������:&lt;/b&gt;&lt;/caption&gt;</samp><br>
+<samp class="xxx">&lt;thead bgcolor ="#deb887" title="�����"&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;�������&lt;/th&gt;&lt;th&gt;�����&lt;/th&gt;&lt;th&gt;����&lt;/th&gt;&lt;th&gt;���������&lt;/th&gt;&lt;th&gt;����&lt;/th&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;/thead&gt;</samp><br>
+<samp class="xxx">&lt;tbody align="left" bgcolor ="#faebd7" title="����������� �������� �������� ����������"&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;������ ���&lt;/th&gt;&lt;td&gt;4,7&lt;/td&gt;&lt;td&gt;0,7&lt;/td&gt;&lt;td&gt;49,8&lt;/td&gt;&lt;td&gt;214&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;������&lt;/th&gt;&lt;td&gt;2,8&lt;/td&gt;&lt;td&gt;3,2&lt;/td&gt;&lt;td&gt;4,7&lt;/td&gt;&lt;td&gt;58&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;��������&lt;/th&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;0,1&lt;/td&gt;&lt;td&gt;19,7&lt;/td&gt;&lt;td&gt;83&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;�������&lt;/th&gt;&lt;td&gt;11,4&lt;/td&gt;&lt;td&gt;49,3&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;489&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;/tbody&gt;</samp><br>
+<samp class="xxx">&lt;tfoot align="left" bgcolor ="#f5f5dc" title="�����:"&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;�����:&lt;/th&gt;&lt;td&gt;20,9&lt;/td&gt;&lt;td&gt;53,3&lt;/td&gt;&lt;td&gt;83,2&lt;/td&gt;&lt;td&gt;844&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;/tfoot&gt;</samp><br>
+<samp class="xx">&lt;/table&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer67.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+<p>� ��� ������� <samp><b>rules</b></samp> �� ����� �� <samp><b>frame</b></samp> ������� ����� �� ��, �� ��� �������� ������� �� ���������� �������.</p>
+<p>������� <samp><b>rules</b></samp> ���� �������� ����� �������:</p>
+<ul>
+<li><samp><b>all</b></samp> - ���������� �� ��� �� ����������.
+<li><samp><b>none</b></samp> - �� ���������� ������� �� ����������. 
+<li><samp><b>rows</b></samp> - ���������� ������� ����� �� �������. 
+<li><samp><b>cols</b></samp> - ���������� ������� ����� �� �������. 
+<li><samp><b>groups</b></samp> - ���������� ������� ����� �� ������� ����� � ������� �������� ��������� �� ��������� ����: <samp><b>&lt;thead&gt;</b>, <b>&lt;tbody&gt;</b>, <b>&lt;tfoot&gt;</b> � <b>&lt;colgroup&gt;</b></samp>. 
+</ul>
+<p>�������:</p>
+<div class="primer">
+<samp>&lt;!DOCTYPE HTML"&gt;</samp><br>
+<samp>&lt;html&gt;</samp><br>
+<samp class="x">&lt;head&gt;</samp><br>
+<samp class="xx">&lt;title&gt;rules&lt;/title&gt;</samp><br>
+<samp class="x">&lt;/head&gt;</samp><br>
+<samp class="x">&lt;body&gt;</samp><br>
+<samp class="xx">&lt;table border="1" <b>rules="groups"</b> width="500" cellpadding="3" cellspacing="0"&gt;</samp><br>
+<samp class="xxx">&lt;caption&gt;&lt;b&gt;����������� �������� �������� ����������:&lt;/b&gt;&lt;/caption&gt;</samp><br>
+<samp class="xxx">&lt;thead bgcolor ="#deb887" title="�����"&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;�������&lt;/th&gt;&lt;th&gt;�����&lt;/th&gt;&lt;th&gt;����&lt;/th&gt;&lt;th&gt;���������&lt;/th&gt;&lt;th&gt;����&lt;/th&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;/thead&gt;</samp><br>
+<samp class="xxx">&lt;tbody align="left" bgcolor ="#faebd7" title="����������� �������� �������� ����������"&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;������ ���&lt;/th&gt;&lt;td&gt;4,7&lt;/td&gt;&lt;td&gt;0,7&lt;/td&gt;&lt;td&gt;49,8&lt;/td&gt;&lt;td&gt;214&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;������&lt;/th&gt;&lt;td&gt;2,8&lt;/td&gt;&lt;td&gt;3,2&lt;/td&gt;&lt;td&gt;4,7&lt;/td&gt;&lt;td&gt;58&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;��������&lt;/th&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;0,1&lt;/td&gt;&lt;td&gt;19,7&lt;/td&gt;&lt;td&gt;83&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;�������&lt;/th&gt;&lt;td&gt;11,4&lt;/td&gt;&lt;td&gt;49,3&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;489&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;/tbody&gt;</samp><br>
+<samp class="xxx">&lt;tfoot align="left" bgcolor ="#f5f5dc" title="�����:"&gt;</samp><br>
+<samp class="xxxx">&lt;tr&gt;</samp><br>
+<samp class="xxxxx">&lt;th&gt;�����:&lt;/th&gt;&lt;td&gt;20,9&lt;/td&gt;&lt;td&gt;53,3&lt;/td&gt;&lt;td&gt;83,2&lt;/td&gt;&lt;td&gt;844&lt;/td&gt;</samp><br>
+<samp class="xxxx">&lt;/tr&gt;</samp><br>
+<samp class="xxx">&lt;/tfoot&gt;</samp><br>
+<samp class="xx">&lt;/table&gt;</samp><br>
+<samp class="x">&lt;/body&gt;</samp><br>
+<samp>&lt;/html&gt;</samp>
+<div align="right"><a href="primer/primer68.html" target="_blank">�������� �������</a>&nbsp;&nbsp;</div> 
+</div>
+
+<p>������� <samp><b>rules</b></samp> ���� ������ ������� Opera, ��� �� � ��� �� ��� ������� ��� �������� ����� ������� �� ��������� ������ CSS.</p>
+
+<h2>������� ������:</h2>
+<ul>
+<li><p>��� <samp><b>&lt;col&gt;</b></samp> ��� ����� ������� ��������, ����� �� ���� ������� ����� .. <br>
+��� ������������ ������� �������� �� ��������� �� ���� �� ��� �� ���� ������� �������� �� �������������. ��� ��� ��� ������������ ���� <samp><b>&lt;col&gt;</b></samp>, ������� ������ ������� � �������� ������ �������, ������ ������ ���������� ����, �� ������� ������� ������������ .. �� � ���! �������� ��� ��������� �'������� ���������. ����� ���������� ��������� �������� ���������� "���������" �� ��� ������������.</p>
+<li><p>�� ���������������, �� ��� <samp><b>&lt;th&gt;</b></samp> ��������� ����� ������� �������, � ����� � ��������� ������� ����� ������ "����", � ���� ��������� ������, ��� ��� ����� � ��������� ���������, �� � ���� ����� ���� �������� �� ���������� ������ �� ���� �� ������ ���������� ������.</p>
+<li><p>��� �� �������� � ����� �����, �� ������ ���� �������, ��������� �� ����� �������, �� ������� ����� ��� !:<br>
+- ���-��������, ��� ���� �������� ��������� �������� ����� ���� ��� �������.<br>
+- ���������, � ������ ��������� ��� ���� ���������� ����������� ��� ������� �������.<br> 
+- ���������� ��������� ������, �� ����������� ������ �� ���� ����� �� �� �� ����� �������, ��� ������ ������������ ������� ���������� ����������.</p>
+<p>��� �� �� ����� ��������� ������: <samp><b>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;th&gt;, &lt;col&gt;, &lt;caption&gt;, &lt;colgroup&gt;</b></samp> - ���� ���� �������!</p>
+</ul>
+
+
+<div class="url">
+<a href="test4.html" title="�� �����">&lt;&lt; ����</a> | 
+<a href="glava11h.html" title="�� ���������� ������">�������� ����� &gt;&gt;</a>
+</div>
+</div>
+</body>
+</html>
